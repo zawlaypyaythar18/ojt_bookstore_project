@@ -1,0 +1,565 @@
+2022-12-06 20:02:59.058  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 11.0.12 on DESKTOP-UED44E2 with PID 5180 (C:\ojt_project_workspace\ojt_bookstore_project\bookstore\target\classes started by User in C:\ojt_project_workspace\ojt_bookstore_project\bookstore)
+2022-12-06 20:02:59.063  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-06 20:02:59.275  INFO 5180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-06 20:02:59.276  INFO 5180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-06 20:03:02.236  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:03:02.246  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 20:03:02.269  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+2022-12-06 20:03:02.334  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:03:02.341  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 20:03:02.384  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-12-06 20:03:04.600  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06 20:03:04.641  INFO 5180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06 20:03:04.643  INFO 5180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-06 20:03:05.007  INFO 5180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-06 20:03:05.016  INFO 5180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5739 ms
+2022-12-06 20:03:05.827  INFO 5180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 20:03:05.990  INFO 5180 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-06 20:03:06.485  INFO 5180 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-06 20:03:06.793  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-06 20:03:07.748  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-06 20:03:07.791  INFO 5180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-06 20:03:08.920  INFO 5180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 20:03:08.946  INFO 5180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:03:09.112  WARN 5180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 20:03:09.521 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-06 20:03:09.773 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2022-12-06 20:03:09.851 DEBUG 5180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-06 20:03:09.912 DEBUG 5180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-06 20:03:10.062  WARN 5180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-06 20:03:10.681  WARN 5180 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 17ff6787-dd4f-4621-81cb-142c82181a75
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-06 20:03:11.126  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77fa81c2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3524621e, org.springframework.security.web.context.SecurityContextPersistenceFilter@784f33ca, org.springframework.security.web.header.HeaderWriterFilter@3c0eeed0, org.springframework.security.web.csrf.CsrfFilter@4f0dd423, org.springframework.security.web.authentication.logout.LogoutFilter@3650679f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19cd6688, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6c95d87d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6fc39c64, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@511261d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d4b7aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@624fddd8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6adebff8, org.springframework.security.web.session.SessionManagementFilter@4fc0d0b7, org.springframework.security.web.access.ExceptionTranslationFilter@71a4bfc2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d34c1d8]
+2022-12-06 20:03:11.295  INFO 5180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-06 20:03:11.455  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06 20:03:11.508  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 13.817 seconds (JVM running for 18.333)
+2022-12-06 20:03:34.861  INFO 5180 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-06 20:03:34.868  INFO 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-06 20:03:34.874 DEBUG 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-06 20:03:34.877 DEBUG 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-06 20:03:34.890 DEBUG 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-06 20:03:34.892 DEBUG 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@68163bc
+2022-12-06 20:03:34.893 DEBUG 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7b00e6ec
+2022-12-06 20:03:34.894 DEBUG 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-06 20:03:34.894  INFO 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2022-12-06 20:03:35.782  WARN 5180 --- [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [790] milliseconds.
+2022-12-06 20:05:47.181  INFO 5180 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 20:05:47.792  INFO 5180 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-06 20:05:47.799  INFO 5180 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-06 20:05:47.851  INFO 5180 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:05:47.862  INFO 5180 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-06 20:05:47.896  INFO 5180 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-06 20:05:48.155  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 11.0.12 on DESKTOP-UED44E2 with PID 5180 (C:\ojt_project_workspace\ojt_bookstore_project\bookstore\target\classes started by User in C:\ojt_project_workspace\ojt_bookstore_project\bookstore)
+2022-12-06 20:05:48.159  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-06 20:05:48.873  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:05:48.875  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 20:05:48.884  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2022-12-06 20:05:48.907  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:05:48.910  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 20:05:48.915  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-12-06 20:05:49.327  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06 20:05:49.335  INFO 5180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06 20:05:49.336  INFO 5180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-06 20:05:49.402  INFO 5180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-06 20:05:49.408  INFO 5180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1222 ms
+2022-12-06 20:05:49.534  INFO 5180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 20:05:49.564  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-12-06 20:05:49.618  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-12-06 20:05:49.619  INFO 5180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-06 20:05:49.668  INFO 5180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 20:05:49.668  INFO 5180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:05:49.768  WARN 5180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 20:05:49.935 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-06 20:05:50.054 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2022-12-06 20:05:50.070 DEBUG 5180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-06 20:05:50.121 DEBUG 5180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-06 20:05:50.137  WARN 5180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-06 20:05:50.220  WARN 5180 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: af1f9c88-8b5e-465b-9a27-b364870fdf08
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-06 20:05:50.241  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59975a34, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d88e5e3, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e864653, org.springframework.security.web.header.HeaderWriterFilter@198242b3, org.springframework.security.web.csrf.CsrfFilter@481da8d, org.springframework.security.web.authentication.logout.LogoutFilter@1ded8411, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@69b959ac, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@491f9c39, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4e5fb5c7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7a48fb25, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b1c71d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@700033d9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7373fefa, org.springframework.security.web.session.SessionManagementFilter@74d9aff7, org.springframework.security.web.access.ExceptionTranslationFilter@5601ff7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12d4cffa]
+2022-12-06 20:05:50.260  INFO 5180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-06 20:05:50.286  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06 20:05:50.296  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 2.261 seconds (JVM running for 177.121)
+2022-12-06 20:05:50.300  INFO 5180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 20:05:56.180  INFO 5180 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-06 20:05:56.181  INFO 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-06 20:05:56.181 DEBUG 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-06 20:05:56.182 DEBUG 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-06 20:05:56.184 DEBUG 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-06 20:05:56.186 DEBUG 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5ef474b1
+2022-12-06 20:05:56.186 DEBUG 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5e0038a8
+2022-12-06 20:05:56.187 DEBUG 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-06 20:05:56.187  INFO 5180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-12-06 20:07:15.255  INFO 5180 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2022-12-06 20:07:16.170  INFO 5180 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-06 20:07:16.177  INFO 5180 --- [Thread-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-06 20:07:16.196  INFO 5180 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:07:16.200  INFO 5180 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-12-06 20:07:16.231  INFO 5180 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-12-06 20:07:16.525  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 11.0.12 on DESKTOP-UED44E2 with PID 5180 (C:\ojt_project_workspace\ojt_bookstore_project\bookstore\target\classes started by User in C:\ojt_project_workspace\ojt_bookstore_project\bookstore)
+2022-12-06 20:07:16.525  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-06 20:07:17.243  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:07:17.249  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 20:07:17.372  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 0 JDBC repository interfaces.
+2022-12-06 20:07:17.445  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:07:17.445  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 20:07:17.573  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 0 JPA repository interfaces.
+2022-12-06 20:07:18.229  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06 20:07:18.231  INFO 5180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06 20:07:18.231  INFO 5180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-06 20:07:18.677  INFO 5180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-06 20:07:18.724  INFO 5180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2194 ms
+2022-12-06 20:07:19.194  INFO 5180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 20:07:19.211  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-12-06 20:07:19.264  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-12-06 20:07:19.265  INFO 5180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-06 20:07:19.537  INFO 5180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 20:07:19.541  INFO 5180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:07:19.559  WARN 5180 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSecurityConfig' defined in file [C:\ojt_project_workspace\ojt_bookstore_project\bookstore\target\classes\com\OJTProject\bookstore\security\WebSecurityConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.OJTProject.bookstore.security.WebSecurityConfig$$EnhancerBySpringCGLIB$$2be78aa5]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import lombok cannot be resolved
+	RequiredArgsConstructor cannot be resolved to a type
+
+2022-12-06 20:07:19.559  INFO 5180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:07:19.560  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-12-06 20:07:19.657  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-12-06 20:07:19.657  INFO 5180 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-06 20:07:19.675  INFO 5180 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-06 20:07:19.763 ERROR 5180 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSecurityConfig' defined in file [C:\ojt_project_workspace\ojt_bookstore_project\bookstore\target\classes\com\OJTProject\bookstore\security\WebSecurityConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.OJTProject.bookstore.security.WebSecurityConfig$$EnhancerBySpringCGLIB$$2be78aa5]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import lombok cannot be resolved
+	RequiredArgsConstructor cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.6.jar:2.7.6]
+	at com.OJTProject.bookstore.BookstoreApplication.main(BookstoreApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.OJTProject.bookstore.security.WebSecurityConfig$$EnhancerBySpringCGLIB$$2be78aa5]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import lombok cannot be resolved
+	RequiredArgsConstructor cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import lombok cannot be resolved
+	RequiredArgsConstructor cannot be resolved to a type
+
+	at com.OJTProject.bookstore.security.WebSecurityConfig.<init>(WebSecurityConfig.java:12) ~[classes/:na]
+	at com.OJTProject.bookstore.security.WebSecurityConfig$$EnhancerBySpringCGLIB$$2be78aa5.<init>(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 24 common frames omitted
+
+2022-12-06 20:07:51.361  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 11.0.12 on DESKTOP-UED44E2 with PID 5180 (C:\ojt_project_workspace\ojt_bookstore_project\bookstore\target\classes started by User in C:\ojt_project_workspace\ojt_bookstore_project\bookstore)
+2022-12-06 20:07:51.363  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-06 20:07:52.006  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:07:52.011  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 20:07:52.022  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2022-12-06 20:07:52.033  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:07:52.052  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 20:07:52.067  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2022-12-06 20:07:52.371  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06 20:07:52.377  INFO 5180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06 20:07:52.378  INFO 5180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-06 20:07:52.445  INFO 5180 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-06 20:07:52.446  INFO 5180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1076 ms
+2022-12-06 20:07:52.587  INFO 5180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 20:07:52.610  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-12-06 20:07:52.690  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-12-06 20:07:52.696  INFO 5180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-06 20:07:52.748  INFO 5180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 20:07:52.749  INFO 5180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:07:52.809  WARN 5180 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e2a0b155-cc82-44e8-a805-652c2fe09fee
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-06 20:07:52.849  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@418f8ea9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7adbe497, org.springframework.security.web.context.SecurityContextPersistenceFilter@380a86a4, org.springframework.security.web.header.HeaderWriterFilter@3a69af5d, org.springframework.security.web.csrf.CsrfFilter@6a9a951f, org.springframework.security.web.authentication.logout.LogoutFilter@6e68f5dd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5dbbf30d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4782c107, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@787a435a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2d33643f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@98bc8e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@777cf887, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e5ec2f6, org.springframework.security.web.session.SessionManagementFilter@606c916, org.springframework.security.web.access.ExceptionTranslationFilter@797e7ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27039d82]
+2022-12-06 20:07:52.972  WARN 5180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 20:07:53.159 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-06 20:07:53.240 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2022-12-06 20:07:53.255 DEBUG 5180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2022-12-06 20:07:53.274 DEBUG 5180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/*] in 'resourceHandlerMapping'
+2022-12-06 20:07:53.286 DEBUG 5180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-06 20:07:53.303  WARN 5180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-06 20:07:53.381  INFO 5180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-06 20:07:53.415  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06 20:07:53.426  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 2.239 seconds (JVM running for 300.251)
+2022-12-06 20:07:53.441  INFO 5180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-12-06 20:08:16.848  INFO 5180 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 20:08:17.672  INFO 5180 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-06 20:08:17.689  INFO 5180 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:08:17.692  INFO 5180 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-12-06 20:08:17.717  INFO 5180 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-12-06 20:08:17.928  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 11.0.12 on DESKTOP-UED44E2 with PID 5180 (C:\ojt_project_workspace\ojt_bookstore_project\bookstore\target\classes started by User in C:\ojt_project_workspace\ojt_bookstore_project\bookstore)
+2022-12-06 20:08:17.929  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-06 20:08:18.507  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:08:18.511  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 20:08:18.522  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2022-12-06 20:08:18.529  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:08:18.530  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 20:08:18.536  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-12-06 20:08:18.870  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06 20:08:18.877  INFO 5180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06 20:08:18.881  INFO 5180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-06 20:08:18.934  INFO 5180 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-06 20:08:18.939  INFO 5180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1005 ms
+2022-12-06 20:08:19.056  INFO 5180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 20:08:19.082  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-12-06 20:08:19.155  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-12-06 20:08:19.156  INFO 5180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-06 20:08:19.190  INFO 5180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 20:08:19.191  INFO 5180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:08:19.232  WARN 5180 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7d3287dc-da27-43c6-946d-36b98c8da60c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-06 20:08:19.260  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5838b9d2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b60810a, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a944d35, org.springframework.security.web.header.HeaderWriterFilter@12c612ce, org.springframework.security.web.csrf.CsrfFilter@59e9f0ee, org.springframework.security.web.authentication.logout.LogoutFilter@5888be72, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@dac35bc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6ec42afb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@78d580f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@44f6884d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2525744d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7575245, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77491c53, org.springframework.security.web.session.SessionManagementFilter@ceca2c6, org.springframework.security.web.access.ExceptionTranslationFilter@492ec41e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@686b7017]
+2022-12-06 20:08:19.298  WARN 5180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 20:08:19.486 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-06 20:08:19.517 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2022-12-06 20:08:19.547 DEBUG 5180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2022-12-06 20:08:19.619 DEBUG 5180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/*] in 'resourceHandlerMapping'
+2022-12-06 20:08:19.630 DEBUG 5180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-06 20:08:19.644  WARN 5180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-06 20:08:19.717  INFO 5180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-06 20:08:19.741  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06 20:08:19.757  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 1.91 seconds (JVM running for 326.582)
+2022-12-06 20:08:19.767  INFO 5180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 20:08:28.025  INFO 5180 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-06 20:08:28.026  INFO 5180 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-06 20:08:28.026 DEBUG 5180 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-06 20:08:28.026 DEBUG 5180 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-06 20:08:28.026 DEBUG 5180 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-06 20:08:28.028 DEBUG 5180 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@484079d2
+2022-12-06 20:08:28.028 DEBUG 5180 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@ec7a0f8
+2022-12-06 20:08:28.028 DEBUG 5180 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-06 20:08:28.029  INFO 5180 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-12-06 20:09:06.157  INFO 5180 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 20:09:06.673  INFO 5180 --- [Thread-18] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-06 20:09:06.712  INFO 5180 --- [Thread-18] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-06 20:09:06.778  INFO 5180 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:09:06.780  INFO 5180 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2022-12-06 20:09:06.830  INFO 5180 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2022-12-06 20:09:07.045  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 11.0.12 on DESKTOP-UED44E2 with PID 5180 (C:\ojt_project_workspace\ojt_bookstore_project\bookstore\target\classes started by User in C:\ojt_project_workspace\ojt_bookstore_project\bookstore)
+2022-12-06 20:09:07.045  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-06 20:09:07.607  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:09:07.612  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 20:09:07.619  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2022-12-06 20:09:07.628  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:09:07.629  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 20:09:07.636  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2022-12-06 20:09:07.936  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06 20:09:07.943  INFO 5180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06 20:09:07.948  INFO 5180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-06 20:09:08.008  INFO 5180 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-06 20:09:08.059  INFO 5180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1007 ms
+2022-12-06 20:09:08.240  INFO 5180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 20:09:08.288  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2022-12-06 20:09:08.333  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2022-12-06 20:09:08.337  INFO 5180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-06 20:09:08.377  INFO 5180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 20:09:08.377  INFO 5180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:09:08.418  WARN 5180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 20:09:08.507  WARN 5180 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 96c55de8-87a1-4294-8175-424a4f4f4740
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-06 20:09:08.610 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2022-12-06 20:09:08.630 DEBUG 5180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2022-12-06 20:09:08.742 DEBUG 5180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/*] in 'resourceHandlerMapping'
+2022-12-06 20:09:08.809  WARN 5180 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-06 20:09:08.810  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2022-12-06 20:09:08.811  WARN 5180 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-06 20:09:08.812  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2022-12-06 20:09:08.813  WARN 5180 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-06 20:09:08.814  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2022-12-06 20:09:08.830  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5abdca50, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1677d758, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ea23360, org.springframework.security.web.header.HeaderWriterFilter@41fb5d67, org.springframework.security.web.authentication.logout.LogoutFilter@7a9216f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7065f0b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b6e8bb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d31128d, org.springframework.security.web.session.SessionManagementFilter@3ff0248c, org.springframework.security.web.access.ExceptionTranslationFilter@54a34541, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ea02b53]
+2022-12-06 20:09:08.867 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-06 20:09:08.884 DEBUG 5180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-06 20:09:08.898  WARN 5180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-06 20:09:08.999  INFO 5180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-06 20:09:09.043  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06 20:09:09.059  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 2.104 seconds (JVM running for 375.884)
+2022-12-06 20:09:09.068  INFO 5180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' webSecurityConfig; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-12-06 20:09:28.392  INFO 5180 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 20:09:28.917  INFO 5180 --- [Thread-22] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-06 20:09:28.935  INFO 5180 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:09:28.939  INFO 5180 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2022-12-06 20:09:28.963  INFO 5180 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2022-12-06 20:09:29.171  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 11.0.12 on DESKTOP-UED44E2 with PID 5180 (C:\ojt_project_workspace\ojt_bookstore_project\bookstore\target\classes started by User in C:\ojt_project_workspace\ojt_bookstore_project\bookstore)
+2022-12-06 20:09:29.172  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-06 20:09:29.738  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:09:29.741  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 20:09:29.749  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2022-12-06 20:09:29.760  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:09:29.763  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 20:09:29.774  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-12-06 20:09:30.126  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06 20:09:30.132  INFO 5180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06 20:09:30.135  INFO 5180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-06 20:09:30.198  INFO 5180 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-06 20:09:30.202  INFO 5180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1023 ms
+2022-12-06 20:09:30.317  INFO 5180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 20:09:30.353  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2022-12-06 20:09:30.398  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2022-12-06 20:09:30.400  INFO 5180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-06 20:09:30.439  INFO 5180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 20:09:30.439  INFO 5180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:09:30.480  WARN 5180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 20:09:30.542  WARN 5180 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 164132aa-9b0e-432c-8b96-9f540115f9f3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-06 20:09:30.629 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2022-12-06 20:09:30.642 DEBUG 5180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2022-12-06 20:09:30.825 DEBUG 5180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/*] in 'resourceHandlerMapping'
+2022-12-06 20:09:30.839  WARN 5180 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-06 20:09:30.839  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2022-12-06 20:09:30.840  WARN 5180 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-06 20:09:30.840  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2022-12-06 20:09:30.840  WARN 5180 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-06 20:09:30.840  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2022-12-06 20:09:30.874  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@b3c6924, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c932363, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bbe3b06, org.springframework.security.web.header.HeaderWriterFilter@476c4ec6, org.springframework.security.web.authentication.logout.LogoutFilter@4ee4ef92, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a0abee1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f35cb18, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d944acf, org.springframework.security.web.session.SessionManagementFilter@57559062, org.springframework.security.web.access.ExceptionTranslationFilter@1cffb54d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d194afc]
+2022-12-06 20:09:30.916 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-06 20:09:30.931 DEBUG 5180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-06 20:09:30.943  WARN 5180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-06 20:09:31.034  INFO 5180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-06 20:09:31.076  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06 20:09:31.087  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 2.001 seconds (JVM running for 397.912)
+2022-12-06 20:09:31.091  INFO 5180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 20:18:40.844  INFO 5180 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2022-12-06 20:18:41.343  INFO 5180 --- [Thread-26] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-06 20:18:41.360  INFO 5180 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:18:41.361  INFO 5180 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2022-12-06 20:18:41.384  INFO 5180 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2022-12-06 20:18:41.595  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 11.0.12 on DESKTOP-UED44E2 with PID 5180 (C:\ojt_project_workspace\ojt_bookstore_project\bookstore\target\classes started by User in C:\ojt_project_workspace\ojt_bookstore_project\bookstore)
+2022-12-06 20:18:41.596  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-06 20:18:42.006  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:18:42.007  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 20:18:42.010  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+2022-12-06 20:18:42.016  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:18:42.016  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 20:18:42.019  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-12-06 20:18:42.269  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06 20:18:42.271  INFO 5180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06 20:18:42.273  INFO 5180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-06 20:18:42.323  INFO 5180 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-06 20:18:42.323  INFO 5180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 719 ms
+2022-12-06 20:18:42.404  INFO 5180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 20:18:42.425  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2022-12-06 20:18:42.478  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2022-12-06 20:18:42.479  INFO 5180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-06 20:18:42.536  INFO 5180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 20:18:42.537  INFO 5180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:18:42.579  WARN 5180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 20:18:42.701 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-06 20:18:42.747 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2022-12-06 20:18:42.769 DEBUG 5180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-06 20:18:42.790 DEBUG 5180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-06 20:18:42.809  WARN 5180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-06 20:18:42.921  WARN 5180 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8a6cb68e-aa08-4719-9ee1-1ef9fd5660ee
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-06 20:18:42.944  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@33188872, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c9aa790, org.springframework.security.web.context.SecurityContextPersistenceFilter@60be3739, org.springframework.security.web.header.HeaderWriterFilter@3360a41d, org.springframework.security.web.csrf.CsrfFilter@50ec690b, org.springframework.security.web.authentication.logout.LogoutFilter@c7adaea, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53579e06, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@de447a9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7352bdab, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7f89d6fd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2566afd8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1390a725, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42dda302, org.springframework.security.web.session.SessionManagementFilter@5329a866, org.springframework.security.web.access.ExceptionTranslationFilter@5212f1ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66492c85]
+2022-12-06 20:18:42.962  INFO 5180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-06 20:18:42.986  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06 20:18:42.995  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 1.479 seconds (JVM running for 949.82)
+2022-12-06 20:18:43.000  INFO 5180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-12-06 20:18:50.593  INFO 5180 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 20:18:51.015  INFO 5180 --- [Thread-30] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-06 20:18:51.029  INFO 5180 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:18:51.031  INFO 5180 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2022-12-06 20:18:51.049  INFO 5180 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2022-12-06 20:18:51.226  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 11.0.12 on DESKTOP-UED44E2 with PID 5180 (C:\ojt_project_workspace\ojt_bookstore_project\bookstore\target\classes started by User in C:\ojt_project_workspace\ojt_bookstore_project\bookstore)
+2022-12-06 20:18:51.227  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-06 20:18:51.602  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:18:51.602  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 20:18:51.606  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2022-12-06 20:18:51.613  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 20:18:51.613  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 20:18:51.616  INFO 5180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-12-06 20:18:51.811  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06 20:18:51.812  INFO 5180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06 20:18:51.813  INFO 5180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-06 20:18:51.855  INFO 5180 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-06 20:18:51.855  INFO 5180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 621 ms
+2022-12-06 20:18:51.921  INFO 5180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 20:18:51.934  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2022-12-06 20:18:51.973  INFO 5180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2022-12-06 20:18:51.979  INFO 5180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-06 20:18:52.018  INFO 5180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 20:18:52.018  INFO 5180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:18:52.058  WARN 5180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 20:18:52.133 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-06 20:18:52.170 DEBUG 5180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2022-12-06 20:18:52.195 DEBUG 5180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-06 20:18:52.212 DEBUG 5180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-06 20:18:52.248  WARN 5180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-06 20:18:52.389  WARN 5180 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 24f0243f-39b8-409f-aee7-8507c817987b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-06 20:18:52.419  INFO 5180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b472e96, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77491445, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f2a7545, org.springframework.security.web.header.HeaderWriterFilter@61fdf461, org.springframework.security.web.csrf.CsrfFilter@69a7732c, org.springframework.security.web.authentication.logout.LogoutFilter@374470b0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3665c17e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3b1601ac, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6fbf45e3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4a7dceac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a7155e6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34a1f035, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b93fe16, org.springframework.security.web.session.SessionManagementFilter@3d464fd2, org.springframework.security.web.access.ExceptionTranslationFilter@5d511bf5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42bfd1ba]
+2022-12-06 20:18:52.436  INFO 5180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-06 20:18:52.460  INFO 5180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06 20:18:52.479  INFO 5180 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 1.315 seconds (JVM running for 959.304)
+2022-12-06 20:18:52.486  INFO 5180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 20:19:01.304  INFO 5180 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-12-06 20:19:01.773  INFO 5180 --- [RMI TCP Connection(19)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-06 20:19:01.790  INFO 5180 --- [RMI TCP Connection(19)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 20:19:01.793  INFO 5180 --- [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2022-12-06 20:19:01.820  INFO 5180 --- [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
