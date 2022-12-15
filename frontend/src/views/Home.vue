@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col>
-          <h1>Hello World</h1>
+          <h1 class="text-center">Home</h1>
         </v-col>
       </v-row>
     </v-container>
