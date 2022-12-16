@@ -7,7 +7,7 @@
           <v-card class="my-card" elevation="6">
             <v-card-title>Admin Profile</v-card-title>
             <v-divider></v-divider>
-            <v-form ref="updateProfileForm">
+            <v-form ref="updateProfileForm" v-model="updateProfileForm">
 
               <v-alert class="mt-3 mx-1"  v-show="successAlert" dense type="info">
                 Updated Successfully
@@ -26,6 +26,10 @@
                 New Password and Confirm Password is not Match!
               </v-alert>
 
+              <v-alert class="mt-3 mx-1" v-show="chaLengthAlert" dense type="error">
+                New Password Must Be Aleast 4 Characters!
+              </v-alert>
+
               <v-row>
                 <v-col class="mx-6">
                   <v-text-field class="mt-5" label="FirstName" dense outlined v-model="userData.firstName"></v-text-field>
@@ -42,7 +46,9 @@
                   :type="show1 ? 'text' : 'password'"
                   name="currentPassword"
                   @click:append="show1 = !show1"
-                  :rules="[(v) => !!v || 'Required']"></v-text-field>
+                  :rules="[(v) => !!v || 'Required']"
+                  required
+                  ></v-text-field>
 
                   <v-text-field class="mt-5" label="New Password" placeholder="Enter Your New Password" dense outlined v-model="newPassword"
                   :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'"
@@ -60,7 +66,7 @@
                 </v-col>
               </v-row>
               <v-col class="d-flex flex-row-reverse" style="margin-right: 80px;">
-                <v-btn color="info" @click="updateAdminInfo">
+                <v-btn color="info" @click="updateAdminInfo" :disabled="!updateProfileForm">
                   <span v-if="!loading">Update Profile</span>
                     <v-progress-circular
                     v-else
@@ -84,6 +90,7 @@ export default {
     name: "admin_profile",
     data() {
       return {
+        updateProfileForm: false,
         loginUser: {},
         userData: {},
         currentPassword: "",
@@ -97,6 +104,7 @@ export default {
         show2: "",
         show3: "",
         loading: false,
+        chaLengthAlert: false,
       }
     },
     async created() {
@@ -125,28 +133,37 @@ export default {
       }
     },
     async updateAdminInfo() {
-      if (this.$refs.updateProfileForm.validate()) {
+      if (this.newPassword != "" && this.newPassword.length < 4) {
         this.alreadyExistAlert = false;
         this.errorAlert = false;
         this.successAlert = false;
         this.notSameAlert = false;
-        if (this.newPassword == this.confirmPassword) {
-          this.loading = true;
-          const resp = await utils.http.put("/user/profile/update?currentPassword=" + this.currentPassword + "&" + "newPassword=" + this.newPassword, this.userData);
-          if (resp.status === 200) {
-            this.successAlert = true;
+        this.chaLengthAlert = true;
+      } else {
+        if (this.$refs.updateProfileForm.validate()) {
+          this.alreadyExistAlert = false;
+          this.errorAlert = false;
+          this.successAlert = false;
+          this.notSameAlert = false;
+          this.chaLengthAlert = false;
+          if (this.newPassword == this.confirmPassword) {
+            this.loading = true;
+            const resp = await utils.http.put("/user/profile/update?currentPassword=" + this.currentPassword + "&newPassword=" + this.newPassword, this.userData);
+            if (resp.status === 200) {
+              this.successAlert = true;
+            }
+            
+            if (resp.status === 404) {
+              this.errorAlert = true;
+            }
+            
+            if (resp.status === 400) {
+              this.alreadyExistAlert = true;
+            }
+            this.loading = false;
+          } else {
+            this.notSameAlert = true;
           }
-          
-          if (resp.status === 404) {
-            this.errorAlert = true;
-          }
-          
-          if (resp.status === 400) {
-            this.alreadyExistAlert = true;
-          }
-          this.loading = false;
-        } else {
-          this.notSameAlert = true;
         }
       }
     },

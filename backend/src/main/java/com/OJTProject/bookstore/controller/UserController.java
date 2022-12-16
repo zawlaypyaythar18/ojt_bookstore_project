@@ -132,17 +132,20 @@ public class UserController {
 				return ResponseEntity.badRequest().body("Email Already Exists");
 			}
 		}
-		
-		if (newPassword != null && !newPassword.isEmpty() && !newPassword.equals("")) {
 
 			String dbPassword = localUser.getPassword();
 
 			if (passwordEncoder.matches(currentPassword, dbPassword)) {
-				localUser.setPassword(passwordEncoder.encode(newPassword));
+				
+				if (newPassword != null && !newPassword.isEmpty() && !newPassword.equals("")) {
+					
+					localUser.setPassword(passwordEncoder.encode(newPassword));
+				
+				}
+				
 			} else {
 				return ResponseEntity.notFound().build();
 			}
-		}
 		
 		localUser.setFirstName(user.getFirstName());
 		localUser.setLastName(user.getLastName());
