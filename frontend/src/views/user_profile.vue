@@ -28,6 +28,10 @@
                 New Password and Confirm Password is not Match!
               </v-alert>
 
+              <v-alert class="mt-3 mx-1" v-show="chaLengthAlert" dense type="error">
+                New Password Must Be Aleast 4 Characters!
+              </v-alert>
+
               <v-row>
                 <v-col class="mx-6">
                   <v-text-field class="mt-5" label="FirstName" dense outlined v-model="userData.firstName"></v-text-field>
@@ -102,6 +106,7 @@ export default {
         show2: "",
         show3: "",
         loading: false,
+        chaLengthAlert: false,
       }
     },
     async created() {
@@ -130,28 +135,37 @@ export default {
       }
     },
     async updateUserInfo() {
-      if (this.$refs.updateProfileForm.validate()) {
+      if (this.newPassword != "" && this.newPassword.length < 4) {
         this.alreadyExistAlert = false;
         this.errorAlert = false;
         this.successAlert = false;
         this.notSameAlert = false;
-        if (this.newPassword == this.confirmPassword) {
-          this.loading = true;
-          const resp = await utils.http.put("/user/profile/update?currentPassword=" + this.currentPassword + "&" + "newPassword=" + this.newPassword, this.userData);
-          if (resp.status === 200) {
-            this.successAlert = true;
+        this.chaLengthAlert = true;
+      } else {
+        if (this.$refs.updateProfileForm.validate()) {
+          this.alreadyExistAlert = false;
+          this.errorAlert = false;
+          this.successAlert = false;
+          this.notSameAlert = false;
+          this.chaLengthAlert = false;
+          if (this.newPassword == this.confirmPassword) {
+            this.loading = true;
+            const resp = await utils.http.put("/user/profile/update?currentPassword=" + this.currentPassword + "&" + "newPassword=" + this.newPassword, this.userData);
+            if (resp.status === 200) {
+              this.successAlert = true;
+            }
+            
+            if (resp.status === 404) {
+              this.errorAlert = true;
+            }
+            
+            if (resp.status === 400) {
+              this.alreadyExistAlert = true;
+            }
+            this.loading = false;
+          } else {
+            this.notSameAlert = true;
           }
-          
-          if (resp.status === 404) {
-            this.errorAlert = true;
-          }
-          
-          if (resp.status === 400) {
-            this.alreadyExistAlert = true;
-          }
-          this.loading = false;
-        } else {
-          this.notSameAlert = true;
         }
       }
     },

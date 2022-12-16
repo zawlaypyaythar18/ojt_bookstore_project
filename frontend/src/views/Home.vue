@@ -1,9 +1,36 @@
 <template>
   <div>
     <v-container>
-      <v-row>
-        <v-col>
-          <h1 class="text-center">Home</h1>
+      <v-row class="mt-3">
+        <v-col cols="6">
+          <h2 class="text-center" style="font-size: 50px;">Welcome To Champion's Bookstore</h2>
+          <p class="text-center" style="font-size: 30px;">Get Your New Book With The Best Price</p>
+          <div class="text-center">
+            <v-btn
+            class="ma-2"
+            outlined
+            color="indigo"
+            @click="goToRoute('/register')"
+          >
+            Register
+          </v-btn>
+          </div>
+          <p class="text-center mt-2" style="font-size: 18px;">If you Already Register, You can Login </p>
+          <div class="text-center">
+            <v-btn
+            class="ma-2"
+            outlined
+            color="indigo"
+            @click="goToRoute('/login')"
+          >
+            Login
+          </v-btn>
+          </div>
+        </v-col>
+        <v-col cols="6">
+          <v-img
+            src="https://www.stoltze.com/wp-content/uploads/2018/09/RISD_Viewbooks_Cover.jpg"
+          ></v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -23,6 +50,9 @@ export default {
     created() {
     },
     methods: {
+      goToRoute(path) {
+        this.$router.push({ path: path });
+      }
     },
 
 }
