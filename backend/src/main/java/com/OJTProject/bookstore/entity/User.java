@@ -2,7 +2,9 @@ package com.OJTProject.bookstore.entity;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -10,9 +12,13 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.validation.constraints.NotBlank;
 
 import org.hibernate.annotations.ColumnDefault;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class User {
@@ -58,6 +64,22 @@ public class User {
 	private LocalDateTime createdAt;
 
 	private LocalDateTime updatedAt;
+	
+	@OneToOne(cascade = CascadeType.ALL,mappedBy = "user")
+	@JsonIgnore
+	private ShoppingCart shoppingCart;
+	
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
+	@JsonIgnore
+	private List<UserShipping> userShippingList;
+	
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
+	@JsonIgnore
+	private List<UserPayment> userPaymentList;
+	
+	@OneToMany(mappedBy = "user")
+	@JsonIgnore
+	private List<Order> orderList;
 	
 	public User() {}
 
@@ -163,6 +185,38 @@ public class User {
 
 	public void setUpdatedAt(LocalDateTime updatedAt) {
 		this.updatedAt = updatedAt;
+	}
+
+	public ShoppingCart getShoppingCart() {
+		return shoppingCart;
+	}
+
+	public void setShoppingCart(ShoppingCart shoppingCart) {
+		this.shoppingCart = shoppingCart;
+	}
+
+	public List<UserShipping> getUserShippingList() {
+		return userShippingList;
+	}
+
+	public void setUserShippingList(List<UserShipping> userShippingList) {
+		this.userShippingList = userShippingList;
+	}
+
+	public List<UserPayment> getUserPaymentList() {
+		return userPaymentList;
+	}
+
+	public void setUserPaymentList(List<UserPayment> userPaymentList) {
+		this.userPaymentList = userPaymentList;
+	}
+
+	public List<Order> getOrderList() {
+		return orderList;
+	}
+
+	public void setOrderList(List<Order> orderList) {
+		this.orderList = orderList;
 	}
 	
 	
