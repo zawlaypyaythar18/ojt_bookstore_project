@@ -46,14 +46,20 @@ async function putMedia(path, file, fileType, filePath) {
   return resp;
 }
 
-async function get(path, body) {
-  const resp = await fetch(constant.localDomain + path, {
-    method: "GET",
-  });
-  return resp;
+async function get(path) {
+  try {
+    const resp = await fetch(constant.localDomain + path, {
+      method: "GET",
+    });
+    return resp;
+  } catch (error) {
+    console.log(error)
+  }
+  return null;
 }
 
 async function put(path, body) {
+  try {
   const resp = await fetch(constant.localDomain + path, {
     method: "PUT",
     headers: {
@@ -62,6 +68,10 @@ async function put(path, body) {
     body: JSON.stringify(body),
   });
   return resp;
+} catch (error) {
+  console.log(error)
+}
+return null;
 }
 
 async function putFormData(path, body) {
@@ -70,7 +80,7 @@ async function putFormData(path, body) {
     formData.append(key, body[key]);
   }
   const resp = await fetch(constant.localDomain + path, {
-    method: "PUT",
+   method: "PUT",
     body: formData,
   });
   return resp;

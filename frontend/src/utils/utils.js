@@ -1,4 +1,4 @@
 import constant from "./constant";
-import http from "./http";
+import http from "./api";
 
 export default { constant, http };

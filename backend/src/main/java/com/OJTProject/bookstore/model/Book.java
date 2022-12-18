@@ -35,7 +35,7 @@ public class Book {
 	private String publisher;
 	
 	@Column (nullable = false)
-	private LocalDate PublishedDate;
+	private LocalDate publicationDate;
 	
 	@Column (nullable = false)
 	private String language;
@@ -111,12 +111,13 @@ public class Book {
 		this.publisher = publisher;
 	}
 
-	public LocalDate getPublishedDate() {
-		return PublishedDate;
+	
+	public LocalDate getPublicationDate() {
+		return publicationDate;
 	}
 
-	public void setPublishedDate(LocalDate publishedDate) {
-		PublishedDate = publishedDate;
+	public void setPublicationDate(LocalDate publicationDate) {
+		this.publicationDate = publicationDate;
 	}
 
 	public String getLanguage() {
@@ -207,7 +208,7 @@ public class Book {
 		this.posterPath = posterPath;
 	}
 
-	public Book(int id, String title, String author, BookCategory category, String publisher, LocalDate publishedDate,
+	public Book(int id, String title, String author, BookCategory category, String publisher, LocalDate publicationDate,
 			String language, String numberOfPages, String format, Long isbn, Double shippingWeight, Double listPrice,
 			Double ourPrice, Boolean active, Integer inStockNumber, String description,
 			@NotBlank(message = "Required") String posterPath) {
@@ -217,7 +218,7 @@ public class Book {
 		this.author = author;
 		this.category = category;
 		this.publisher = publisher;
-		PublishedDate = publishedDate;
+		this.publicationDate = publicationDate;
 		this.language = language;
 		this.numberOfPages = numberOfPages;
 		this.format = format;

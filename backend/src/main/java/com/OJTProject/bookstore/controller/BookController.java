@@ -1,5 +1,6 @@
 package com.OJTProject.bookstore.controller;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,17 +29,18 @@ import com.OJTProject.bookstore.service.BookstoreServiceInter;
 		return service.getAll();
 	}
 	
-	@GetMapping("/book/{book_id}")
+	@GetMapping("/book/get/{book_id}")
 	Book get (@PathVariable("book_id") int bookID){
 		return service.get(bookID);
 	}
 	
-	@PostMapping("/book")
+	@PostMapping("/book/add")
 	Book create (@RequestBody Book book){
+
 		return service.create(book);
 	}
 	
-	@PutMapping("/book")
+	@PutMapping("/book/update")
 	ResponseEntity<?> update (@RequestBody Book book){
 		Book updatedBook= service.update(book);
 		if (updatedBook==null) {
@@ -47,12 +49,13 @@ import com.OJTProject.bookstore.service.BookstoreServiceInter;
 		return ResponseEntity.ok(updatedBook);
 	}
 	
-	@DeleteMapping("/book")
-	boolean delete (@RequestBody  Book book){
-		return service.delete(book.getId());
+	@DeleteMapping("/book/delete/{id}")
+	ResponseEntity<?> delete (@PathVariable int id){
+		boolean isDelected = service.delete(id);
+		if (isDelected==false) {
+			return ResponseEntity.notFound().build();
+		}
+		return ResponseEntity.ok().build();
 	}
-//	public ResponseEntity<String> home() {
-//		return ResponseEntity.ok("Hello World");
-//	}
 
 }
