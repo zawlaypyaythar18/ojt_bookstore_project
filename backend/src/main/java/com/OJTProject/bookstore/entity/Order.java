@@ -33,21 +33,14 @@ public class Order {
 	
 	@OneToMany(mappedBy = "order",cascade = CascadeType.ALL)
 	@JsonIgnore
-	private List<CartItem> cartItemList;
+	private List<UserCartItem> cartItemList;
 	
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "shipping_address_id")
-	@JsonIgnore
-	private ShippingAddress shippingAddress;
-	
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "billing_address_id")
-	@JsonIgnore
-	private BillingAddress billingAddress;
+	@OneToMany(mappedBy = "order",cascade = CascadeType.ALL)
+	private List<UserOrderAddress> userOrderAddressList;
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	@JsonIgnore
-	private Payment payment;
+	private UserTransaction userTransaction;
 	
 	@ManyToOne
 	@JoinColumn(name = "userId")
@@ -103,36 +96,20 @@ public class Order {
 		this.orderTotal = orderTotal;
 	}
 
-	public List<CartItem> getCartItemList() {
+	public List<UserCartItem> getCartItemList() {
 		return cartItemList;
 	}
 
-	public void setCartItemList(List<CartItem> cartItemList) {
+	public void setCartItemList(List<UserCartItem> cartItemList) {
 		this.cartItemList = cartItemList;
 	}
 
-	public ShippingAddress getShippingAddress() {
-		return shippingAddress;
+	public UserTransaction getUserTransaction() {
+		return userTransaction;
 	}
 
-	public void setShippingAddress(ShippingAddress shippingAddress) {
-		this.shippingAddress = shippingAddress;
-	}
-
-	public BillingAddress getBillingAddress() {
-		return billingAddress;
-	}
-
-	public void setBillingAddress(BillingAddress billingAddress) {
-		this.billingAddress = billingAddress;
-	}
-
-	public Payment getPayment() {
-		return payment;
-	}
-
-	public void setPayment(Payment payment) {
-		this.payment = payment;
+	public void setUserTransaction(UserTransaction userTransaction) {
+		this.userTransaction = userTransaction;
 	}
 
 	public User getUser() {
@@ -141,6 +118,14 @@ public class Order {
 
 	public void setUser(User user) {
 		this.user = user;
+	}
+
+	public List<UserOrderAddress> getUserOrderAddressList() {
+		return userOrderAddressList;
+	}
+
+	public void setUserOrderAddressList(List<UserOrderAddress> userOrderAddressList) {
+		this.userOrderAddressList = userOrderAddressList;
 	}
 	
 
