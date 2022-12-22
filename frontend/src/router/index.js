@@ -14,6 +14,7 @@ import admin_profile from "../views/admin_profile.vue"
 import user_list from "../views/user_list.vue"
 import add_book from "../views/add_book.vue"
 import admin_orders from "../views/admin_orders.vue"
+import admin_book_details from "../views/admin_book_details.vue"
 
 import user_profile from "../views/user_profile.vue"
 import user_billing from "../views/user_billing.vue"
@@ -36,11 +37,17 @@ const routes = [
     path: "/login",
     name: "login",
     component: login,
+    meta: {
+      regiLogi: true,
+    }
   },
   {
     path: "/register",
     name: "register",
     component: register,
+    meta: {
+      regiLogi: true,
+    }
   },
   {
     path: "/newUser",
@@ -79,6 +86,15 @@ const routes = [
     path: "/admin/user/list",
     name: "user_list",
     component: user_list,
+    meta: {
+      requiresAuth: true,
+      requiresAdmin: true,
+    }
+  },
+  {
+    path: "/admin/book/details/:id",
+    name: "admin_book_details",
+    component: admin_book_details,
     meta: {
       requiresAuth: true,
       requiresAdmin: true,
@@ -176,6 +192,8 @@ router.beforeEach((to, from, next) => {
     to.meta.requiresUser == true &&
     loginUser.userRole != "user"
   ) {
+    next({ path: "/" });
+  } else if (to.meta.regiLogi == true && isLogin) {
     next({ path: "/" });
   } else {
     next();

@@ -15,7 +15,7 @@ import javax.persistence.OneToOne;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-public class CartItem {
+public class UserCartItem {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -25,22 +25,22 @@ public class CartItem {
 	
 	private BigDecimal subTotal;
 	
-	@OneToOne
-	private Book book;
+//	@OneToOne
+//	private Book book;
 	
 	@ManyToOne
-	@JoinColumn(name = "shoppingCartId")
-	private ShoppingCart shoppingCart;
+	@JoinColumn(name = "userCartId")
+	private UserCart userCart;
 	
 	@OneToMany(mappedBy = "cartItem")
 	@JsonIgnore
-	private List<BookToCartItem> bookToCartItemList;
+	private List<UserCartItemBook> userCartItemBook;
 	
 	@ManyToOne
 	@JoinColumn(name = "orderId")
 	private Order order;
 	
-	public CartItem() {
+	public UserCartItem() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -68,28 +68,30 @@ public class CartItem {
 		this.subTotal = subTotal;
 	}
 
-	public ShoppingCart getShoppingCart() {
-		return shoppingCart;
+	
+
+//	public Book getBook() {
+//		return book;
+//	}
+//
+//	public void setBook(Book book) {
+//		this.book = book;
+//	}
+
+	public UserCart getUserCart() {
+		return userCart;
 	}
 
-	public void setShoppingCart(ShoppingCart shoppingCart) {
-		this.shoppingCart = shoppingCart;
+	public void setUserCart(UserCart userCart) {
+		this.userCart = userCart;
 	}
 
-	public List<BookToCartItem> getBookToCartItemList() {
-		return bookToCartItemList;
+	public List<UserCartItemBook> getUserCartItemBook() {
+		return userCartItemBook;
 	}
 
-	public void setBookToCartItemList(List<BookToCartItem> bookToCartItemList) {
-		this.bookToCartItemList = bookToCartItemList;
-	}
-
-	public Book getBook() {
-		return book;
-	}
-
-	public void setBook(Book book) {
-		this.book = book;
+	public void setUserCartItemBook(List<UserCartItemBook> userCartItemBook) {
+		this.userCartItemBook = userCartItemBook;
 	}
 
 	public Order getOrder() {
@@ -99,13 +101,6 @@ public class CartItem {
 	public void setOrder(Order order) {
 		this.order = order;
 	}
-
-	@Override
-	public String toString() {
-		return "CartItem [id=" + id + ", qty=" + qty + ", subTotal=" + subTotal + ", shoppingCart=" + shoppingCart
-				+ ", bookToCartItemList=" + bookToCartItemList + "]";
-	}
-	
 	
 
 }

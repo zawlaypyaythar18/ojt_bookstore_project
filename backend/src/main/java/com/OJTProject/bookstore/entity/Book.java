@@ -44,7 +44,7 @@ public class Book {
 	
 	@OneToMany(mappedBy = "book")
 	@JsonIgnore
-	private List<BookToCartItem> bookToCartItemList;
+	private List<UserCartItemBook> userCartItemBookList;
 	
 	public Book() {}
 
@@ -184,12 +184,12 @@ public class Book {
 		this.posterPath = posterPath;
 	}
 
-	public List<BookToCartItem> getBookToCartItemList() {
-		return bookToCartItemList;
+	public List<UserCartItemBook> getUserCartItemBookList() {
+		return userCartItemBookList;
 	}
 
-	public void setBookToCartItemList(List<BookToCartItem> bookToCartItemList) {
-		this.bookToCartItemList = bookToCartItemList;
+	public void setUserCartItemBookList(List<UserCartItemBook> userCartItemBookList) {
+		this.userCartItemBookList = userCartItemBookList;
 	}
 
 	@Override

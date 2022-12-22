@@ -67,7 +67,7 @@ public class User {
 	
 	@OneToOne(cascade = CascadeType.ALL,mappedBy = "user")
 	@JsonIgnore
-	private ShoppingCart shoppingCart;
+	private UserCart userCart;
 	
 	@OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
 	@JsonIgnore
@@ -75,7 +75,7 @@ public class User {
 	
 	@OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
 	@JsonIgnore
-	private List<UserPayment> userPaymentList;
+	private List<UserPaymentMethod> userPaymentMethodList;
 	
 	@OneToMany(mappedBy = "user")
 	@JsonIgnore
@@ -187,12 +187,12 @@ public class User {
 		this.updatedAt = updatedAt;
 	}
 
-	public ShoppingCart getShoppingCart() {
-		return shoppingCart;
+	public UserCart getUserCart() {
+		return userCart;
 	}
 
-	public void setShoppingCart(ShoppingCart shoppingCart) {
-		this.shoppingCart = shoppingCart;
+	public void setUserCart(UserCart userCart) {
+		this.userCart = userCart;
 	}
 
 	public List<UserShipping> getUserShippingList() {
@@ -203,12 +203,12 @@ public class User {
 		this.userShippingList = userShippingList;
 	}
 
-	public List<UserPayment> getUserPaymentList() {
-		return userPaymentList;
+	public List<UserPaymentMethod> getUserPaymentMethodList() {
+		return userPaymentMethodList;
 	}
 
-	public void setUserPaymentList(List<UserPayment> userPaymentList) {
-		this.userPaymentList = userPaymentList;
+	public void setUserPaymentMethodList(List<UserPaymentMethod> userPaymentMethodList) {
+		this.userPaymentMethodList = userPaymentMethodList;
 	}
 
 	public List<Order> getOrderList() {
