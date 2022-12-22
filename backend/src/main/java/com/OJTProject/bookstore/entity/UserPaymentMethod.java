@@ -10,9 +10,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
-@Entity
-public class UserPayment {
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
+@Entity
+public class UserPaymentMethod {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
@@ -41,10 +43,12 @@ public class UserPayment {
 	@JoinColumn(name = "userId")
 	private User user;
 	
-	@OneToOne(cascade = CascadeType.ALL,mappedBy = "userPayment")
+	@OneToOne(cascade = CascadeType.ALL,mappedBy = "userPaymentMethod")
 	private UserBilling userBilling;
 	
-	public UserPayment() {}
+	public UserPaymentMethod() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public Long getId() {
 		return id;
@@ -141,5 +145,5 @@ public class UserPayment {
 				+ ", holderName=" + holderName + ", defaultPayment=" + defaultPayment + ", user=" + user
 				+ ", userBilling=" + userBilling + "]";
 	}
-	
+
 }

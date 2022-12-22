@@ -17,7 +17,7 @@ import javax.persistence.OneToOne;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-public class ShoppingCart implements Serializable {
+public class UserCart implements Serializable {
 
 	/**
 	 * 
@@ -30,15 +30,15 @@ public class ShoppingCart implements Serializable {
 	
 	private BigDecimal grandTotal;
 	
-	@OneToMany(mappedBy = "shoppingCart",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "userCart",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
 	@JsonIgnore
-	private List<CartItem> cartItemList;
+	private List<UserCartItem> cartItemList;
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "userId")
 	private User user;
 	
-	public ShoppingCart() {
+	public UserCart() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -58,11 +58,11 @@ public class ShoppingCart implements Serializable {
 		this.grandTotal = grandTotal;
 	}
 
-	public List<CartItem> getCartItemList() {
+	public List<UserCartItem> getCartItemList() {
 		return cartItemList;
 	}
 
-	public void setCartItemList(List<CartItem> cartItemList) {
+	public void setCartItemList(List<UserCartItem> cartItemList) {
 		this.cartItemList = cartItemList;
 	}
 

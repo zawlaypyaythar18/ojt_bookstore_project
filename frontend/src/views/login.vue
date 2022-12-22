@@ -81,7 +81,7 @@ export default {
             if (this.$refs.loginForm.validate()) {
                 this.loading = true;
                 this.errorAlert = false;
-                const resp = await utils.http.post("/user/login", {
+                const resp = await utils.http.post("/api/user/login", {
                     email: this.email,
                     password: this.password,
                 });

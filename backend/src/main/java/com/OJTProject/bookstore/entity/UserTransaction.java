@@ -9,8 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
 @Entity
-public class Payment {
-	
+public class UserTransaction {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
@@ -36,10 +36,12 @@ public class Payment {
 	@OneToOne
 	private Order order;
 	
-	@OneToOne(mappedBy = "userPayment",cascade = CascadeType.ALL)
+	@OneToOne(mappedBy = "userPaymentMethod",cascade = CascadeType.ALL)
 	private UserBilling userBilling;
 	
-	public Payment() {}
+	public UserTransaction() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public Long getId() {
 		return id;
@@ -121,6 +123,4 @@ public class Payment {
 		this.userBilling = userBilling;
 	}
 	
-	
-
 }

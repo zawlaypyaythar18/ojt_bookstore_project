@@ -126,7 +126,7 @@ export default {
   },
   methods: {
     async getUserData() {
-      const resp = await utils.http.get("/user/profile?userId=" + this.loginUser.id);
+      const resp = await utils.http.get("/api/user/profile?userId=" + this.loginUser.id);
       if (resp && resp.status === 200) {
         const data = await resp.json();
         if (data) {
@@ -150,7 +150,7 @@ export default {
           this.chaLengthAlert = false;
           if (this.newPassword == this.confirmPassword) {
             this.loading = true;
-            const resp = await utils.http.put("/user/profile/update?currentPassword=" + this.currentPassword + "&" + "newPassword=" + this.newPassword, this.userData);
+            const resp = await utils.http.put("/api/user/profile/update?currentPassword=" + this.currentPassword + "&" + "newPassword=" + this.newPassword, this.userData);
             if (resp.status === 200) {
               this.successAlert = true;
             }
