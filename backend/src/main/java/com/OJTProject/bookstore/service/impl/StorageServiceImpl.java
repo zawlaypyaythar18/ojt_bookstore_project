@@ -56,11 +56,11 @@ public class StorageServiceImpl implements StorageService {
 			switch (fileType) {
 				case "image/jpg" :
 				case "image/jpeg" :
-					filePath = "/media/jpg/" + fileName;
+					filePath = "/api/admin/book/media/jpg/" + fileName;
 					break;
 				case "image/png" :
 				default :
-					filePath = "/media/png/" + fileName;
+					filePath = "/api/admin/book/media/png/" + fileName;
 					break;
 			}
 		} catch (IOException e) {
@@ -114,8 +114,8 @@ public class StorageServiceImpl implements StorageService {
 		
 		String retfilePath = null;
 
-		filePath = filePath.replace("/media/jpg/", "");
-		filePath = filePath.replace("/media/png/", "");
+		filePath = filePath.replace("/api/admin/book/media/jpg/", "");
+		filePath = filePath.replace("/api/admin/book/media/png/", "");
 		try {
 			if (filePath != null && filePath != "") {
 				try {
@@ -133,11 +133,11 @@ public class StorageServiceImpl implements StorageService {
 			switch (fileType) {
 				case "image/jpg" :
 				case "image/jpeg" :
-					retfilePath = "/media/jpg/" + fileName;
+					retfilePath = "/api/admin/book/media/jpg/" + fileName;
 					break;
 				case "image/png" :
 				default :
-					retfilePath = "/media/png/" + fileName;
+					retfilePath = "/api/admin/book/media/png/" + fileName;
 					break;
 			}
 		} catch (IOException e) {

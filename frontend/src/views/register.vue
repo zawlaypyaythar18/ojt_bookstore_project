@@ -86,7 +86,7 @@ export default {
         async register() {
             if (this.$refs.registerForm.validate()) {
                 this.loading = true;
-                const resp = await utils.http.post("/user/register", {
+                const resp = await utils.http.post("/api/user/register", {
                     username: this.username,
                     email: this.email,
                     password: "1111",

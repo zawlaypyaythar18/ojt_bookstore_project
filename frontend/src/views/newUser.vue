@@ -23,7 +23,7 @@ export default {
     methods: {
         async checkUserToken() {
             // console.log(this.token)
-            const resp = await utils.http.post("/user/newUser", {
+            const resp = await utils.http.post("/api/user/newUser", {
                 token: this.token,
             });
             if (resp && resp.status == 200) {
