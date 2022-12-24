@@ -79,3 +79,246 @@ This generated password is for development use only. Your security configuration
 2022-12-23 07:25:28.765  INFO 10712 --- [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-12-23 07:25:28.780  INFO 10712 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-12-23 07:25:28.813  INFO 10712 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-23 18:17:15.786  INFO 7396 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 11.0.12 on DESKTOP-UED44E2 with PID 7396 (C:\ojt_project_workspace\ojt_bookstore_project\backend\target\classes started by User in C:\ojt_project_workspace\ojt_bookstore_project\backend)
+2022-12-23 18:17:15.812  INFO 7396 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-23 18:17:16.042  INFO 7396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-23 18:17:16.060  INFO 7396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-23 18:17:18.396  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-23 18:17:18.403  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-23 18:17:18.489  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.BookRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 18:17:18.495  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.PasswordResetTokenRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 18:17:18.515  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserAddressRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 18:17:18.524  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserBillingRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 18:17:18.530  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserPaymentMethodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 18:17:18.542  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 18:17:18.567  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserShippingRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 18:17:18.571  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 155 ms. Found 0 JDBC repository interfaces.
+2022-12-23 18:17:18.593  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-23 18:17:18.609  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 18:17:18.741  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 7 JPA repository interfaces.
+2022-12-23 18:17:20.368  INFO 7396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-23 18:17:20.397  INFO 7396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 18:17:20.399  INFO 7396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-23 18:17:20.721  INFO 7396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 18:17:20.728  INFO 7396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4647 ms
+2022-12-23 18:17:21.093  INFO 7396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 18:17:21.249  INFO 7396 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-23 18:17:21.709  INFO 7396 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 18:17:21.986  INFO 7396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-23 18:17:22.681  INFO 7396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-23 18:17:22.730  INFO 7396 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-23 18:17:25.440  INFO 7396 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 18:17:25.461  INFO 7396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 18:17:27.071  WARN 7396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 18:17:27.294  WARN 7396 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 584b4fb2-df97-4009-a277-055d3bffd30b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-23 18:17:27.624 DEBUG 7396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2022-12-23 18:17:27.636 DEBUG 7396 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2022-12-23 18:17:27.796 DEBUG 7396 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/*] in 'resourceHandlerMapping'
+2022-12-23 18:17:27.811  WARN 7396 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-23 18:17:27.814  INFO 7396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2022-12-23 18:17:27.817  WARN 7396 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-23 18:17:27.818  INFO 7396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2022-12-23 18:17:27.818  WARN 7396 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-23 18:17:27.819  INFO 7396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2022-12-23 18:17:27.937  INFO 7396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a7463b9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46301452, org.springframework.security.web.context.SecurityContextPersistenceFilter@3beda2af, org.springframework.security.web.header.HeaderWriterFilter@4ad5f638, org.springframework.security.web.authentication.logout.LogoutFilter@11182ed9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67ce22b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1aa163e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f195c5d, org.springframework.security.web.session.SessionManagementFilter@65a10dd3, org.springframework.security.web.access.ExceptionTranslationFilter@c583cac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37849328]
+2022-12-23 18:17:28.076 DEBUG 7396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-23 18:17:28.169 DEBUG 7396 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-23 18:17:28.256  WARN 7396 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-23 18:17:28.642  INFO 7396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-23 18:17:28.743  INFO 7396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-23 18:17:28.779  INFO 7396 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 14.102 seconds (JVM running for 17.42)
+2022-12-23 19:01:36.159  INFO 7396 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2022-12-23 19:01:38.058  INFO 7396 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-23 19:01:38.094  INFO 7396 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 19:01:38.101  INFO 7396 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-23 19:01:38.126  INFO 7396 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-23 19:01:38.397  INFO 7396 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 11.0.12 on DESKTOP-UED44E2 with PID 7396 (C:\ojt_project_workspace\ojt_bookstore_project\backend\target\classes started by User in C:\ojt_project_workspace\ojt_bookstore_project\backend)
+2022-12-23 19:01:38.398  INFO 7396 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-23 19:01:39.373  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-23 19:01:39.379  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-23 19:01:39.418  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.BookRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 19:01:39.427  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.PasswordResetTokenRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 19:01:39.440  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserAddressRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 19:01:39.447  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserBillingRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 19:01:39.457  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserPaymentMethodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 19:01:39.466  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 19:01:39.477  INFO 7396 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserShippingRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-23 19:01:39.477  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 0 JDBC repository interfaces.
+2022-12-23 19:01:39.484  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-23 19:01:39.485  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 19:01:39.588  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 7 JPA repository interfaces.
+2022-12-23 19:01:40.074  INFO 7396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-23 19:01:40.079  INFO 7396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-23 19:01:40.083  INFO 7396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-23 19:01:40.193  INFO 7396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-23 19:01:40.211  INFO 7396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1802 ms
+2022-12-23 19:01:40.459  INFO 7396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 19:01:40.552  INFO 7396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-12-23 19:01:40.659  INFO 7396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-12-23 19:01:40.660  INFO 7396 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-23 19:01:42.235  INFO 7396 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 19:01:42.236  INFO 7396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 19:01:43.126  WARN 7396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 19:01:43.166  WARN 7396 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 74b611b9-6a22-444f-9ce4-ceefa08088a9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-23 19:01:43.274 DEBUG 7396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2022-12-23 19:01:43.283 DEBUG 7396 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2022-12-23 19:01:43.386 DEBUG 7396 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/*] in 'resourceHandlerMapping'
+2022-12-23 19:01:43.390  WARN 7396 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-23 19:01:43.392  INFO 7396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2022-12-23 19:01:43.392  WARN 7396 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-23 19:01:43.393  INFO 7396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2022-12-23 19:01:43.393  WARN 7396 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-23 19:01:43.393  INFO 7396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2022-12-23 19:01:43.415  INFO 7396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7562416a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@dea382d, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fecc71, org.springframework.security.web.header.HeaderWriterFilter@1a0c2d6b, org.springframework.security.web.authentication.logout.LogoutFilter@4d9aeced, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36e949ca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4df54d09, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36904d95, org.springframework.security.web.session.SessionManagementFilter@29343c25, org.springframework.security.web.access.ExceptionTranslationFilter@1d1536c2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ee48baa]
+2022-12-23 19:01:43.468 DEBUG 7396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-23 19:01:43.486 DEBUG 7396 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-23 19:01:43.501  WARN 7396 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-23 19:01:43.615  INFO 7396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-23 19:01:43.648  INFO 7396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-23 19:01:43.657  INFO 7396 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 5.388 seconds (JVM running for 2672.298)
+2022-12-23 19:01:43.662  INFO 7396 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-23 19:45:45.733  INFO 7396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-23 19:45:45.734  INFO 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-23 19:45:45.735 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-23 19:45:45.736 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-23 19:45:45.736 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-23 19:45:45.738 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@fcf8d6f
+2022-12-23 19:45:45.739 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@696d3cf2
+2022-12-23 19:45:45.744 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-23 19:45:45.744  INFO 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-12-23 19:45:45.830 DEBUG 7396 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#register(User, HttpServletRequest)
+2022-12-23 19:45:45.866 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/user/register", parameters={}
+2022-12-23 19:45:45.881 DEBUG 7396 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#register(User, HttpServletRequest)
+2022-12-23 19:45:45.935 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 19:45:45.967 DEBUG 7396 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#register(User, HttpServletRequest)
+2022-12-23 19:45:45.969 DEBUG 7396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/user/register", parameters={}
+2022-12-23 19:45:45.970 DEBUG 7396 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#register(User, HttpServletRequest)
+2022-12-23 19:45:46.220 DEBUG 7396 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.User@605b951c]
+2022-12-23 19:45:52.025 DEBUG 7396 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-23 19:45:52.027 DEBUG 7396 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Email is Send."]
+2022-12-23 19:45:52.038 DEBUG 7396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 19:46:35.033 DEBUG 7396 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#newUser(PasswordResetToken)
+2022-12-23 19:46:35.035 DEBUG 7396 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/user/newUser", parameters={}
+2022-12-23 19:46:35.035 DEBUG 7396 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#newUser(PasswordResetToken)
+2022-12-23 19:46:35.037 DEBUG 7396 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 19:46:35.042 DEBUG 7396 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#newUser(PasswordResetToken)
+2022-12-23 19:46:35.043 DEBUG 7396 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/user/newUser", parameters={}
+2022-12-23 19:46:35.043 DEBUG 7396 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#newUser(PasswordResetToken)
+2022-12-23 19:46:35.055 DEBUG 7396 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.PasswordResetToken@4634f6a7]
+2022-12-23 19:46:35.182 DEBUG 7396 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 19:46:35.182 DEBUG 7396 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.entity.User@39852360]
+2022-12-23 19:46:35.211 DEBUG 7396 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:14:34.341 DEBUG 7396 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-23 20:14:34.343 DEBUG 7396 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/user/login", parameters={}
+2022-12-23 20:14:34.344 DEBUG 7396 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-23 20:14:34.346 DEBUG 7396 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:14:34.356 DEBUG 7396 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-23 20:14:34.357 DEBUG 7396 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/user/login", parameters={}
+2022-12-23 20:14:34.357 DEBUG 7396 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-23 20:14:34.362 DEBUG 7396 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.LoginRequest@5f707cf0]
+2022-12-23 20:14:35.538 DEBUG 7396 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 20:14:35.549 DEBUG 7396 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.entity.User@7352af8c]
+2022-12-23 20:14:35.552 DEBUG 7396 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:14:37.471 DEBUG 7396 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#getProfile(Long)
+2022-12-23 20:14:37.473 DEBUG 7396 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/user/profile?userId=128", parameters={masked}
+2022-12-23 20:14:37.474 DEBUG 7396 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#getProfile(Long)
+2022-12-23 20:14:37.498 DEBUG 7396 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 20:14:37.498 DEBUG 7396 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.entity.User@63e4bcc4]
+2022-12-23 20:14:37.500 DEBUG 7396 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:14:44.570 DEBUG 7396 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#updateProfile(User, String, String)
+2022-12-23 20:14:44.571 DEBUG 7396 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/user/profile/update?currentPassword=RTKYWMUBA26AEHQKMC&newPassword=1111", parameters={masked}
+2022-12-23 20:14:44.572 DEBUG 7396 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#updateProfile(User, String, String)
+2022-12-23 20:14:44.576 DEBUG 7396 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:14:44.603 DEBUG 7396 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#updateProfile(User, String, String)
+2022-12-23 20:14:44.604 DEBUG 7396 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : PUT "/api/user/profile/update?currentPassword=RTKYWMUBA26AEHQKMC&newPassword=1111", parameters={masked}
+2022-12-23 20:14:44.604 DEBUG 7396 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#updateProfile(User, String, String)
+2022-12-23 20:14:44.617 DEBUG 7396 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.User@c16de01]
+2022-12-23 20:14:46.960 DEBUG 7396 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2022-12-23 20:14:46.961 DEBUG 7396 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:15:04.271 DEBUG 7396 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-23 20:15:04.272 DEBUG 7396 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/user/login", parameters={}
+2022-12-23 20:15:04.273 DEBUG 7396 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-23 20:15:04.276 DEBUG 7396 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.LoginRequest@711eb6a1]
+2022-12-23 20:15:05.529 DEBUG 7396 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 20:15:05.530 DEBUG 7396 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.entity.User@3ee45cc9]
+2022-12-23 20:15:05.536 DEBUG 7396 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:15:07.772 DEBUG 7396 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#getProfile(Long)
+2022-12-23 20:15:07.774 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/user/profile?userId=128", parameters={masked}
+2022-12-23 20:15:07.775 DEBUG 7396 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#getProfile(Long)
+2022-12-23 20:15:07.791 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 20:15:07.791 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.entity.User@7f1d5d21]
+2022-12-23 20:15:07.793 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:15:09.556 DEBUG 7396 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#listOfCreditCards(Long)
+2022-12-23 20:15:09.558 DEBUG 7396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/user/card/list?currentUserId=128", parameters={masked}
+2022-12-23 20:15:09.560 DEBUG 7396 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#listOfCreditCards(Long)
+2022-12-23 20:15:09.600 DEBUG 7396 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 20:15:09.600 DEBUG 7396 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.dto.StatePaymentList@4a4ca239]
+2022-12-23 20:15:09.656 DEBUG 7396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:15:10.689 DEBUG 7396 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#listOfShippingAddress(Long)
+2022-12-23 20:15:10.691 DEBUG 7396 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/user/shipping/list?currentUserId=128", parameters={masked}
+2022-12-23 20:15:10.695 DEBUG 7396 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#listOfShippingAddress(Long)
+2022-12-23 20:15:10.714 DEBUG 7396 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 20:15:10.715 DEBUG 7396 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.dto.StateShippingList@5abaa231]
+2022-12-23 20:15:10.722 DEBUG 7396 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:15:11.902 DEBUG 7396 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#listOfCreditCards(Long)
+2022-12-23 20:15:11.903 DEBUG 7396 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/user/card/list?currentUserId=128", parameters={masked}
+2022-12-23 20:15:11.904 DEBUG 7396 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#listOfCreditCards(Long)
+2022-12-23 20:15:11.917 DEBUG 7396 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 20:15:11.918 DEBUG 7396 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.dto.StatePaymentList@4be44605]
+2022-12-23 20:15:11.922 DEBUG 7396 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:16:08.355 DEBUG 7396 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#addNewCreditCard(UserBillingPayment, Long)
+2022-12-23 20:16:08.356 DEBUG 7396 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/user/card/add?currentUserId=128", parameters={masked}
+2022-12-23 20:16:08.357 DEBUG 7396 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#addNewCreditCard(UserBillingPayment, Long)
+2022-12-23 20:16:08.358 DEBUG 7396 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:16:08.363 DEBUG 7396 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#addNewCreditCard(UserBillingPayment, Long)
+2022-12-23 20:16:08.364 DEBUG 7396 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/user/card/add?currentUserId=128", parameters={masked}
+2022-12-23 20:16:08.365 DEBUG 7396 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#addNewCreditCard(UserBillingPayment, Long)
+2022-12-23 20:16:08.379 DEBUG 7396 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.dto.UserBillingPayment@840c0d3]
+2022-12-23 20:16:08.578 DEBUG 7396 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 20:16:08.579 DEBUG 7396 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[UserPayment [id=132, cardType=MasterCard, cardName=test3, cardNumber=434343434, expiryMonth=4, expi (truncated)...]
+2022-12-23 20:16:08.586 DEBUG 7396 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:16:08.607 DEBUG 7396 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#listOfCreditCards(Long)
+2022-12-23 20:16:08.608 DEBUG 7396 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/user/card/list?currentUserId=128", parameters={masked}
+2022-12-23 20:16:08.609 DEBUG 7396 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#listOfCreditCards(Long)
+2022-12-23 20:16:08.617 DEBUG 7396 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 20:16:08.618 DEBUG 7396 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.dto.StatePaymentList@67848ee8]
+2022-12-23 20:16:08.632 DEBUG 7396 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:16:16.629 DEBUG 7396 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#listOfShippingAddress(Long)
+2022-12-23 20:16:16.630 DEBUG 7396 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/user/shipping/list?currentUserId=128", parameters={masked}
+2022-12-23 20:16:16.630 DEBUG 7396 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#listOfShippingAddress(Long)
+2022-12-23 20:16:16.640 DEBUG 7396 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 20:16:16.640 DEBUG 7396 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.dto.StateShippingList@20ac2e45]
+2022-12-23 20:16:16.644 DEBUG 7396 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:18:49.015 DEBUG 7396 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#addNewShippingAddress(UserAddress, Long)
+2022-12-23 20:18:49.016 DEBUG 7396 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/user/shipping/add?currentUserId=128", parameters={masked}
+2022-12-23 20:18:49.016 DEBUG 7396 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#addNewShippingAddress(UserAddress, Long)
+2022-12-23 20:18:49.017 DEBUG 7396 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:18:49.022 DEBUG 7396 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#addNewShippingAddress(UserAddress, Long)
+2022-12-23 20:18:49.023 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/user/shipping/add?currentUserId=128", parameters={masked}
+2022-12-23 20:18:49.023 DEBUG 7396 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#addNewShippingAddress(UserAddress, Long)
+2022-12-23 20:18:49.026 DEBUG 7396 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.UserAddress@51f91e8a]
+2022-12-23 20:18:50.776 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 20:18:50.777 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.entity.UserAddress@23deee96]
+2022-12-23 20:18:50.778 DEBUG 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:18:50.823 DEBUG 7396 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#listOfShippingAddress(Long)
+2022-12-23 20:18:50.823 DEBUG 7396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/user/shipping/list?currentUserId=128", parameters={masked}
+2022-12-23 20:18:50.824 DEBUG 7396 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#listOfShippingAddress(Long)
+2022-12-23 20:18:50.835 DEBUG 7396 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-23 20:18:50.835 DEBUG 7396 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.dto.StateShippingList@6698cdb8]
+2022-12-23 20:18:50.841 DEBUG 7396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-23 20:54:46.997  INFO 7396 --- [RMI TCP Connection(161)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-12-23 20:54:47.495  INFO 7396 --- [RMI TCP Connection(161)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-23 20:54:47.496  INFO 7396 --- [RMI TCP Connection(161)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-23 20:54:47.525  INFO 7396 --- [RMI TCP Connection(161)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 20:54:47.527  INFO 7396 --- [RMI TCP Connection(161)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-12-23 20:54:47.541  INFO 7396 --- [RMI TCP Connection(161)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.

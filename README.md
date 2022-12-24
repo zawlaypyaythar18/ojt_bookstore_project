@@ -1,6 +1,6 @@
 ## Champion - ojt_bookstore_project
 
-Bookstore Project
+OJT Bookstore Project
 
 ```
 Frontend Vuejs
