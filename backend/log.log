@@ -269,3 +269,952 @@ This generated password is for development use only. Your security configuration
 2022-12-26 00:29:59.104  INFO 8848 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2022-12-26 00:29:59.112  INFO 8848 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 1.722 seconds (JVM running for 1112.254)
 2022-12-26 00:29:59.115  INFO 8848 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-26 01:38:32.241  INFO 17436 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 17.0.4.1 on DESKTOP-KG05SA1 with PID 17436 (C:\Users\zinma\OneDrive\Documents\GitHub\ojt_bookstore_project\backend\target\classes started by zinma in C:\Users\zinma\OneDrive\Documents\GitHub\ojt_bookstore_project\backend)
+2022-12-26 01:38:32.243  INFO 17436 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-26 01:38:32.308  INFO 17436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-26 01:38:32.309  INFO 17436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-26 01:38:33.200  INFO 17436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-26 01:38:33.202  INFO 17436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-26 01:38:33.246  INFO 17436 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.BookRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:38:33.248  INFO 17436 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.PasswordResetTokenRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:38:33.251  INFO 17436 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserAddressRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:38:33.254  INFO 17436 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserBillingRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:38:33.256  INFO 17436 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserPaymentMethodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:38:33.259  INFO 17436 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:38:33.261  INFO 17436 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserShippingRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:38:33.262  INFO 17436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 0 JDBC repository interfaces.
+2022-12-26 01:38:33.271  INFO 17436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-26 01:38:33.272  INFO 17436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-26 01:38:33.332  INFO 17436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 7 JPA repository interfaces.
+2022-12-26 01:38:34.062  INFO 17436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-12-26 01:38:34.081  INFO 17436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-26 01:38:34.082  INFO 17436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-26 01:38:34.230  INFO 17436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-26 01:38:34.230  INFO 17436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1919 ms
+2022-12-26 01:38:34.488  INFO 17436 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-26 01:38:34.570  INFO 17436 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-26 01:38:34.767  INFO 17436 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-26 01:38:34.889  INFO 17436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-26 01:38:35.307  INFO 17436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-26 01:38:35.330  INFO 17436 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-26 01:38:37.369  INFO 17436 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-26 01:38:37.380  INFO 17436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 01:38:38.093  WARN 17436 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-26 01:38:38.133  WARN 17436 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 020f8099-998c-450c-a92e-4651201a560d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-26 01:38:38.314 DEBUG 17436 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2022-12-26 01:38:38.320 DEBUG 17436 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2022-12-26 01:38:38.412 DEBUG 17436 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/*] in 'resourceHandlerMapping'
+2022-12-26 01:38:38.419  WARN 17436 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-26 01:38:38.420  INFO 17436 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2022-12-26 01:38:38.420  WARN 17436 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-26 01:38:38.421  INFO 17436 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2022-12-26 01:38:38.421  WARN 17436 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-26 01:38:38.421  INFO 17436 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2022-12-26 01:38:38.484  INFO 17436 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b1aec6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@373d1c55, org.springframework.security.web.context.SecurityContextPersistenceFilter@611718c2, org.springframework.security.web.header.HeaderWriterFilter@78d375e2, org.springframework.security.web.authentication.logout.LogoutFilter@457a21e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ef17212, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f633164, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@728ec2e8, org.springframework.security.web.session.SessionManagementFilter@579db5ec, org.springframework.security.web.access.ExceptionTranslationFilter@77b2e7ad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5312f006]
+2022-12-26 01:38:38.562 DEBUG 17436 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-26 01:38:38.605 DEBUG 17436 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-26 01:38:38.640  WARN 17436 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-26 01:38:38.864  INFO 17436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-26 01:38:38.888  WARN 17436 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2022-12-26 01:38:38.892  INFO 17436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 01:38:38.895  INFO 17436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-26 01:38:38.908  INFO 17436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-26 01:38:38.911  INFO 17436 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-26 01:38:38.924  INFO 17436 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-26 01:38:38.951 ERROR 17436 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2022-12-26 01:39:10.587  INFO 3768 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 17.0.4.1 on DESKTOP-KG05SA1 with PID 3768 (C:\Users\zinma\OneDrive\Documents\GitHub\ojt_bookstore_project\backend\target\classes started by zinma in C:\Users\zinma\OneDrive\Documents\GitHub\ojt_bookstore_project\backend)
+2022-12-26 01:39:10.588  INFO 3768 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-26 01:39:10.648  INFO 3768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-26 01:39:10.648  INFO 3768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-26 01:39:11.423  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-26 01:39:11.425  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-26 01:39:11.466  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.BookRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:39:11.468  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.PasswordResetTokenRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:39:11.471  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserAddressRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:39:11.473  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserBillingRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:39:11.476  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserPaymentMethodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:39:11.478  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:39:11.480  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserShippingRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:39:11.481  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 0 JDBC repository interfaces.
+2022-12-26 01:39:11.493  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-26 01:39:11.494  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-26 01:39:11.563  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 7 JPA repository interfaces.
+2022-12-26 01:39:12.277  INFO 3768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-26 01:39:12.297  INFO 3768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-26 01:39:12.298  INFO 3768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-26 01:39:12.403  INFO 3768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-26 01:39:12.404  INFO 3768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1755 ms
+2022-12-26 01:39:12.595  INFO 3768 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-26 01:39:12.672  INFO 3768 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-26 01:39:12.858  INFO 3768 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-26 01:39:12.992  INFO 3768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-26 01:39:13.391  INFO 3768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-26 01:39:13.411  INFO 3768 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-26 01:39:14.748  INFO 3768 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-26 01:39:14.759  INFO 3768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 01:39:15.382  WARN 3768 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-26 01:39:15.419  WARN 3768 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 725439a2-ce6a-48e8-929f-f0098058ebc6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-26 01:39:15.555 DEBUG 3768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2022-12-26 01:39:15.560 DEBUG 3768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2022-12-26 01:39:15.638 DEBUG 3768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/*] in 'resourceHandlerMapping'
+2022-12-26 01:39:15.643  WARN 3768 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-26 01:39:15.644  INFO 3768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2022-12-26 01:39:15.644  WARN 3768 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-26 01:39:15.644  INFO 3768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2022-12-26 01:39:15.644  WARN 3768 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-26 01:39:15.645  INFO 3768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2022-12-26 01:39:15.689  INFO 3768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3534a040, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b69a81, org.springframework.security.web.context.SecurityContextPersistenceFilter@ec534f8, org.springframework.security.web.header.HeaderWriterFilter@4e3516dd, org.springframework.security.web.authentication.logout.LogoutFilter@2cd64f9b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79a79ce6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25bca270, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@622203c1, org.springframework.security.web.session.SessionManagementFilter@200e4af1, org.springframework.security.web.access.ExceptionTranslationFilter@43e0eeb4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b43c019]
+2022-12-26 01:39:15.752 DEBUG 3768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-26 01:39:15.796 DEBUG 3768 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-26 01:39:15.824  WARN 3768 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-26 01:39:15.986  INFO 3768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-26 01:39:16.042  INFO 3768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-26 01:39:16.052  INFO 3768 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 5.932 seconds (JVM running for 6.841)
+2022-12-26 01:39:30.135  INFO 3768 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 01:39:30.135  INFO 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-26 01:39:30.135 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-26 01:39:30.135 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-26 01:39:30.136 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-26 01:39:30.137 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@539f7509
+2022-12-26 01:39:30.137 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@605f1a88
+2022-12-26 01:39:30.137 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-26 01:39:30.137  INFO 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-12-26 01:39:30.158 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:39:30.168 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/book/list", parameters={}
+2022-12-26 01:39:30.170 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:39:30.285 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:39:30.285 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:39:30.334 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:39:30.374 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:39:30.374 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:39:30.375 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:39:30.375 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:39:30.376 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/746787_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 01:39:30.377 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/919822_justonemorechapter.jpg", parameters={}
+2022-12-26 01:39:30.377 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/46070_9780131424715-us.jpg", parameters={}
+2022-12-26 01:39:30.377 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/991007_images.jpg", parameters={}
+2022-12-26 01:39:30.377 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:39:30.377 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:39:30.377 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:39:30.377 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:39:30.406 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:39:30.406 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:39:30.406 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:39:30.406 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:39:30.406 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:39:30.406 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:39:30.407 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:39:30.407 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:39:30.407 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:39:30.407 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:39:30.407 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:39:30.407 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:43:56.236 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:43:56.237 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/book/list", parameters={}
+2022-12-26 01:43:56.237 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:43:56.248 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:43:56.248 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:43:56.250 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:43:56.342 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:43:56.344 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/46070_9780131424715-us.jpg", parameters={}
+2022-12-26 01:43:56.347 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:43:56.347 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:43:56.347 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/991007_images.jpg", parameters={}
+2022-12-26 01:43:56.348 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/746787_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 01:43:56.350 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:43:56.351 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:43:56.353 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:43:56.354 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:43:56.355 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:43:56.355 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:43:56.355 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:43:56.355 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:43:56.355 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:43:56.356 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:43:56.357 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/919822_justonemorechapter.jpg", parameters={}
+2022-12-26 01:43:56.359 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:43:56.359 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:43:56.359 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:43:56.360 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:43:56.361 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:43:56.361 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:43:56.361 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:43:57.843 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 01:43:57.843 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/category/search/fiction", parameters={}
+2022-12-26 01:43:57.844 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 01:43:57.865 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:43:57.865 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:43:57.867 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:43:59.345 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 01:43:59.345 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/category/search/engineering", parameters={}
+2022-12-26 01:43:59.346 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 01:43:59.357 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:43:59.358 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=6, title=Test3, author=Willian, publisher=Traffic Engineering Third Edition , publicationD (truncated)...]
+2022-12-26 01:43:59.359 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:43:59.374 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:43:59.374 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/46070_9780131424715-us.jpg", parameters={}
+2022-12-26 01:43:59.375 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:43:59.376 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:43:59.377 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:43:59.377 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:00.860 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 01:44:00.861 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/category/search/programming", parameters={}
+2022-12-26 01:44:00.861 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 01:44:00.868 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:44:00.869 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=7, title=Test2, author=Tsung-Hsien Lee, publisher=One More Chapter, publicationDate=2018-1 (truncated)...]
+2022-12-26 01:44:00.870 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:00.884 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:44:00.884 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/991007_images.jpg", parameters={}
+2022-12-26 01:44:00.885 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:44:00.886 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:44:00.886 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:44:00.886 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:02.510 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 01:44:02.510 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/category/search/arts%20and%20literature", parameters={}
+2022-12-26 01:44:02.511 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 01:44:02.519 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:44:02.520 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2022-12-26 01:44:02.521 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:04.268 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 01:44:04.269 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/category/search/management", parameters={}
+2022-12-26 01:44:04.269 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 01:44:04.278 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:44:04.279 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=5, title=Test1, author=Julie Zhuo , publisher=The Making Of A Manager, publicationDate=201 (truncated)...]
+2022-12-26 01:44:04.280 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:04.295 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:44:04.296 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/746787_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 01:44:04.297 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:44:04.298 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:44:04.299 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:44:04.299 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:13.127 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-26 01:44:13.129 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/user/login", parameters={}
+2022-12-26 01:44:13.129 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-26 01:44:13.130 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:13.135 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-26 01:44:13.135 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/user/login", parameters={}
+2022-12-26 01:44:13.136 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-26 01:44:13.201 DEBUG 3768 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.LoginRequest@16f07a93]
+2022-12-26 01:44:13.672 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:44:13.673 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.entity.User@4d0f979e]
+2022-12-26 01:44:13.676 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:13.689 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 01:44:13.690 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/list", parameters={}
+2022-12-26 01:44:13.690 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 01:44:13.708 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:44:13.709 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:44:13.714 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:40.131 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:44:40.132 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/book/list", parameters={}
+2022-12-26 01:44:40.132 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:44:40.147 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:44:40.148 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:44:40.150 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:40.183 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:44:40.183 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:44:40.184 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/746787_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 01:44:40.184 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/919822_justonemorechapter.jpg", parameters={}
+2022-12-26 01:44:40.185 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:44:40.185 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:44:40.185 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:44:40.185 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:44:40.186 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/46070_9780131424715-us.jpg", parameters={}
+2022-12-26 01:44:40.186 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/991007_images.jpg", parameters={}
+2022-12-26 01:44:40.188 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:44:40.188 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:44:40.188 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:44:40.188 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:44:40.188 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:44:40.188 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:44:40.188 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:40.188 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:40.189 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:44:40.189 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:44:40.189 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:44:40.189 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:44:40.190 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:44:40.190 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:45:33.490 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 01:45:33.491 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/list", parameters={}
+2022-12-26 01:45:33.491 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 01:45:33.507 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:45:33.507 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:45:33.509 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:45:35.606 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getUserList()
+2022-12-26 01:45:35.607 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/user/list", parameters={}
+2022-12-26 01:45:35.607 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getUserList()
+2022-12-26 01:45:35.634 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:45:35.634 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.OJTProject.bookstore.entity.User@5ccb201d, com.OJTProject.bookstore.entity.User@13c23698]]
+2022-12-26 01:45:35.636 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:45:35.685 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getAllStatus()
+2022-12-26 01:45:35.685 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/user/status", parameters={}
+2022-12-26 01:45:35.685 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getAllStatus()
+2022-12-26 01:45:35.687 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:45:35.687 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[active, deactivated]]
+2022-12-26 01:45:35.689 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:45:39.806 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2022-12-26 01:45:39.806 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/admin/user/delete/2", parameters={}
+2022-12-26 01:45:39.807 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2022-12-26 01:45:39.807 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:45:39.809 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2022-12-26 01:45:39.810 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : DELETE "/api/admin/user/delete/2", parameters={}
+2022-12-26 01:45:39.810 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2022-12-26 01:45:39.811 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-26 01:45:39.811 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-26 01:45:39.815 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for DELETE "/error", parameters={}
+2022-12-26 01:45:39.817 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-26 01:45:39.821 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:45:39.821 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Dec 26 01:45:39 MMT 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
+2022-12-26 01:45:39.825 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-26 01:45:49.450 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:45:49.450 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/book/list", parameters={}
+2022-12-26 01:45:49.450 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:45:49.463 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:45:49.464 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:45:49.465 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:45:49.487 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:45:49.487 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/919822_justonemorechapter.jpg", parameters={}
+2022-12-26 01:45:49.488 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:45:49.488 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:45:49.488 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/746787_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 01:45:49.489 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:45:49.489 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:45:49.489 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:45:49.491 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/46070_9780131424715-us.jpg", parameters={}
+2022-12-26 01:45:49.492 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/991007_images.jpg", parameters={}
+2022-12-26 01:45:49.493 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:45:49.493 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:45:49.493 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:45:49.493 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:45:49.493 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:45:49.493 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:45:49.493 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:45:49.493 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:45:49.496 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:45:49.496 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:45:49.497 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:45:49.497 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:45:49.497 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:45:49.497 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:45:56.537 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 01:45:56.537 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/list", parameters={}
+2022-12-26 01:45:56.537 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 01:45:56.552 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:45:56.553 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:45:56.553 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:48:35.640 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#getProfile(Long)
+2022-12-26 01:48:35.641 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/user/profile?userId=1", parameters={masked}
+2022-12-26 01:48:35.641 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#getProfile(Long)
+2022-12-26 01:48:35.668 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:48:35.669 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.entity.User@599096da]
+2022-12-26 01:48:35.670 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:48:44.036 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:48:44.036 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/book/list", parameters={}
+2022-12-26 01:48:44.036 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:48:44.050 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:48:44.051 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:48:44.052 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:48:44.084 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:48:44.085 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/991007_images.jpg", parameters={}
+2022-12-26 01:48:44.085 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:48:44.085 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:48:44.086 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/746787_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 01:48:44.087 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:48:44.087 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:48:44.087 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:48:44.088 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:48:44.088 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/919822_justonemorechapter.jpg", parameters={}
+2022-12-26 01:48:44.088 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:48:44.088 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/46070_9780131424715-us.jpg", parameters={}
+2022-12-26 01:48:44.089 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:48:44.089 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:48:44.090 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:48:44.090 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:48:44.090 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:48:44.090 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:48:44.090 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:48:44.090 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:48:44.090 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:48:44.090 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:48:44.091 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:48:44.091 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:07.321 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:49:07.322 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/book/list", parameters={}
+2022-12-26 01:49:07.322 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:49:07.339 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:49:07.339 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:49:07.342 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:07.366 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:07.367 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/919822_justonemorechapter.jpg", parameters={}
+2022-12-26 01:49:07.367 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:07.368 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:07.368 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/991007_images.jpg", parameters={}
+2022-12-26 01:49:07.368 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:07.368 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:07.368 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:07.368 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:49:07.368 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:49:07.369 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/46070_9780131424715-us.jpg", parameters={}
+2022-12-26 01:49:07.369 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/746787_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 01:49:07.369 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:07.369 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:07.369 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:49:07.369 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:07.369 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:49:07.369 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:07.370 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:49:07.370 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:49:07.370 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:49:07.370 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:49:07.370 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:07.370 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:11.866 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:49:11.867 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/book/list", parameters={}
+2022-12-26 01:49:11.867 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:49:11.879 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:49:11.880 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:49:11.882 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:11.912 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:11.912 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:11.912 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:11.912 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/46070_9780131424715-us.jpg", parameters={}
+2022-12-26 01:49:11.913 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/919822_justonemorechapter.jpg", parameters={}
+2022-12-26 01:49:11.913 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:11.913 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/746787_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 01:49:11.913 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:11.912 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:11.913 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:11.914 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/991007_images.jpg", parameters={}
+2022-12-26 01:49:11.914 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:11.914 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:49:11.914 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:49:11.914 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:49:11.914 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:49:11.914 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:11.914 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:49:11.915 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:11.915 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:49:11.915 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:49:11.915 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:49:11.915 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:11.915 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:37.928 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:49:37.928 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/book/list", parameters={}
+2022-12-26 01:49:37.928 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:49:37.940 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:49:37.940 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:49:37.941 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:37.966 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:37.967 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:37.967 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/46070_9780131424715-us.jpg", parameters={}
+2022-12-26 01:49:37.968 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/919822_justonemorechapter.jpg", parameters={}
+2022-12-26 01:49:37.968 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:37.967 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:37.968 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:37.968 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/991007_images.jpg", parameters={}
+2022-12-26 01:49:37.968 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:37.968 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/746787_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 01:49:37.969 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:37.969 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:49:37.969 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:49:37.969 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:49:37.969 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:49:37.969 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:49:37.969 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:49:37.969 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:49:37.970 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:37.970 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:37.970 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:49:37.970 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:49:37.970 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:49:37.970 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:50:40.017 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:50:40.019 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/book/list", parameters={}
+2022-12-26 01:50:40.019 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:50:40.034 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:50:40.035 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:50:40.037 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:50:40.063 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:50:40.063 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/919822_justonemorechapter.jpg", parameters={}
+2022-12-26 01:50:40.063 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:50:40.063 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:50:40.064 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/46070_9780131424715-us.jpg", parameters={}
+2022-12-26 01:50:40.065 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:50:40.065 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:50:40.065 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:50:40.066 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/991007_images.jpg", parameters={}
+2022-12-26 01:50:40.066 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/746787_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 01:50:40.067 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:50:40.067 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:50:40.068 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:50:40.068 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:50:40.068 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:50:40.068 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:50:40.068 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:50:40.068 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:50:40.068 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:50:40.068 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:50:40.068 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:50:40.068 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:50:40.068 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:50:40.068 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:52:14.854 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:52:14.855 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/book/list", parameters={}
+2022-12-26 01:52:14.856 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:52:14.873 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:52:14.874 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:52:14.875 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:52:14.898 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:52:14.898 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:52:14.900 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/746787_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 01:52:14.900 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/991007_images.jpg", parameters={}
+2022-12-26 01:52:14.901 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:52:14.901 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:52:14.902 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/919822_justonemorechapter.jpg", parameters={}
+2022-12-26 01:52:14.901 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:52:14.903 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:52:14.901 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:52:14.903 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:52:14.904 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:52:14.904 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:52:14.905 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:52:14.906 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:52:14.904 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/46070_9780131424715-us.jpg", parameters={}
+2022-12-26 01:52:14.905 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:52:14.906 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:52:14.906 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:52:14.906 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:52:14.907 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:52:14.908 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:52:14.909 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:52:14.909 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:56:50.316 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:56:50.318 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/book/list", parameters={}
+2022-12-26 01:56:50.318 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 01:56:50.337 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:56:50.338 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:56:50.340 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:56:50.365 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:56:50.365 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/919822_justonemorechapter.jpg", parameters={}
+2022-12-26 01:56:50.366 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:56:50.366 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:56:50.366 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:56:50.366 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/991007_images.jpg", parameters={}
+2022-12-26 01:56:50.367 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/46070_9780131424715-us.jpg", parameters={}
+2022-12-26 01:56:50.367 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:56:50.367 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:56:50.370 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:56:50.371 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:56:50.371 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:56:50.371 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:56:50.371 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:56:50.371 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:56:50.371 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:56:50.371 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:56:50.371 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/746787_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 01:56:50.371 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 01:56:50.371 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:56:50.372 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:56:50.373 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 01:56:50.374 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-26 01:56:50.374 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:56:58.146 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-26 01:56:58.146 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/user/login", parameters={}
+2022-12-26 01:56:58.147 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-26 01:56:58.148 DEBUG 3768 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.LoginRequest@79313bd0]
+2022-12-26 01:56:58.473 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:56:58.473 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.entity.User@24bd9bf3]
+2022-12-26 01:56:58.475 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:56:58.489 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 01:56:58.490 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/list", parameters={}
+2022-12-26 01:56:58.490 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 01:56:58.505 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:56:58.505 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 01:56:58.507 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:57:57.818  INFO 3768 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-26 01:57:57.885  INFO 3768 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-26 01:57:57.887  INFO 3768 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-26 01:57:57.895  INFO 3768 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 01:57:57.897  INFO 3768 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-26 01:57:57.913  INFO 3768 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-26 01:57:57.998  INFO 3768 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 17.0.4.1 on DESKTOP-KG05SA1 with PID 3768 (C:\Users\zinma\OneDrive\Documents\GitHub\ojt_bookstore_project\backend\target\classes started by zinma in C:\Users\zinma\OneDrive\Documents\GitHub\ojt_bookstore_project\backend)
+2022-12-26 01:57:57.999  INFO 3768 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-26 01:57:58.200  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-26 01:57:58.200  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-26 01:57:58.210  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.BookRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:57:58.211  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.PasswordResetTokenRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:57:58.212  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserAddressRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:57:58.214  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserBillingRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:57:58.215  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserPaymentMethodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:57:58.216  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:57:58.217  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserShippingRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:57:58.217  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2022-12-26 01:57:58.220  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-26 01:57:58.220  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-26 01:57:58.239  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 7 JPA repository interfaces.
+2022-12-26 01:57:58.348  INFO 3768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-26 01:57:58.348  INFO 3768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-26 01:57:58.348  INFO 3768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-26 01:57:58.368  INFO 3768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-26 01:57:58.368  INFO 3768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 367 ms
+2022-12-26 01:57:58.404  INFO 3768 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-26 01:57:58.411  INFO 3768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-12-26 01:57:58.433  INFO 3768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-12-26 01:57:58.434  INFO 3768 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-26 01:57:59.953  INFO 3768 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-26 01:57:59.953  INFO 3768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 01:58:00.183  WARN 3768 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-26 01:58:00.198  WARN 3768 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 564ab358-2674-40d5-b147-2739b2cbcf84
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-26 01:58:00.227 DEBUG 3768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2022-12-26 01:58:00.230 DEBUG 3768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2022-12-26 01:58:00.271 DEBUG 3768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/*] in 'resourceHandlerMapping'
+2022-12-26 01:58:00.272  WARN 3768 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-26 01:58:00.272  INFO 3768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2022-12-26 01:58:00.272  WARN 3768 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-26 01:58:00.272  INFO 3768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2022-12-26 01:58:00.272  WARN 3768 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-26 01:58:00.272  INFO 3768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2022-12-26 01:58:00.278  INFO 3768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@632ac7c9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a93327f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d0b5de7, org.springframework.security.web.header.HeaderWriterFilter@6b4f196c, org.springframework.security.web.authentication.logout.LogoutFilter@39bf9d92, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ee84444, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d7fbc8c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e9757f7, org.springframework.security.web.session.SessionManagementFilter@6be2810c, org.springframework.security.web.access.ExceptionTranslationFilter@43840092, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a0bed72]
+2022-12-26 01:58:00.295 DEBUG 3768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-26 01:58:00.301 DEBUG 3768 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-26 01:58:00.306  WARN 3768 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-26 01:58:00.343  INFO 3768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-26 01:58:00.354  INFO 3768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-26 01:58:00.358  INFO 3768 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 2.392 seconds (JVM running for 1131.148)
+2022-12-26 01:58:00.752  INFO 3768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-26 01:58:08.030  INFO 3768 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-26 01:58:08.039  INFO 3768 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-26 01:58:08.043  INFO 3768 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 01:58:08.043  INFO 3768 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-12-26 01:58:08.052  INFO 3768 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-12-26 01:58:08.133  INFO 3768 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 17.0.4.1 on DESKTOP-KG05SA1 with PID 3768 (C:\Users\zinma\OneDrive\Documents\GitHub\ojt_bookstore_project\backend\target\classes started by zinma in C:\Users\zinma\OneDrive\Documents\GitHub\ojt_bookstore_project\backend)
+2022-12-26 01:58:08.133  INFO 3768 --- [restartedMain] c.O.bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-12-26 01:58:08.296  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-26 01:58:08.296  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-26 01:58:08.308  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.BookRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:58:08.309  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.PasswordResetTokenRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:58:08.310  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserAddressRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:58:08.312  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserBillingRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:58:08.313  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserPaymentMethodRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:58:08.314  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:58:08.315  INFO 3768 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.OJTProject.bookstore.repo.UserShippingRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-26 01:58:08.315  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2022-12-26 01:58:08.318  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-26 01:58:08.318  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-26 01:58:08.336  INFO 3768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 7 JPA repository interfaces.
+2022-12-26 01:58:08.412  INFO 3768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-26 01:58:08.412  INFO 3768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-26 01:58:08.412  INFO 3768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-26 01:58:08.441  INFO 3768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-26 01:58:08.441  INFO 3768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 306 ms
+2022-12-26 01:58:08.470  INFO 3768 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-26 01:58:08.476  INFO 3768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-12-26 01:58:08.495  INFO 3768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-12-26 01:58:08.495  INFO 3768 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-26 01:58:08.728  INFO 3768 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-26 01:58:08.728  INFO 3768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 01:58:08.920  WARN 3768 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-26 01:58:08.928  WARN 3768 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 156f2dd2-7d9d-42b0-9725-0e82a8896760
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-26 01:58:08.941 DEBUG 3768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2022-12-26 01:58:08.943 DEBUG 3768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2022-12-26 01:58:08.977 DEBUG 3768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/*] in 'resourceHandlerMapping'
+2022-12-26 01:58:08.977  WARN 3768 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-26 01:58:08.978  INFO 3768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2022-12-26 01:58:08.978  WARN 3768 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-26 01:58:08.978  INFO 3768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2022-12-26 01:58:08.978  WARN 3768 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-26 01:58:08.978  INFO 3768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2022-12-26 01:58:08.982  INFO 3768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5cb32680, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3045f0a5, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b05d74f, org.springframework.security.web.header.HeaderWriterFilter@57d3ffb5, org.springframework.security.web.authentication.logout.LogoutFilter@2645221c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63d0f087, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b36851f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cb476b, org.springframework.security.web.session.SessionManagementFilter@207d178d, org.springframework.security.web.access.ExceptionTranslationFilter@30a70f5f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27b12228]
+2022-12-26 01:58:08.996 DEBUG 3768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-26 01:58:09.001 DEBUG 3768 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-26 01:58:09.007  WARN 3768 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-12-26 01:58:09.039  INFO 3768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-26 01:58:09.050  INFO 3768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-26 01:58:09.053  INFO 3768 --- [restartedMain] c.O.bookstore.BookstoreApplication       : Started BookstoreApplication in 0.943 seconds (JVM running for 1139.842)
+2022-12-26 01:58:09.054  INFO 3768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-26 01:58:41.614  INFO 3768 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 01:58:41.614  INFO 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-26 01:58:41.614 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-26 01:58:41.615 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-26 01:58:41.615 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-26 01:58:41.617 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@61374f82
+2022-12-26 01:58:41.617 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7503a8ac
+2022-12-26 01:58:41.617 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-26 01:58:41.617  INFO 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-12-26 01:58:41.618 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#register(User, HttpServletRequest)
+2022-12-26 01:58:41.619 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/user/register", parameters={}
+2022-12-26 01:58:41.620 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#register(User, HttpServletRequest)
+2022-12-26 01:58:41.621 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:58:41.626 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#register(User, HttpServletRequest)
+2022-12-26 01:58:41.626 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/user/register", parameters={}
+2022-12-26 01:58:41.626 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#register(User, HttpServletRequest)
+2022-12-26 01:58:41.643 DEBUG 3768 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.User@7f020b14]
+2022-12-26 01:58:48.535 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:58:48.535 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Email is Send."]
+2022-12-26 01:58:48.536 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:59:30.387 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-26 01:59:30.388 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/user/login", parameters={}
+2022-12-26 01:59:30.389 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-26 01:59:30.392 DEBUG 3768 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.LoginRequest@2a0368d5]
+2022-12-26 01:59:30.402 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2022-12-26 01:59:30.402 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-26 01:59:40.369 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-26 01:59:40.370 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/user/login", parameters={}
+2022-12-26 01:59:40.370 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-26 01:59:40.371 DEBUG 3768 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.LoginRequest@53672ae1]
+2022-12-26 01:59:40.688 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:59:40.690 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.entity.User@1c9dc4c6]
+2022-12-26 01:59:40.691 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 01:59:48.520 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#getProfile(Long)
+2022-12-26 01:59:48.521 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/user/profile?userId=2", parameters={masked}
+2022-12-26 01:59:48.521 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#getProfile(Long)
+2022-12-26 01:59:48.534 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 01:59:48.534 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.entity.User@34c49dc3]
+2022-12-26 01:59:48.535 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:00:00.885 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#updateProfile(User, String, String)
+2022-12-26 02:00:00.886 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/user/profile/update?currentPassword=R1E2HFKY1ZX51LH2FH&newPassword=1111", parameters={masked}
+2022-12-26 02:00:00.886 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#updateProfile(User, String, String)
+2022-12-26 02:00:00.887 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:00:00.892 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#updateProfile(User, String, String)
+2022-12-26 02:00:00.892 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : PUT "/api/user/profile/update?currentPassword=R1E2HFKY1ZX51LH2FH&newPassword=1111", parameters={masked}
+2022-12-26 02:00:00.892 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#updateProfile(User, String, String)
+2022-12-26 02:00:00.900 DEBUG 3768 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.User@4c2a9194]
+2022-12-26 02:00:01.607 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2022-12-26 02:00:01.607 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:00:23.497 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-26 02:00:23.497 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/user/login", parameters={}
+2022-12-26 02:00:23.498 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.UserController#login(LoginRequest)
+2022-12-26 02:00:23.498 DEBUG 3768 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.OJTProject.bookstore.entity.LoginRequest@2d97df05]
+2022-12-26 02:00:23.819 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:00:23.819 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.OJTProject.bookstore.entity.User@c852a71]
+2022-12-26 02:00:23.822 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:00:23.840 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 02:00:23.841 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/list", parameters={}
+2022-12-26 02:00:23.841 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 02:00:23.867 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:00:23.867 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2022-12-26 02:00:23.869 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:00:47.159 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#createFile(MultipartFile, String)
+2022-12-26 02:00:47.159 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/admin/book/file/create", parameters={multipart}
+2022-12-26 02:00:47.191 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#createFile(MultipartFile, String)
+2022-12-26 02:00:47.198 DEBUG 3768 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:00:47.198 DEBUG 3768 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/api/admin/book/media/jpg/209318_justonemorechapter.jpg"]
+2022-12-26 02:00:47.199 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:00:47.209 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#addBook(Book)
+2022-12-26 02:00:47.210 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/admin/book/add", parameters={}
+2022-12-26 02:00:47.210 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#addBook(Book)
+2022-12-26 02:00:47.210 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:00:47.213 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#addBook(Book)
+2022-12-26 02:00:47.214 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/admin/book/add", parameters={}
+2022-12-26 02:00:47.214 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#addBook(Book)
+2022-12-26 02:00:47.217 DEBUG 3768 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Book [id=null, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, lang (truncated)...]
+2022-12-26 02:00:47.243 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:00:47.243 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, languag (truncated)...]
+2022-12-26 02:00:47.244 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:00:47.253 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 02:00:47.253 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/list", parameters={}
+2022-12-26 02:00:47.253 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 02:00:47.265 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:00:47.266 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 02:00:47.267 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:04:39.494 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#createFile(MultipartFile, String)
+2022-12-26 02:04:39.495 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/admin/book/file/create", parameters={multipart}
+2022-12-26 02:04:39.504 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#createFile(MultipartFile, String)
+2022-12-26 02:04:39.508 DEBUG 3768 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:04:39.508 DEBUG 3768 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/api/admin/book/media/jpg/974201_the-making-of-a-manager-book-01-1-2048x1152.jpeg"]
+2022-12-26 02:04:39.512 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:04:39.538 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#addBook(Book)
+2022-12-26 02:04:39.539 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/admin/book/add", parameters={}
+2022-12-26 02:04:39.539 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#addBook(Book)
+2022-12-26 02:04:39.541 DEBUG 3768 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Book [id=null, title=Test1, author=Julie Zhuo , publisher=The Making Of A Manager, publicationDate=2 (truncated)...]
+2022-12-26 02:04:39.561 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:04:39.561 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Book [id=5, title=Test1, author=Julie Zhuo , publisher=The Making Of A Manager, publicationDate=2019 (truncated)...]
+2022-12-26 02:04:39.562 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:04:39.573 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 02:04:39.574 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/list", parameters={}
+2022-12-26 02:04:39.574 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 02:04:39.586 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:04:39.587 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 02:04:39.587 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:07:11.755 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#createFile(MultipartFile, String)
+2022-12-26 02:07:11.757 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/admin/book/file/create", parameters={multipart}
+2022-12-26 02:07:11.764 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#createFile(MultipartFile, String)
+2022-12-26 02:07:11.767 DEBUG 3768 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:07:11.767 DEBUG 3768 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/api/admin/book/media/jpg/414711_9780131424715-us.jpg"]
+2022-12-26 02:07:11.770 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:07:11.805 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#addBook(Book)
+2022-12-26 02:07:11.805 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/admin/book/add", parameters={}
+2022-12-26 02:07:11.805 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#addBook(Book)
+2022-12-26 02:07:11.807 DEBUG 3768 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Book [id=null, title=Test2, author=Willian, publisher=Traffic Engineering Third Edition , publicatio (truncated)...]
+2022-12-26 02:07:11.827 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:07:11.828 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Book [id=6, title=Test2, author=Willian, publisher=Traffic Engineering Third Edition , publicationDa (truncated)...]
+2022-12-26 02:07:11.828 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:07:11.839 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 02:07:11.839 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/list", parameters={}
+2022-12-26 02:07:11.840 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 02:07:11.855 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:07:11.856 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 02:07:11.857 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:10:50.223 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#createFile(MultipartFile, String)
+2022-12-26 02:10:50.223 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/admin/book/file/create", parameters={multipart}
+2022-12-26 02:10:50.229 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#createFile(MultipartFile, String)
+2022-12-26 02:10:50.240 DEBUG 3768 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:10:50.241 DEBUG 3768 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/api/admin/book/media/jpg/427959_images.jpg"]
+2022-12-26 02:10:50.242 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:10:50.259 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#addBook(Book)
+2022-12-26 02:10:50.260 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/admin/book/add", parameters={}
+2022-12-26 02:10:50.262 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#addBook(Book)
+2022-12-26 02:10:50.263 DEBUG 3768 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Book [id=null, title=Test3, author=Tsung-Hsien Lee, publisher=Elements of Programming Interviews in  (truncated)...]
+2022-12-26 02:10:50.280 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:10:50.280 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Book [id=7, title=Test3, author=Tsung-Hsien Lee, publisher=Elements of Programming Interviews in Pyt (truncated)...]
+2022-12-26 02:10:50.281 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:10:50.288 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 02:10:50.289 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/list", parameters={}
+2022-12-26 02:10:50.289 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#bookList()
+2022-12-26 02:10:50.306 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:10:50.306 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 02:10:50.307 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:10:52.927 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 02:10:52.928 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/book/list", parameters={}
+2022-12-26 02:10:52.928 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#bookList()
+2022-12-26 02:10:52.949 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:10:52.950 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 02:10:52.954 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:10:52.999 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.000 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/427959_images.jpg", parameters={}
+2022-12-26 02:10:53.000 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.002 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.002 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.002 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.002 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/209318_justonemorechapter.jpg", parameters={}
+2022-12-26 02:10:53.002 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/414711_9780131424715-us.jpg", parameters={}
+2022-12-26 02:10:53.003 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.003 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.002 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/974201_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 02:10:53.003 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.004 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 02:10:53.004 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 02:10:53.004 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 02:10:53.004 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 02:10:53.011 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -31, 0, 42, 69, 120, 105 (truncated)...]
+2022-12-26 02:10:53.011 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 9, 9, 1 (truncated)...]
+2022-12-26 02:10:53.012 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:10:53.015 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:10:53.016 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 9, 6, 7 (truncated)...]
+2022-12-26 02:10:53.018 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:10:53.019 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 1, 0, 96, 0, 96, 0, 0, -1, -31, 55, 116, 69, 120, (truncated)...]
+2022-12-26 02:10:53.021 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:10:53.049 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.049 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.049 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.049 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.049 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/209318_justonemorechapter.jpg", parameters={}
+2022-12-26 02:10:53.049 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/414711_9780131424715-us.jpg", parameters={}
+2022-12-26 02:10:53.049 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/427959_images.jpg", parameters={}
+2022-12-26 02:10:53.050 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.050 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.050 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.050 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/974201_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 02:10:53.050 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:10:53.051 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 02:10:53.051 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 02:10:53.051 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 02:10:53.051 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 02:10:53.055 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 9, 9, 1 (truncated)...]
+2022-12-26 02:10:53.055 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -31, 0, 42, 69, 120, 105 (truncated)...]
+2022-12-26 02:10:53.056 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:10:53.056 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:10:53.059 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 9, 6, 7 (truncated)...]
+2022-12-26 02:10:53.060 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:10:53.062 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 1, 0, 96, 0, 96, 0, 0, -1, -31, 55, 116, 69, 120, (truncated)...]
+2022-12-26 02:10:53.063 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:11:01.857 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 02:11:01.858 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/category/search/fiction", parameters={}
+2022-12-26 02:11:01.860 DEBUG 3768 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 02:11:01.874 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:11:01.874 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=4, title=Test, author=John, publisher=One More Chapter, publicationDate=2019-10-10, langua (truncated)...]
+2022-12-26 02:11:01.875 DEBUG 3768 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:11:03.210 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 02:11:03.211 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/category/search/management", parameters={}
+2022-12-26 02:11:03.211 DEBUG 3768 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 02:11:03.217 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:11:03.217 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=5, title=Test1, author=Julie Zhuo , publisher=The Making Of A Manager, publicationDate=201 (truncated)...]
+2022-12-26 02:11:03.218 DEBUG 3768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:11:03.227 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:11:03.227 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/974201_the-making-of-a-manager-book-01-1-2048x1152.jpeg", parameters={}
+2022-12-26 02:11:03.228 DEBUG 3768 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:11:03.229 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 02:11:03.254 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 1, 0, 96, 0, 96, 0, 0, -1, -31, 55, 116, 69, 120, (truncated)...]
+2022-12-26 02:11:03.255 DEBUG 3768 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:11:04.378 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 02:11:04.379 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/category/search/engineering", parameters={}
+2022-12-26 02:11:04.379 DEBUG 3768 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 02:11:04.386 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:11:04.386 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=6, title=Test2, author=Willian, publisher=Traffic Engineering Third Edition , publicationD (truncated)...]
+2022-12-26 02:11:04.387 DEBUG 3768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:11:04.394 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:11:04.395 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/414711_9780131424715-us.jpg", parameters={}
+2022-12-26 02:11:04.395 DEBUG 3768 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:11:04.396 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 02:11:04.398 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -31, 0, 42, 69, 120, 105 (truncated)...]
+2022-12-26 02:11:04.399 DEBUG 3768 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:11:05.225 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 02:11:05.226 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/category/search/programming", parameters={}
+2022-12-26 02:11:05.226 DEBUG 3768 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 02:11:05.233 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:11:05.233 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=7, title=Test3, author=Tsung-Hsien Lee, publisher=Elements of Programming Interviews in Py (truncated)...]
+2022-12-26 02:11:05.234 DEBUG 3768 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:11:05.241 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:11:05.242 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/427959_images.jpg", parameters={}
+2022-12-26 02:11:05.242 DEBUG 3768 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:11:05.243 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 02:11:05.248 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 9, 6, 7 (truncated)...]
+2022-12-26 02:11:05.249 DEBUG 3768 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:11:06.177 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 02:11:06.178 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/category/search/arts%20and%20literature", parameters={}
+2022-12-26 02:11:06.178 DEBUG 3768 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 02:11:06.184 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:11:06.185 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2022-12-26 02:11:06.185 DEBUG 3768 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:11:07.730 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 02:11:07.731 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/category/search/programming", parameters={}
+2022-12-26 02:11:07.731 DEBUG 3768 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.BookController#getBookByCategory(String)
+2022-12-26 02:11:07.740 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-26 02:11:07.740 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=7, title=Test3, author=Tsung-Hsien Lee, publisher=Elements of Programming Interviews in Py (truncated)...]
+2022-12-26 02:11:07.741 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-26 02:11:07.752 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
