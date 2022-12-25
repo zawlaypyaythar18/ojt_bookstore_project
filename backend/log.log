@@ -1218,3 +1218,8 @@ This generated password is for development use only. Your security configuration
 2022-12-26 02:11:07.740 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Book [id=7, title=Test3, author=Tsung-Hsien Lee, publisher=Elements of Programming Interviews in Py (truncated)...]
 2022-12-26 02:11:07.741 DEBUG 3768 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2022-12-26 02:11:07.752 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:11:07.753 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/admin/book/media/jpg/427959_images.jpg", parameters={}
+2022-12-26 02:11:07.753 DEBUG 3768 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.OJTProject.bookstore.controller.AdminController#getPoster(String, String)
+2022-12-26 02:11:07.754 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-26 02:11:07.758 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 9, 6, 7 (truncated)...]
+2022-12-26 02:11:07.759 DEBUG 3768 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
