@@ -6,10 +6,8 @@
 
 <script>
 export default {
-    name: "shopping_cart",
-}
+  name: "shopping_cart",
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
