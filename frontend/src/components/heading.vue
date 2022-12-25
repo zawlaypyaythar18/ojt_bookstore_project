@@ -201,13 +201,14 @@ export default {
 
 <style scoped>
 .navlink {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
   text-decoration: none;
 }
 
 .navlink:hover {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgb(255, 255, 255) !important;
 }
 
 .navtitle {
