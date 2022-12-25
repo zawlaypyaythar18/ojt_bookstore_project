@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-color">
+  <div class="mt-5">
     <v-container>
     <v-row>
       <!-- Category Menu -->
