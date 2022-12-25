@@ -82,6 +82,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public boolean deleteUser(Long id) {
+		//passwordResetTokenRepo.deletePasswordResetTokenByUser(id);
 		userRepo.deleteById(id);
 		return true;
 	}
@@ -289,4 +290,9 @@ public class UserServiceImpl implements UserService {
 		
 	}
 
+	/*@Override
+	public boolean deletePasswordResetTokenByUser(Long user_id) {
+		passwordResetTokenRepo.deleteByUser(user_id);
+		return true;
+	}*/
 }

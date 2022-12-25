@@ -3,6 +3,7 @@ package com.OJTProject.bookstore.entity;
 import java.util.Calendar;
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -22,7 +23,7 @@ public class PasswordResetToken {
 	
 	private String token;
 	
-	@OneToOne(targetEntity = User.class,fetch = FetchType.EAGER)
+	@OneToOne(targetEntity = User.class,fetch = FetchType.EAGER, cascade={CascadeType.REMOVE,CascadeType.PERSIST}, orphanRemoval = true)
 	@JoinColumn(name = "userId",nullable = false)
 	private User user;
 	
