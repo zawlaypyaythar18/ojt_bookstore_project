@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
       <heading></heading>
-      <router-view class="mx-3 my-2" style="height: 100%" />
+      <router-view class="" style="height: 100%;" />
       <footing></footing>
     </v-main>
   </v-app>
