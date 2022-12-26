@@ -66,6 +66,9 @@ const routes = [
     path: "/book/details/:id",
     name: "book_details",
     component: book_details,
+    meta: {
+      requiresAuth: true,
+    }
   },
 
   // **********Admin
