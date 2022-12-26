@@ -66,6 +66,9 @@ public class User {
 	private LocalDateTime updatedAt;
 	
 	@OneToOne(cascade = CascadeType.ALL,mappedBy = "user")
+	private PasswordResetToken passwordResetToken;
+	
+	@OneToOne(cascade = CascadeType.ALL,mappedBy = "user")
 	@JsonIgnore
 	private UserCart userCart;
 	

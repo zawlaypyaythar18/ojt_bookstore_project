@@ -13,6 +13,7 @@ import com.OJTProject.bookstore.entity.PasswordResetToken;
 import com.OJTProject.bookstore.entity.User;
 import com.OJTProject.bookstore.entity.UserAddress;
 import com.OJTProject.bookstore.entity.UserBilling;
+import com.OJTProject.bookstore.entity.UserCart;
 import com.OJTProject.bookstore.entity.UserPaymentMethod;
 import com.OJTProject.bookstore.entity.UserShipping;
 import com.OJTProject.bookstore.entity.UserStatus;
@@ -71,6 +72,12 @@ public class UserServiceImpl implements UserService {
 		if (findByEmail(user.getEmail()) != null) {
 			return null;
 		}
+		
+		// ** One User One ShoppingCart
+		UserCart userCart = new UserCart();
+		userCart.setUser(user);
+		user.setUserCart(userCart);
+		
 		return userRepo.save(user);
 	}
 
@@ -290,9 +297,4 @@ public class UserServiceImpl implements UserService {
 		
 	}
 
-	/*@Override
-	public boolean deletePasswordResetTokenByUser(Long user_id) {
-		passwordResetTokenRepo.deleteByUser(user_id);
-		return true;
-	}*/
 }

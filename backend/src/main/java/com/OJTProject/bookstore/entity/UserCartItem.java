@@ -25,8 +25,8 @@ public class UserCartItem {
 	
 	private BigDecimal subTotal;
 	
-//	@OneToOne
-//	private Book book;
+	@OneToOne
+	private Book book;
 	
 	@ManyToOne
 	@JoinColumn(name = "userCartId")
@@ -68,15 +68,13 @@ public class UserCartItem {
 		this.subTotal = subTotal;
 	}
 
-	
+	public Book getBook() {
+		return book;
+	}
 
-//	public Book getBook() {
-//		return book;
-//	}
-//
-//	public void setBook(Book book) {
-//		this.book = book;
-//	}
+	public void setBook(Book book) {
+		this.book = book;
+	}
 
 	public UserCart getUserCart() {
 		return userCart;

@@ -8,6 +8,7 @@ import register from "../views/register.vue";
 import newUser from "../views/newUser.vue"
 
 import book_list from "../views/book_list.vue"
+import book_details from "../views/book_details.vue"
 
 import admin from "../views/admin.vue"
 import admin_profile from "../views/admin_profile.vue"
@@ -57,11 +58,15 @@ const routes = [
 
   // ********** Book
   {
-    path: "/book_list",
+    path: "/book/list",
     name: "book_list",
     component: book_list,
   },
-
+  {
+    path: "/book/details/:id",
+    name: "book_details",
+    component: book_details,
+  },
 
   // **********Admin
   {
@@ -101,7 +106,7 @@ const routes = [
     }
   },
   {
-    path: "/admin/book/addBook",
+    path: "/admin/book/add",
     name: "add_book",
     component: add_book,
     meta: {

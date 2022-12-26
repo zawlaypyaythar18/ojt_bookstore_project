@@ -33,8 +33,6 @@ public interface UserService {
 	
 	void createPasswordResetTokenForUser(User user, String token);
 	
-	//boolean deletePasswordResetTokenByUser(Long user_id);
-	
 	void updateUserBilling(UserAddress userAddress,UserPaymentMethod userPayment,User user);
 	
 	void updateUserShipping(UserAddress userAddress,User user);

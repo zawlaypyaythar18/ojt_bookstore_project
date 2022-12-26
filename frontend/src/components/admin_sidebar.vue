@@ -41,7 +41,7 @@ export default {
         {
           title: "Add Book",
           icon: "mdi-book-edit",
-          path: "/admin/book/addBook",
+          path: "/admin/book/add",
         },
         { title: "Book List", icon: "mdi-book-multiple", path: "/admin" },
         {

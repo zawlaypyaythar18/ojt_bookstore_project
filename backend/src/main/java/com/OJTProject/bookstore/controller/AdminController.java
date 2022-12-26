@@ -65,6 +65,18 @@ public class AdminController {
 		return ResponseEntity.ok().build();
 	}
 	
+	@DeleteMapping("/user/delete")
+	public ResponseEntity<?> deleteUser(@RequestParam("userId") Long userId) {
+		User user = userService.findById(userId);
+		if (user == null) {
+			return ResponseEntity.badRequest().build();
+		}
+		
+		userService.deleteUser(userId);
+		
+		return ResponseEntity.ok().build();
+	}
+	
 //	**********Book**********
 	
 	@GetMapping("/book/list")
