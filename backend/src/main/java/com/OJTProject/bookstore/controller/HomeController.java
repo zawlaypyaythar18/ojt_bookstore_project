@@ -9,7 +9,8 @@ public class HomeController {
 	
 	@GetMapping("/")
 	public ResponseEntity<String> home() {
-		return ResponseEntity.ok("Hello World");
+		return ResponseEntity.ok("Welcome to bookstore");
 	}
+	
 
 }
