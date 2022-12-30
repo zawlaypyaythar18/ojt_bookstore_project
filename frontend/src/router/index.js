@@ -69,7 +69,6 @@ const routes = [
     component: book_details
   },
 
-
   // **********Admin
   {
     path: "/admin",

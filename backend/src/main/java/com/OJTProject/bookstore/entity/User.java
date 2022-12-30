@@ -67,8 +67,8 @@ public class User {
 
 	@OneToOne(cascade = CascadeType.ALL, mappedBy = "user")
 	private PasswordResetToken passwordResetToken;
-
-	@OneToOne(cascade = CascadeType.ALL, mappedBy = "user")
+	
+	@OneToOne(cascade = CascadeType.ALL,mappedBy = "user")
 	@JsonIgnore
 	private UserCart userCart;
 

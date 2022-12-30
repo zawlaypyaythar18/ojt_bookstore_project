@@ -11,7 +11,7 @@ import com.OJTProject.bookstore.entity.PasswordResetToken;
 public interface PasswordResetTokenRepo extends JpaRepository<PasswordResetToken, Long> {
 
 	PasswordResetToken findByToken(String token);
-
+	
 	Stream<PasswordResetToken> findAllByExpiryDateLessThan(Date now);
 
 	@Query("delete from PasswordResetToken t where t.expiryDate <= ?1")
