@@ -54,7 +54,8 @@ public class OrderServiceImpl implements OrderService {
 			estimatedDeliveryDate = today.plusDays(3);
 		}
 
-		order.setShippingDate(Date.from(estimatedDeliveryDate.atStartOfDay(ZoneId.systemDefault()).toInstant()));
+		order.setShippingDate(estimatedDeliveryDate);
+//		order.setShippingDate(Date.from(estimatedDeliveryDate.atStartOfDay(ZoneId.systemDefault()).toInstant()));
 
 		List<UserCartItem> userCartItemList = userCartItemService.findByUserCart(userCart);
 
@@ -65,7 +66,8 @@ public class OrderServiceImpl implements OrderService {
 		}
 
 		order.setCartItemList(userCartItemList);
-		order.setOrderDate(Calendar.getInstance().getTime());
+//		order.setOrderDate(Calendar.getInstance().getTime());
+		order.setOrderDate(today);
 		order.setOrderTotal(userCart.getGrandTotal());
 
 		for (UserOrderAddress orderAddress : userOrderAddressList) {

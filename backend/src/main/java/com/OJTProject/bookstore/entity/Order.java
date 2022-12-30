@@ -1,7 +1,7 @@
 package com.OJTProject.bookstore.entity;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -25,8 +25,8 @@ public class Order {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-	private Date orderDate;
-	private Date shippingDate;
+	private LocalDate orderDate;
+	private LocalDate shippingDate;
 	private String shippingMethod;
 	private String orderStatus;
 	private BigDecimal orderTotal;
@@ -58,19 +58,19 @@ public class Order {
 		this.id = id;
 	}
 
-	public Date getOrderDate() {
+	public LocalDate getOrderDate() {
 		return orderDate;
 	}
 
-	public void setOrderDate(Date orderDate) {
+	public void setOrderDate(LocalDate orderDate) {
 		this.orderDate = orderDate;
 	}
 
-	public Date getShippingDate() {
+	public LocalDate getShippingDate() {
 		return shippingDate;
 	}
 
-	public void setShippingDate(Date shippingDate) {
+	public void setShippingDate(LocalDate shippingDate) {
 		this.shippingDate = shippingDate;
 	}
 
