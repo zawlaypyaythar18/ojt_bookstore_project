@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class UserTransaction {
@@ -14,31 +15,35 @@ public class UserTransaction {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	@Column(length = 100)
+	@NotBlank(message = "Required")
 	private String cardType;
-	
+
 	@Column(length = 255)
+	@NotBlank(message = "Required")
 	private String cardName;
-	
+
 	@Column(length = 255)
+	@NotBlank(message = "Required")
 	private String cardNumber;
-	
+
 	private Integer expiryMonth;
-	
+
 	private Integer expiryYear;
-	
+
 	private Integer cvc;
-	
+
 	@Column(length = 255)
+	@NotBlank(message = "Required")
 	private String holderName;
-	
+
 	@OneToOne
 	private Order order;
-	
-	@OneToOne(mappedBy = "userPaymentMethod",cascade = CascadeType.ALL)
+
+	@OneToOne(mappedBy = "userPaymentMethod", cascade = CascadeType.ALL)
 	private UserBilling userBilling;
-	
+
 	public UserTransaction() {
 		// TODO Auto-generated constructor stub
 	}
@@ -122,5 +127,5 @@ public class UserTransaction {
 	public void setUserBilling(UserBilling userBilling) {
 		this.userBilling = userBilling;
 	}
-	
+
 }

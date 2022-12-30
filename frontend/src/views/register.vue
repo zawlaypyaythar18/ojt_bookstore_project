@@ -1,6 +1,6 @@
 <template>
   <div class="bg-img">
-    <h2 class="text-center pt-16" style="font-family: serif">REGISTER</h2>
+    <h2 class="text-center pt-16 font-play">REGISTER</h2>
     <v-container>
       <v-row>
         <v-col cols="3"></v-col>
@@ -50,9 +50,11 @@
             </v-btn>
 
             <v-alert
+              shaped
+              dark
               color="blue"
-              type="primary"
               v-show="emailAlert"
+              type="info"
               dense
               class="mt-3"
               >Email is Send.</v-alert
@@ -60,6 +62,8 @@
 
             <v-alert class="mt-3" v-show="errorAlert" dense type="error">
               Register Failed!
+              <br />
+              Email Already Exist!
             </v-alert>
           </v-form>
         </v-col>
@@ -77,8 +81,8 @@ export default {
   data() {
     return {
       registerForm: false,
-      username: "Customer",
-      email: "zawlaytest2@gmail.com",
+      username: "",
+      email: "",
       loading: false,
       emailAlert: false,
       errorAlert: false,
@@ -108,8 +112,14 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+
 .bg-img {
   background-attachment: fixed;
   background-image: url("https://miro.medium.com/max/1400/1*HY09Xt_KMPnk1CAaSuHX5g.jpeg");
+}
+
+.font-play {
+  font-family: "Playfair Display", serif;
 }
 </style>

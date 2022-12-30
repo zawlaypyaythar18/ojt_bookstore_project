@@ -1,6 +1,6 @@
 <template>
   <div class="bg-img">
-    <h2 class="text-center pt-16" style="font-family: serif">LOGIN</h2>
+    <h2 class="text-center pt-16 font-play">LOGIN</h2>
     <v-container>
       <v-row>
         <v-col cols="3"></v-col>
@@ -70,8 +70,8 @@ export default {
   data() {
     return {
       loginForm: false,
-      email: "admin@gmail.com",
-      password: "1111",
+      email: "",
+      password: "",
       loading: false,
       errorAlert: false,
       show1: "",
@@ -108,8 +108,14 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+
 .bg-img {
   background-attachment: fixed;
   background-image: url("https://miro.medium.com/max/1400/1*HY09Xt_KMPnk1CAaSuHX5g.jpeg");
+}
+
+.font-play {
+  font-family: "Playfair Display", serif;
 }
 </style>

@@ -27,17 +27,17 @@ public class UserCart implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	private BigDecimal grandTotal;
-	
-	@OneToMany(mappedBy = "userCart",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+
+	@OneToMany(mappedBy = "userCart", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@JsonIgnore
 	private List<UserCartItem> cartItemList;
-	
+
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "userId")
 	private User user;
-	
+
 	public UserCart() {
 		// TODO Auto-generated constructor stub
 	}
@@ -79,5 +79,5 @@ public class UserCart implements Serializable {
 		return "ShoppingCart [id=" + id + ", grandTotal=" + grandTotal + ", cartItemList=" + cartItemList + ", user="
 				+ user + "]";
 	}
-	
+
 }

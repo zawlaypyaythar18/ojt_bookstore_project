@@ -14,12 +14,14 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Book {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
+	@NotBlank(message = "Required")
 	private String title;
+
 	private String author;
 	private String publisher;
 	private String publicationDate;
@@ -32,21 +34,22 @@ public class Book {
 	private Double listPrice;
 	private Double ourPrice;
 	private Boolean active = true;
-	
+
 	@Column(columnDefinition = "text")
 	private String description;
-	
+
 	private Integer inStockNumber;
-	
+
 	@Column(length = 200)
 	@NotBlank(message = "Required")
 	private String posterPath;
-	
+
 	@OneToMany(mappedBy = "book")
 	@JsonIgnore
 	private List<UserCartItemBook> userCartItemBookList;
-	
-	public Book() {}
+
+	public Book() {
+	}
 
 	public Long getId() {
 		return id;

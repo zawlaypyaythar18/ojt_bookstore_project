@@ -11,7 +11,7 @@
       <div class="d-none d-sm-flex">
         <router-link class="mx-2 navlink" to="/">ホーム</router-link>
         <span>|</span>
-        <router-link class="mx-2 navlink" to="/book_list">本一覧</router-link>
+        <router-link class="mx-2 navlink" to="/book/list">本一覧</router-link>
         <span v-if="this.loginUser.userRole == 'admin'">|</span>
         <router-link
           v-if="this.loginUser.userRole == 'admin'"
@@ -66,7 +66,7 @@
           <v-list-item class="blue-grey lighten-1">
             <router-link
               class="mx-2 navlink text-decoration-none"
-              to="/book_list"
+              to="/book/list"
               >本一覧</router-link
             >
           </v-list-item>

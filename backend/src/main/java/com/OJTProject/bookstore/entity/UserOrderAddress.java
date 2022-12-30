@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class UserOrderAddress {
@@ -16,29 +17,34 @@ public class UserOrderAddress {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long addressId;
-	
+
+	@NotBlank(message = "Required")
 	private String addressName;
-	
+
+	@NotBlank(message = "Required")
 	private String addressStreet1;
-	
+
 	private String addressStreet2;
-	
+
+	@NotBlank(message = "Required")
 	private String addressCity;
-	
+
+	@NotBlank(message = "Required")
 	private String addressState;
-	
+
 	private String addressCountry;
-	
+
+	@NotBlank(message = "Required")
 	private String addressZipcode;
-	
+
 	@Column(columnDefinition = "ENUM('shipping', 'billing') NOT NULL")
 	@Enumerated(EnumType.STRING)
 	private ShippingBill shippingBill;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "order_id")
 	private Order order;
-	
+
 	public Order getOrder() {
 		return order;
 	}
@@ -122,7 +128,5 @@ public class UserOrderAddress {
 	public void setShippingBill(ShippingBill shippingBill) {
 		this.shippingBill = shippingBill;
 	}
-	
-	
-	
+
 }

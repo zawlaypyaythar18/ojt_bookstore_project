@@ -9,7 +9,7 @@ import com.OJTProject.bookstore.service.UserShippingService;
 
 @Service
 public class UserShippingServiceImpl implements UserShippingService {
-	
+
 	@Autowired
 	private UserShippingRepo userShippingRepo;
 

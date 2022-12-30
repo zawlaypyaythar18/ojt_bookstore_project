@@ -267,10 +267,7 @@
                           <v-btn color="primary" @click="addNewCreditCard"
                             >Save all</v-btn
                           >
-                          <v-btn
-                            color="error"
-                            @click="resetFormData"
-                            class="ml-3"
+                          <v-btn color="error" @click="clearAll" class="ml-3"
                             >Clear all</v-btn
                           >
                         </v-col>
@@ -534,7 +531,24 @@ export default {
         this.defaultAlert = true;
       }
     },
-    resetFormData() {},
+    clearAll() {
+      this.id = null;
+      this.cardName = "";
+      this.cardNumber = null;
+      this.cardType = "";
+      this.cvc = null;
+      this.holderName = "";
+      this.expiryMonth = "";
+      this.expiryYear = "";
+
+      this.userBillingId = null;
+      this.userBillingName = "";
+      this.userBillingStreet1 = "";
+      this.userBillingStreet2 = "";
+      this.userBillingCity = "";
+      this.userBillingState = "";
+      this.userBillingZipcode = null;
+    },
   },
 };
 </script>

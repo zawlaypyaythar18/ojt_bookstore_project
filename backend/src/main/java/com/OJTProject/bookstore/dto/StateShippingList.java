@@ -6,11 +6,11 @@ import com.OJTProject.bookstore.entity.UserAddress;
 import com.OJTProject.bookstore.entity.UserShipping;
 
 public class StateShippingList {
-	
+
 	private List<UserAddress> userAddressList;
-	
+
 	private List<String> stateList;
-	
+
 	private List<UserShipping> userShippingList;
 
 	public List<UserAddress> getUserAddressList() {

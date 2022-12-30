@@ -9,22 +9,23 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class UserShipping {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long userShippingId;
-	
+
 	private Boolean userShippingDefault;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "userAddressId")
 	private UserAddress userAddress;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "userId")
 	private User user;
-	
-	public UserShipping() {}
+
+	public UserShipping() {
+	}
 
 	public Long getUserShippingId() {
 		return userShippingId;
@@ -57,5 +58,5 @@ public class UserShipping {
 	public void setUser(User user) {
 		this.user = user;
 	}
-	
+
 }

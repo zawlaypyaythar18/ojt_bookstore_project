@@ -13,20 +13,21 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class UserBilling {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long userBillingId;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "userAddressId")
 	private UserAddress userAddress;
-	
+
 	@OneToOne(cascade = CascadeType.ALL)
 	@JsonIgnore
 	private UserPaymentMethod userPaymentMethod;
-	
-	public UserBilling() {}
+
+	public UserBilling() {
+	}
 
 	public Long getUserBillingId() {
 		return userBillingId;
@@ -51,5 +52,5 @@ public class UserBilling {
 	public void setUserPaymentMethod(UserPaymentMethod userPaymentMethod) {
 		this.userPaymentMethod = userPaymentMethod;
 	}
-	
+
 }

@@ -34,7 +34,11 @@
               Register
             </v-btn>
           </div>
-          <p class="text-center mt-2" style="font-size: 15px" v-if="!isLogin">
+          <p
+            class="text-center mt-2 font-play"
+            style="font-size: 15px"
+            v-if="!isLogin"
+          >
             If you Already Register, You can Login
           </p>
           <div class="text-center" v-if="!isLogin">
@@ -87,9 +91,7 @@
 <script>
 export default {
   name: "home",
-
   components: {},
-
   data() {
     return {
       isLogin: false,
@@ -132,4 +134,16 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import "animate.css";
+.bg-color {
+  background-color: rgb(192, 192, 192);
+}
+.font-de {
+  font-family: "Sevillana", cursive;
+}
+.font-play {
+  font-family: "Playfair Display", serif;
+}
 </style>

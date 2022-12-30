@@ -9,43 +9,46 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class UserPaymentMethod {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	@Column(length = 100)
+	@NotBlank(message = "Required")
 	private String cardType;
-	
+
 	@Column(length = 255)
+	@NotBlank(message = "Required")
 	private String cardName;
-	
+
 	@Column(length = 255)
+	@NotBlank(message = "Required")
 	private String cardNumber;
-	
+
 	private Integer expiryMonth;
-	
+
 	private Integer expiryYear;
-	
+
 	private Integer cvc;
-	
+
 	@Column(length = 255)
+	@NotBlank(message = "Required")
 	private String holderName;
-	
+
 	private Boolean defaultPayment;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "userId")
 	private User user;
-	
-	@OneToOne(cascade = CascadeType.ALL,mappedBy = "userPaymentMethod")
+
+	@OneToOne(cascade = CascadeType.ALL, mappedBy = "userPaymentMethod")
 	private UserBilling userBilling;
-	
+
 	public UserPaymentMethod() {
 		// TODO Auto-generated constructor stub
 	}

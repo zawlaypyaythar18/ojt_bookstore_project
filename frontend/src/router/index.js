@@ -8,6 +8,7 @@ import register from "../views/register.vue";
 import newUser from "../views/newUser.vue"
 
 import book_list from "../views/book_list.vue"
+import book_details from "../views/book_details.vue"
 
 import admin from "../views/admin.vue"
 import admin_profile from "../views/admin_profile.vue"
@@ -20,6 +21,7 @@ import user_profile from "../views/user_profile.vue"
 import user_billing from "../views/user_billing.vue"
 import user_shipping from "../views/user_shipping.vue"
 import user_orders from "../views/user_orders.vue"
+import checkout from "../views/checkout.vue"
 
 import shopping_cart from "../views/shopping_cart.vue"
 
@@ -37,17 +39,17 @@ const routes = [
     path: "/login",
     name: "login",
     component: login,
-    meta: {
-      regiLogi: true,
-    }
+    // meta: {
+    //   regiLogi: true,
+    // }
   },
   {
     path: "/register",
     name: "register",
     component: register,
-    meta: {
-      regiLogi: true,
-    }
+    // meta: {
+    //   regiLogi: true,
+    // }
   },
   {
     path: "/newUser",
@@ -57,9 +59,14 @@ const routes = [
 
   // ********** Book
   {
-    path: "/book_list",
+    path: "/book/list",
     name: "book_list",
     component: book_list,
+  },
+  {
+    path: "/book/details/:id",
+    name: "book_details",
+    component: book_details
   },
 
 
@@ -101,7 +108,7 @@ const routes = [
     }
   },
   {
-    path: "/admin/book/addBook",
+    path: "/admin/book/add",
     name: "add_book",
     component: add_book,
     meta: {
@@ -156,6 +163,15 @@ const routes = [
       requiresUser: true,
     }
   },
+  {
+    path: "/checkout/:id",
+    name: "checkout",
+    component: checkout,
+    meta: {
+      requiresAuth: true,
+      requiresUser: true,
+    }
+  },
 
   // *******Shopping_Cart
   {
@@ -193,11 +209,13 @@ router.beforeEach((to, from, next) => {
     loginUser.userRole != "user"
   ) {
     next({ path: "/" });
-  } else if (to.meta.regiLogi == true && isLogin) {
-    next({ path: "/" });
   } else {
     next();
   }
+
+  // else if (to.meta.regiLogi == true && isLogin) {
+  //   next({ path: "/" });
+  // } 
 
 });
 

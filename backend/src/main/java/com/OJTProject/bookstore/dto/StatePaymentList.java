@@ -6,11 +6,11 @@ import com.OJTProject.bookstore.entity.UserAddress;
 import com.OJTProject.bookstore.entity.UserPaymentMethod;
 
 public class StatePaymentList {
-	
+
 	private List<String> stateList;
-	
+
 	private List<UserPaymentMethod> userPaymentMethodList;
-	
+
 	private List<UserAddress> userAddressList;
 
 	public List<String> getStateList() {
@@ -35,6 +35,6 @@ public class StatePaymentList {
 
 	public void setUserAddressList(List<UserAddress> userAddressList) {
 		this.userAddressList = userAddressList;
-	}	
+	}
 
 }
