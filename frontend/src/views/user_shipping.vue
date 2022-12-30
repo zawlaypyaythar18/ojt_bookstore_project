@@ -208,11 +208,8 @@
                               @click="addNewShippingAddress"
                               >Save all</v-btn
                             >
-                            <v-btn
-                              color="error"
-                              @click="resetFormData"
-                              class="ml-3"
-                              >Clear all</v-btn
+                            <v-btn color="error" @click="clearAll" class="ml-3"
+                              >Clear All</v-btn
                             >
                           </v-col>
                           <v-col cols="3"></v-col>
@@ -407,10 +404,19 @@ export default {
         if (data) {
           this.userShippingList = data;
           this.defaultAlert = true;
+          // console.log(data)
         }
       }
     },
-    resetFormData() {},
+    clearAll() {
+      this.userShippingId = null;
+      this.userShippingName = "";
+      this.userShippingStreet1 = "";
+      this.userShippingStreet2 = "";
+      this.userShippingCity = "";
+      this.userShippingState = "";
+      this.userShippingZipcode = null;
+    },
   },
 };
 </script>

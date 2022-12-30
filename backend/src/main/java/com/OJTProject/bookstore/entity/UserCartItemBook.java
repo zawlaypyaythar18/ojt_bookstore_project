@@ -9,20 +9,21 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class UserCartItemBook {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "bookId")
 	private Book book;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "cartItemId")
 	private UserCartItem cartItem;
-	
-	public UserCartItemBook() {}
+
+	public UserCartItemBook() {
+	}
 
 	public Long getId() {
 		return id;

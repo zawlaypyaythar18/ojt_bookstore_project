@@ -34,7 +34,11 @@
               Register
             </v-btn>
           </div>
-          <p class="text-center mt-2" style="font-size: 15px" v-if="!isLogin">
+          <p
+            class="text-center mt-2 font-play"
+            style="font-size: 15px"
+            v-if="!isLogin"
+          >
             If you Already Register, You can Login
           </p>
           <div class="text-center" v-if="!isLogin">

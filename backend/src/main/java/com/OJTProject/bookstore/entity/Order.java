@@ -20,33 +20,35 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 @Table(name = "user_order")
 public class Order {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	private Date orderDate;
 	private Date shippingDate;
 	private String shippingMethod;
 	private String orderStatus;
 	private BigDecimal orderTotal;
-	
-	@OneToMany(mappedBy = "order",cascade = CascadeType.ALL)
+
+	@OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
 	@JsonIgnore
 	private List<UserCartItem> cartItemList;
-	
-	@OneToMany(mappedBy = "order",cascade = CascadeType.ALL)
+
+	@OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<UserOrderAddress> userOrderAddressList;
-	
+
 	@OneToOne(cascade = CascadeType.ALL)
 	@JsonIgnore
 	private UserTransaction userTransaction;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "userId")
 	private User user;
-	
-	public Order() {}
+
+	public Order() {
+	}
 
 	public Long getId() {
 		return id;
@@ -127,6 +129,5 @@ public class Order {
 	public void setUserOrderAddressList(List<UserOrderAddress> userOrderAddressList) {
 		this.userOrderAddressList = userOrderAddressList;
 	}
-	
 
 }

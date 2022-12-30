@@ -19,41 +19,41 @@ public class UserCartServiceImpl implements UserCartService {
 
 	@Autowired
 	private UserCartRepo userCartRepo;
-	
+
 	@Autowired
 	private UserCartItemService userCartItemService;
-	
+
 	@Override
 	public UserCart updateUserCart(UserCart userCart) {
-		
+
 		BigDecimal cartTotal = new BigDecimal(0);
-		
+
 		List<UserCartItem> userCartItemList = userCartItemService.findByUserCart(userCart);
-		
+
 		for (UserCartItem userCartItem : userCartItemList) {
-			if (userCartItem.getBook().getInStockNumber()>0) {
+			if (userCartItem.getBook().getInStockNumber() > 0) {
 				userCartItemService.updateCartItem(userCartItem);
 				cartTotal = cartTotal.add(userCartItem.getSubTotal());
 			}
 		}
-		
+
 		userCart.setGrandTotal(cartTotal);
-		
+
 		userCartRepo.save(userCart);
-		
+
 		return userCart;
 	}
 
 	@Override
 	public void clearUserCart(UserCart userCart) {
-		
+
 		List<UserCartItem> userCartItemList = userCartItemService.findByUserCart(userCart);
-		
+
 		for (UserCartItem userCartItem : userCartItemList) {
 			userCartItem.setUserCart(null);
 			userCartItemService.save(userCartItem);
 		}
-		
+
 		userCart.setGrandTotal(new BigDecimal(0));
 		userCartRepo.save(userCart);
 	}
@@ -62,7 +62,6 @@ public class UserCartServiceImpl implements UserCartService {
 	public UserCart findById(Long userCartId) {
 		return userCartRepo.findById(userCartId).orElse(null);
 	}
-	
-	
+
 
 }

@@ -8,5 +8,5 @@ import com.OJTProject.bookstore.entity.UserCartItemBook;
 public interface UserCartItemBookRepo extends JpaRepository<UserCartItemBook, Long> {
 
 	void deleteByCartItem(UserCartItem userCartItem);
-	
+
 }

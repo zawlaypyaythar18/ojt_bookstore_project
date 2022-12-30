@@ -8,17 +8,18 @@ import com.OJTProject.bookstore.entity.UserCart;
 import com.OJTProject.bookstore.entity.UserCartItem;
 
 public interface UserCartItemService {
-	
+
 	List<UserCartItem> findByUserCart(UserCart userCart);
-	
+
 	UserCartItem updateCartItem(UserCartItem userCartItem);
-	
-	UserCartItem addBookToCartItem(Book book,User user, Integer qty);
-	
+
+	UserCartItem addBookToCartItem(Book book, User user, Integer qty);
+
 	UserCartItem findById(Long cartItemId);
-	
+
 	UserCartItem save(UserCartItem userCartItem);
-	
+
+
 	void removeCartItem(UserCartItem userCartItem);
 
 }

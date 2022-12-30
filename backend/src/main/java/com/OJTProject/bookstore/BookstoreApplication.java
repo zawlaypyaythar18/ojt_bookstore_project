@@ -21,13 +21,13 @@ public class BookstoreApplication implements CommandLineRunner {
 	public static void main(String[] args) {
 		SpringApplication.run(BookstoreApplication.class, args);
 	}
-	
+
 	@Autowired
 	private UserService userService;
-	
+
 	@Autowired
 	private StorageService storageService;
-	
+
 	@Value("${spring.jpa.hibernate.ddl-auto}")
 	private String ddlMode;
 
@@ -36,7 +36,7 @@ public class BookstoreApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		
+
 		if (ddlMode.equals("create")) {
 			User user = new User();
 			user.setEmail("admin@gmail.com");
@@ -47,11 +47,11 @@ public class BookstoreApplication implements CommandLineRunner {
 			user.setCreatedAt(LocalDateTime.now());
 			userService.save(user);
 		}
-		
+
 		if (deleteImages.equals("true")) {
 			storageService.clearAll();
 		}
-		
+
 	}
 
 }

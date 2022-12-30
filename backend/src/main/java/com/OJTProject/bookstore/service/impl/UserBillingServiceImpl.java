@@ -9,7 +9,7 @@ import com.OJTProject.bookstore.service.UserBillingService;
 
 @Service
 public class UserBillingServiceImpl implements UserBillingService {
-	
+
 	@Autowired
 	private UserBillingRepo userBillingRepo;
 

@@ -10,5 +10,5 @@ import com.OJTProject.bookstore.entity.UserCartItem;
 public interface UserCartItemRepo extends JpaRepository<UserCartItem, Long> {
 
 	List<UserCartItem> findByUserCart(UserCart userCart);
-	
+
 }

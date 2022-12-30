@@ -16,47 +16,47 @@ import com.OJTProject.bookstore.service.UserAddressService;
 
 @Service
 public class UserAddressServiceImpl implements UserAddressService {
-	
+
 	@Autowired
 	private UserShippingRepo userShippingRepo;
-	
+
 	@Autowired
 	private UserAddressRepo userAddressRepo;
-	
+
 	@Autowired
 	private UserPaymentMethodRepo userPaymentMethodRepo;
-	
+
 	@Autowired
 	private UserBillingRepo userBillingRepo;
 
 	@Override
 	public UserAddress addUserShipping(UserAddress userAddress, User user) {
-		
+
 		userAddressRepo.save(userAddress);
-		
+
 		UserShipping userShipping = new UserShipping();
 		userShipping.setUser(user);
 		userShipping.setUserAddress(userAddress);
 		userShipping.setUserShippingDefault(true);
 		userShippingRepo.save(userShipping);
-		
+
 		return userAddress;
 	}
 
 	@Override
 	public UserAddress addUserPaymentBilling(UserAddress userAddress, UserPaymentMethod userPaymentMethod, User user) {
-		
+
 		userAddressRepo.save(userAddress);
 		user.getUserPaymentMethodList().add(userPaymentMethod);
-		
+
 		UserBilling userBilling = new UserBilling();
 		userBilling.setUserAddress(userAddress);
 		userBilling.setUserPaymentMethod(userPaymentMethod);
 		userPaymentMethod.setUserBilling(userBilling);
 		userBillingRepo.save(userBilling);
-		
+
 		userPaymentMethodRepo.save(userPaymentMethod);
-		
+
 		return userAddress;
 	}
 

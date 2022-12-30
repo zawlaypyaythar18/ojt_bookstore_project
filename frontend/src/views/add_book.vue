@@ -215,6 +215,7 @@ export default {
       categoryList: [
         "Management",
         "Fiction",
+        "Horror",
         "Engineering",
         "Programming",
         "Arts and Literature",

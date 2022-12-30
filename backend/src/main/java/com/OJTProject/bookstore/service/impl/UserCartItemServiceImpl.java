@@ -23,9 +23,10 @@ public class UserCartItemServiceImpl implements UserCartItemService {
 
 	@Autowired
 	private UserCartItemRepo userCartItemRepo;
-	
+
 	@Autowired
 	private UserCartItemBookRepo userCartItemBookRepo;
+
 	
 	@Override
 	public List<UserCartItem> findByUserCart(UserCart userCart) {
@@ -34,46 +35,51 @@ public class UserCartItemServiceImpl implements UserCartItemService {
 
 	@Override
 	public UserCartItem updateCartItem(UserCartItem userCartItem) {
-		
-		BigDecimal bigDecimal = new BigDecimal(userCartItem.getBook().getOurPrice()).multiply(new BigDecimal(userCartItem.getQty()));
-		
+
+		BigDecimal bigDecimal = new BigDecimal(userCartItem.getBook().getOurPrice())
+				.multiply(new BigDecimal(userCartItem.getQty()));
+
 		bigDecimal = bigDecimal.setScale(2, RoundingMode.HALF_UP);
-		
+
 		userCartItem.setSubTotal(bigDecimal);
-		
+
 		userCartItemRepo.save(userCartItem);
-		
+
 		return userCartItem;
 	}
 
 	@Override
 	public UserCartItem addBookToCartItem(Book book, User user, Integer qty) {
-		
+
 		List<UserCartItem> userCartItemList = userCartItemRepo.findByUserCart(user.getUserCart());
-		
+
 		for (UserCartItem userCartItem : userCartItemList) {
 			if (book.getId() == userCartItem.getBook().getId()) {
 				userCartItem.setQty(userCartItem.getQty() + qty);
-				userCartItem.setSubTotal(new BigDecimal(book.getOurPrice()).multiply(new BigDecimal(userCartItem.getQty())));
+				userCartItem.setSubTotal(
+						new BigDecimal(book.getOurPrice()).multiply(new BigDecimal(userCartItem.getQty())));
+
 				userCartItemRepo.save(userCartItem);
 				return userCartItem;
 			}
 		}
-		
+
+
 		UserCartItem userCartItem = new UserCartItem();
-		
+
 		userCartItem.setUserCart(user.getUserCart());
 		userCartItem.setBook(book);
 		userCartItem.setQty(qty);
 		userCartItem.setSubTotal(new BigDecimal(book.getOurPrice()).multiply(new BigDecimal(qty)));
-		
+
+
 		userCartItem = userCartItemRepo.save(userCartItem);
-		
+
 		UserCartItemBook userCartItemBook = new UserCartItemBook();
 		userCartItemBook.setBook(book);
 		userCartItemBook.setCartItem(userCartItem);
 		userCartItemBookRepo.save(userCartItemBook);
-		
+
 		return userCartItem;
 	}
 

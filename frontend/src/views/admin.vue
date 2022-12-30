@@ -1,10 +1,10 @@
 <template>
-  <div class="mt-6">
+  <div>
     <v-row>
-      <v-col cols="2">
+      <v-col cols="2 mt-6">
         <admin_sidebar></admin_sidebar>
       </v-col>
-      <v-col cols="10">
+      <v-col cols="10 mt-6">
         <template>
           <div>
             <v-data-table
@@ -23,9 +23,21 @@
                 ></v-text-field>
               </template>
               <template v-slot:item.title="{ item }">
-                <a @click="goToAdminBookDetails(item)">
+                <a
+                  @click="goToAdminBookDetails(item)"
+                  class="d-inline-block text-truncate"
+                  style="max-width: 300px"
+                >
                   {{ item.title }}
                 </a>
+              </template>
+              <template v-slot:item.author="{ item }">
+                <div
+                  class="d-inline-block text-truncate"
+                  style="max-width: 300px"
+                >
+                  {{ item.author }}
+                </div>
               </template>
               <template v-slot:item.actions="{ item }">
                 <v-btn
@@ -332,7 +344,7 @@ export default {
       menu: false,
       search: "",
       headers: [
-        { text: "Title", value: "title", sortable: true },
+        { text: "Title", value: "title", align: "center", sortable: true },
         { text: "Author", value: "author", sortable: true },
         { text: "ISBN", value: "isbn", sortable: true },
         { text: "Active", value: "active", sortable: true },
@@ -350,6 +362,7 @@ export default {
       categoryList: [
         "Management",
         "Fiction",
+        "Horror",
         "Engineering",
         "Programming",
         "Arts and Literature",

@@ -9,7 +9,7 @@ import com.OJTProject.bookstore.service.UserPaymentMethodService;
 
 @Service
 public class UserPaymentMethodServiceImpl implements UserPaymentMethodService {
-	
+
 	@Autowired
 	private UserPaymentMethodRepo userPaymentMethodRepo;
 

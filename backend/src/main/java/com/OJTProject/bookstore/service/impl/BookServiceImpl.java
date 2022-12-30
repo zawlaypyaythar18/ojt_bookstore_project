@@ -14,22 +14,22 @@ import com.OJTProject.bookstore.service.BookService;
 
 @Service
 public class BookServiceImpl implements BookService {
-	
+
 	@Autowired
 	private BookRepo bookRepo;
 
 	@Override
 	public List<Book> findAll() {
 		List<Book> bookList = bookRepo.findAll();
-		
+
 		List<Book> activeBookList = new ArrayList<>();
-		
+
 		for (Book book : bookList) {
 			if (book.getActive()) {
 				activeBookList.add(book);
 			}
 		}
-		
+
 		return activeBookList;
 	}
 
@@ -41,30 +41,30 @@ public class BookServiceImpl implements BookService {
 	@Override
 	public List<Book> findByCategory(String category) {
 		List<Book> bookList = bookRepo.findByCategory(category);
-		
+
 		List<Book> activeBookList = new ArrayList<>();
-		
+
 		for (Book book : bookList) {
 			if (book.getActive()) {
 				activeBookList.add(book);
 			}
 		}
-		
+
 		return activeBookList;
 	}
 
 	@Override
 	public List<Book> blurrySearch(String title) {
 		List<Book> bookList = bookRepo.findByTitleContaining(title);
-		
+
 		List<Book> activeBookList = new ArrayList<>();
-		
+
 		for (Book book : bookList) {
 			if (book.getActive()) {
 				activeBookList.add(book);
 			}
 		}
-		
+
 		return activeBookList;
 	}
 
@@ -77,24 +77,24 @@ public class BookServiceImpl implements BookService {
 	public Book save(Book book) {
 		return bookRepo.save(book);
 	}
-	
+
 	@Override
 	public boolean removeOne(Long id) {
 		Book book = findById(id);
 		if (book != null) {
 			bookRepo.deleteById(id);
 			return true;
-		}else { 
+		} else {
 			return false;
 		}
-		
+
 	}
 
 	@Override
 	public List<Book> adminFindAll() {
-		
+
 		List<Book> bookList = bookRepo.findAll();
-		
+
 		return bookList;
 	}
 
@@ -105,17 +105,16 @@ public class BookServiceImpl implements BookService {
 
 	@Override
 	public Page<Book> findByCategoryWithPage(String category, Pageable pageable) {
-		
-	List<Book> bookList = bookRepo.findByCategory(category);		
-			
-			for (Book book : bookList) {
-				if (book.getActive()) {
-					Page<Book> categoryBookList = bookRepo.findByCategory(category,pageable);
-					return categoryBookList;
-				}
-			}
-			return null;
-	}
 
+		List<Book> bookList = bookRepo.findByCategory(category);
+
+		for (Book book : bookList) {
+			if (book.getActive()) {
+				Page<Book> categoryBookList = bookRepo.findByCategory(category, pageable);
+				return categoryBookList;
+			}
+		}
+		return null;
+	}
 
 }

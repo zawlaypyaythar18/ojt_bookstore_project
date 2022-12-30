@@ -3,10 +3,10 @@ package com.OJTProject.bookstore.entity;
 import javax.validation.constraints.NotBlank;
 
 public class LoginRequest {
-	
+
 	@NotBlank(message = "Required")
 	private String email;
-	
+
 	@NotBlank(message = "Required")
 	private String password;
 
@@ -25,7 +25,5 @@ public class LoginRequest {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	
 
 }

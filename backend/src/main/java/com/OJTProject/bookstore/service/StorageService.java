@@ -11,7 +11,7 @@ public interface StorageService {
 	public boolean deleteBookImage(String filePath);
 
 	public String updateBookImage(MultipartFile file, String fileType, String filePath);
-	
+
 	public void clearAll();
 
 }

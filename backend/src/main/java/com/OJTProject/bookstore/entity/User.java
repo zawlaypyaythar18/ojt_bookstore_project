@@ -22,37 +22,37 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class User {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	@Column(length = 100, nullable = false)
 	@NotBlank(message = "Required")
 	private String username;
-	
+
 	@Column(length = 100, nullable = false, unique = true)
 	@NotBlank(message = "Required")
 	private String email;
-	
+
 	@Column(length = 100, nullable = false)
 	@NotBlank(message = "Required")
 	private String password;
-	
+
 	@Column(columnDefinition = "ENUM('active','deactivated') NOT NULL")
 	@Enumerated(EnumType.STRING)
 	private UserStatus userStatus;
-	
+
 	@Column(columnDefinition = "ENUM('user','admin') NOT NULL")
 	@Enumerated(EnumType.STRING)
 	private UserRole userRole;
-	
+
 	@Column(length = 100)
 	private String firstName;
-	
+
 	@Column(length = 100)
 	private String lastName;
-	
+
 	@Column(length = 50)
 	private String phone;
 
@@ -64,27 +64,28 @@ public class User {
 	private LocalDateTime createdAt;
 
 	private LocalDateTime updatedAt;
-	
-	@OneToOne(cascade = CascadeType.ALL,mappedBy = "user")
+
+	@OneToOne(cascade = CascadeType.ALL, mappedBy = "user")
 	private PasswordResetToken passwordResetToken;
 	
 	@OneToOne(cascade = CascadeType.ALL,mappedBy = "user")
 	@JsonIgnore
 	private UserCart userCart;
-	
-	@OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
+
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
 	@JsonIgnore
 	private List<UserShipping> userShippingList;
-	
-	@OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
+
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
 	@JsonIgnore
 	private List<UserPaymentMethod> userPaymentMethodList;
-	
+
 	@OneToMany(mappedBy = "user")
 	@JsonIgnore
 	private List<Order> orderList;
-	
-	public User() {}
+
+	public User() {
+	}
 
 	public Long getId() {
 		return id;
@@ -221,7 +222,5 @@ public class User {
 	public void setOrderList(List<Order> orderList) {
 		this.orderList = orderList;
 	}
-	
-	
 
 }

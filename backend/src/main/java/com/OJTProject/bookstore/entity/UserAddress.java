@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.NotBlank;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -18,25 +19,30 @@ public class UserAddress {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long userAddressId;
 
+	@NotBlank(message = "Required")
 	private String userAddressName;
 
+	@NotBlank(message = "Required")
 	private String userAddressStreet1;
 
 	private String userAddressStreet2;
 
+	@NotBlank(message = "Required")
 	private String userAddressCity;
 
+	@NotBlank(message = "Required")
 	private String userAddressState;
-	
+
 	private String userAddressCountry;
-	
+
+	@NotBlank(message = "Required")
 	private String userAddressZipcode;
-	
-	@OneToMany(cascade = CascadeType.ALL,mappedBy = "userAddress")
+
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "userAddress")
 	@JsonIgnore
 	private List<UserShipping> userShippingList;
-	
-	@OneToMany(cascade = CascadeType.ALL,mappedBy = "userAddress")
+
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "userAddress")
 	@JsonIgnore
 	private List<UserBilling> userBillingList;
 
@@ -119,7 +125,5 @@ public class UserAddress {
 	public void setUserBillingList(List<UserBilling> userBillingList) {
 		this.userBillingList = userBillingList;
 	}
-	
-	
-	
+
 }

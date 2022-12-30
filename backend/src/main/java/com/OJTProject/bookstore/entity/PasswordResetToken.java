@@ -15,20 +15,21 @@ import javax.persistence.OneToOne;
 public class PasswordResetToken {
 
 	private static final int EXPIRATION = 60;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	private String token;
 	
 	@OneToOne(targetEntity = User.class,fetch = FetchType.EAGER)
 	@JoinColumn(name = "userId",nullable = false)
 	private User user;
-	
+
 	private Date expiryDate;
-	
-	public PasswordResetToken() {}
+
+	public PasswordResetToken() {
+	}
 
 	public PasswordResetToken(String token, User user) {
 		super();
@@ -40,10 +41,10 @@ public class PasswordResetToken {
 	private Date calculateExpiryDate(final int expiryTimeInMinutes) {
 		final Calendar cal = Calendar.getInstance();
 		cal.setTimeInMillis(new Date().getTime());
-		cal.add(Calendar.MINUTE, expiryTimeInMinutes);		
+		cal.add(Calendar.MINUTE, expiryTimeInMinutes);
 		return new Date(cal.getTime().getTime());
 	}
-	
+
 	public void updateToken(final String token) {
 		this.token = token;
 		this.expiryDate = calculateExpiryDate(EXPIRATION);
@@ -84,5 +85,5 @@ public class PasswordResetToken {
 	public static int getExpiration() {
 		return EXPIRATION;
 	}
-		
+
 }
