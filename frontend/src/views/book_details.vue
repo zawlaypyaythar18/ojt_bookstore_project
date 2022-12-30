@@ -191,6 +191,7 @@ export default {
   },
 };
 </script>
+<<<<<<< HEAD
 
 <style scoped>
 .select {
@@ -200,3 +201,5 @@ export default {
 }
 </style>
 
+=======
+>>>>>>> 09bf4d82b05e0b3e75ce230a5c52f71d1c70b8f3
