@@ -71,17 +71,6 @@ public class AdminController {
 		return ResponseEntity.ok().build();
 	}
 
-	@DeleteMapping("/user/delete")
-	private ResponseEntity<?> deleteUserAccount(@RequestParam("userId") Long userId) {
-		User user = userService.findById(userId);
-		if (user == null) {
-			return ResponseEntity.notFound().build();
-		}
-		userService.deleteUser(userId);
-
-		return ResponseEntity.ok().build();
-	}
-
 	@GetMapping("/user/orders")
 	private ResponseEntity<?> getOrders() {
 		List<Order> orderList = orderService.findAll();
