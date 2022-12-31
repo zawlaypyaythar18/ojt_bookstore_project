@@ -224,6 +224,9 @@ export default {
           this.searchByTitle();
           // this.grandTotal = newVal[0].shoppingCart.grandTotal;
         }
+        if (!this.inputTitle) {
+        this.onClickCategory("All Books");
+      }
       },
       deep: true,
     },
@@ -315,7 +318,7 @@ export default {
       this.errorAlert = false;
       this.notEnoughStockAlert = false;
       this.noBookAlert = false;
-      // console.log(this.inputTitle.length)
+      // console.log(this.inputTitle)
 
       const resp = await utils.http.get(
         "/api/book/title/search?title=" + this.inputTitle
