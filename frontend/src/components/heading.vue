@@ -194,6 +194,7 @@ export default {
       if (this.$route.path != "/") {
         this.$router.push({ path: "/" });
       }
+      location.reload();
     },
   },
 };

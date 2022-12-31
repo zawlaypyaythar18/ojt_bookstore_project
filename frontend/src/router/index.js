@@ -39,17 +39,17 @@ const routes = [
     path: "/login",
     name: "login",
     component: login,
-    // meta: {
-    //   regiLogi: true,
-    // }
+    meta: {
+      regiLogi: true,
+    }
   },
   {
     path: "/register",
     name: "register",
     component: register,
-    // meta: {
-    //   regiLogi: true,
-    // }
+    meta: {
+      regiLogi: true,
+    }
   },
   {
     path: "/newUser",
@@ -194,6 +194,7 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   let loginUser = router.app.$store.getters.loginUser;
   let isLogin = router.app.$store.getters.isLogin;
+
   if (to.meta.requiresAuth == true && !isLogin) {
     next({ path: "/" });
   } else if (
@@ -201,6 +202,8 @@ router.beforeEach((to, from, next) => {
     to.meta.requiresAdmin == true &&
     loginUser.userRole != "admin"
   ) {
+    next({ path: "/" });
+  }else if (to.meta.regiLogi == true && isLogin) {
     next({ path: "/" });
   } else if (
     to.meta.requiresAuth == true &&
@@ -210,11 +213,7 @@ router.beforeEach((to, from, next) => {
     next({ path: "/" });
   } else {
     next();
-  }
-
-  // else if (to.meta.regiLogi == true && isLogin) {
-  //   next({ path: "/" });
-  // } 
+  } 
 
 });
 
