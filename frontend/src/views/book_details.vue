@@ -176,7 +176,6 @@ export default {
         if (resp.status === 200) {
           this.successAlert = true;
           this.notEnoughStockAlert = false;
-          window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
           console.log("Stock is not Enough.");
           this.notEnoughStockAlert = true;
@@ -184,7 +183,8 @@ export default {
         }
       } else {
         this.errorAlert = true;
-      }
+      };
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     },
     back() {
       this.$router.back();
