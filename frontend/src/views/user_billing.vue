@@ -36,7 +36,7 @@
             Successfully Updated Billing Address
           </v-alert>
           <v-card>
-            <v-toolbar flat color="primary" dark>
+            <v-toolbar flat color="blue-grey lighten-1" dark>
               <v-toolbar-title>Billing Information</v-toolbar-title>
             </v-toolbar>
             <v-tabs v-model="tab">

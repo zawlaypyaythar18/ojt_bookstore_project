@@ -56,8 +56,7 @@
         </v-col>
         <v-col cols="10">
           <v-alert dense text type="success" v-show="successAlert">
-            Successfully Added <strong>"{{ addedTitle }}"</strong> To Shopping
-            Cart.
+            Successfully Added <strong>"{{ addedTitle }}"</strong> To <router-link to="/shopping/cart" style="text-decoration: underline;color: green;">Shopping Cart</router-link>.
           </v-alert>
           <v-alert dense text type="error" v-show="errorAlert">
             Sorry, You have to Login First.
@@ -66,7 +65,7 @@
             Not Enough Stock!
           </v-alert>
           <v-alert dense text type="error" v-show="noBookAlert">
-            Sorry, Book is not found
+            Coming Soon
           </v-alert>
           <v-row>
             <v-col cols="4 mt-4" v-for="book in bookList" :key="book.id">
@@ -353,6 +352,7 @@ export default {
             // console.log(data)
             this.successAlert = true;
             this.addedTitle = title;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           }
         } else {
           this.notEnoughStockAlert = true;
