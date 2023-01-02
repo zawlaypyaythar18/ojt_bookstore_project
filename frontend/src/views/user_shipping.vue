@@ -37,7 +37,7 @@
               Successfully Updated Shipping Address
             </v-alert>
             <v-card>
-              <v-toolbar flat color="primary" dark>
+              <v-toolbar flat color="blue-grey lighten-1" dark>
                 <v-toolbar-title>Shipping Information</v-toolbar-title>
               </v-toolbar>
               <v-tabs v-model="tab">

@@ -25,11 +25,15 @@
               <v-stepper-content step="2">
                 <v-card flat>
                   <v-row>
-                    <v-col cols="12">
+                    <v-col cols="6">
                       <v-card-title>Order Date - {{ orderDate }}</v-card-title>
+                      <v-divider></v-divider>
+                    </v-col>
+                    <v-col cols="6">
                       <v-card-title
                         >Delivery Date - {{ deliveryDate }}</v-card-title
                       >
+                      <v-divider></v-divider>
                     </v-col>
                     <v-col cols="4">
                       <v-card-title>Shipping Address</v-card-title>
@@ -71,7 +75,7 @@
                       <v-card-text
                         >Expiry Year - {{ payment.expiryYear }}</v-card-text
                       >
-                      <v-card-text>CVC - {{ payment.cvc }}</v-card-text>
+                      <!-- <v-card-text>CVC - {{ payment.cvc }}</v-card-text> -->
                     </v-col>
                     <v-col cols="4">
                       <v-card-title>Billing Address</v-card-title>
@@ -146,12 +150,12 @@
                         >${{ estimatedTax }}</span
                       >
                     </h5>
-                    <h3>
+                    <h4>
                       Order Total :
-                      <span style="font-size: 30px; color: rgb(221, 44, 34)"
+                      <span style="font-size: 25px; color: rgb(221, 44, 34)"
                         >${{ orderTotal }}</span
                       >
-                    </h3>
+                    </h4>
                   </v-col>
                 </v-row>
 

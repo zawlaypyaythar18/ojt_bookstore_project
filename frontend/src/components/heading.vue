@@ -6,7 +6,22 @@
         class="d-flex d-sm-none"
       ></v-app-bar-nav-icon>
       <!-- Add this class to show menu icon only on small screen -->
-      <router-link class="navtitle" to="/">書店</router-link>
+      <router-link class="navtitle" to="/">
+        <v-row>
+          <v-col cols="6">
+            <v-img
+              height="25"
+              width="40"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDbtVEylH6FvepaR87nITchzRDazbWzX9cFQ&usqp=CAU"
+              style="border-radius: 50%"
+              class="text-center"
+            ></v-img>
+          </v-col>
+          <v-col cols="6">
+            書店
+          </v-col>
+        </v-row>
+      </router-link>
       <v-spacer></v-spacer>
       <div class="d-none d-sm-flex">
         <router-link class="mx-2 navlink" to="/">ホーム</router-link>

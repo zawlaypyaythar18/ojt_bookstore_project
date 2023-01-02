@@ -1,7 +1,7 @@
 <template>
   <div class="my-5 container">
     <v-alert dense text type="success" v-show="successAlert">
-      Successfully Added <strong>"{{ book.title }}"</strong> To Shopping Cart.
+      Successfully Added <strong>"{{ book.title }}"</strong> To <router-link to="/shopping/cart" style="text-decoration: underline;color: green;">Shopping Cart</router-link>.
     </v-alert>
     <v-alert dense text type="error" v-show="errorAlert">
       Sorry, You have to Login First.
@@ -176,6 +176,7 @@ export default {
         if (resp.status === 200) {
           this.successAlert = true;
           this.notEnoughStockAlert = false;
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
           console.log("Stock is not Enough.");
           this.notEnoughStockAlert = true;

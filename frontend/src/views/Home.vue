@@ -2,7 +2,7 @@
   <div class="bg-color">
     <v-container>
       <v-row class="mt-3">
-        <v-col cols="1">
+        <!-- <v-col cols="1">
           <div>
             <v-img
               height="50"
@@ -12,8 +12,8 @@
               class="text-center"
             ></v-img>
           </div>
-        </v-col>
-        <v-col cols="11">
+        </v-col> -->
+        <v-col cols="12">
           <h2 class="text-center font-de" style="font-size: 40px">
             Welcome To Champion's Bookstore
           </h2>
