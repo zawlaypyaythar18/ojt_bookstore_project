@@ -306,6 +306,9 @@ export default {
             this.totalPages = data.totalPages;
             // console.log(data)
           }
+        } else {
+          this.noBookAlert = true;
+          this.bookList = [];
         }
       } else {
         this.noBookAlert = true;
@@ -352,14 +355,14 @@ export default {
             // console.log(data)
             this.successAlert = true;
             this.addedTitle = title;
-            window.scrollTo({ top: 0, behavior: 'smooth' });
           }
         } else {
           this.notEnoughStockAlert = true;
         }
       } else {
         this.errorAlert = true;
-      }
+      };
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     },
   },
 };

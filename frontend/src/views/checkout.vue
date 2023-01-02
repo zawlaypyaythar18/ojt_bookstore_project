@@ -448,8 +448,8 @@
     </v-container>
     <v-dialog v-model="orderDialog" persistent width="1000">
       <v-card>
-        <v-toolbar color="primary" dark>
-          <div>Thank you, Your Order has been Placed. Order Email is Send.</div>
+        <v-toolbar color="success" dark>
+          <div>Thank you, Your Order has been Placed :Order Email is Send</div>
           <v-spacer></v-spacer>
           <v-btn icon @click="goToHome">
             <v-icon>mdi-close</v-icon>
@@ -499,7 +499,7 @@
           </div>
         </v-card-text>
         <v-card-actions class="justify-end">
-          <v-btn color="red" dark @click="goToHome">Ok</v-btn>
+          <v-btn color="success" dark @click="goToHome">Ok</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
