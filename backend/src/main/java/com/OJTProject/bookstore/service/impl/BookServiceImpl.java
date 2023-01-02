@@ -55,7 +55,7 @@ public class BookServiceImpl implements BookService {
 	}
 
 	@Override
-	public List<Book> blurrySearch(String title) {
+	public Page<Book> blurrySearch(String title, Pageable pageable) {
 		List<Book> bookList = bookRepo.findByTitleContaining(title);
 
 		List<Book> activeBookList = new ArrayList<>();
@@ -66,7 +66,12 @@ public class BookServiceImpl implements BookService {
 			}
 		}
 
-		return activeBookList;
+		int start = (int) pageable.getOffset();
+        int end = Math.min((start + pageable.getPageSize()), activeBookList.size());
+        if(start > activeBookList.size())
+            return new PageImpl<>(new ArrayList<>(), pageable, activeBookList.size());
+        
+        return new PageImpl<>(activeBookList.subList(start, end), pageable, activeBookList.size());
 	}
 
 	@Override
