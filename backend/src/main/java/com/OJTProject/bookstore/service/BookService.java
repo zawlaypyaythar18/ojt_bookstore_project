@@ -17,7 +17,7 @@ public interface BookService {
 
 	List<Book> findByCategory(String category);
 
-	List<Book> blurrySearch(String title);
+	Page<Book> blurrySearch(String title, Pageable pageable);
 
 	List<Book> findTop3ByOrderByIdAsc();
 

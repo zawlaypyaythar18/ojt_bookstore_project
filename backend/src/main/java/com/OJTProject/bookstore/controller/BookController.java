@@ -97,9 +97,11 @@ public class BookController {
 	}
 
 	@RequestMapping("/title/search")
-	private ResponseEntity<?> findByTitle(@RequestParam("title") String title) {
-		List<Book> titleList = bookService.blurrySearch(title);
-		return ResponseEntity.ok(titleList);
+	private ResponseEntity<?> findByTitle(@RequestParam("title") String title, @RequestParam("noPage") int noPage,
+			@RequestParam("count") int count) {
+		Pageable pageable = PageRequest.of(noPage, count);
+		Page<Book> activeBookList = bookService.blurrySearch(title, pageable);
+		return ResponseEntity.ok(activeBookList);
 	}
 
 }

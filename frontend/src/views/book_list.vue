@@ -269,6 +269,7 @@ export default {
       });
     },
     async onClickCategory(cat) {
+      this.inputTitle = "";
       this.successAlert = false;
       this.errorAlert = false;
       this.notEnoughStockAlert = false;
@@ -321,19 +322,26 @@ export default {
       this.notEnoughStockAlert = false;
       this.noBookAlert = false;
       // console.log(this.inputTitle)
+      const pageNumber = this.page - 1;
 
       const resp = await utils.http.get(
-        "/api/book/title/search?title=" + this.inputTitle
-      );
+        "/api/book/title/search?title=" + this.inputTitle + "&noPage=" + pageNumber + "&count=" + 9);
       if (resp.status === 200) {
         const data = await resp.json();
         if (data) {
-          this.bookList = data;
+          // this.bookList = data;
+          // console.log(data)
+          this.bookList = data.content;
+          this.totalPages = data.totalPages;
         }
       }
     },
     async next() {
-      await this.onClickCategory(this.cat);
+      if (this.inputTitle != "") {
+        await this.searchByTitle();
+      } else {
+        await this.onClickCategory(this.cat);
+      }
     },
     async addToCart(id, title) {
       this.successAlert = false;
