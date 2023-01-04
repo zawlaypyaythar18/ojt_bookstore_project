@@ -66,6 +66,7 @@ public class User {
 	private LocalDateTime updatedAt;
 
 	@OneToOne(cascade = CascadeType.ALL, mappedBy = "user")
+	@JsonIgnore
 	private PasswordResetToken passwordResetToken;
 	
 	@OneToOne(cascade = CascadeType.ALL,mappedBy = "user")
@@ -221,6 +222,14 @@ public class User {
 
 	public void setOrderList(List<Order> orderList) {
 		this.orderList = orderList;
+	}
+
+	public PasswordResetToken getPasswordResetToken() {
+		return passwordResetToken;
+	}
+
+	public void setPasswordResetToken(PasswordResetToken passwordResetToken) {
+		this.passwordResetToken = passwordResetToken;
 	}
 
 }
