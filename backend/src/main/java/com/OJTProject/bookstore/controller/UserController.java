@@ -134,6 +134,36 @@ public class UserController {
 
 	}
 
+	@PostMapping("/forget/password")
+	private ResponseEntity<?> forgetPassword(@RequestParam("email") String email, HttpServletRequest request) {
+
+		User user = userService.findByEmail(email);
+
+		if (user == null) {
+			return ResponseEntity.badRequest().body("Email is not Exist");
+		}
+
+		String password = SecurityUtility.randomPassword();
+
+		String encryptedPassword = SecurityUtility.passwordEncoder().encode(password);
+
+		user.setPassword(encryptedPassword);
+
+		userService.update(user);
+
+		String frontendUrl = "http://localhost:8081";
+		
+		String token = user.getPasswordResetToken().getToken();
+		
+		SimpleMailMessage sendEmail = mailConstructor.constructResetTokenEmail(frontendUrl, request.getLocale(), token,
+				user, password, "Champion's Bookstore - Forget Password");
+
+		mailSender.send(sendEmail);
+		
+		return ResponseEntity.ok().body("Email is Send");
+		
+	}
+
 	@GetMapping("/profile")
 	private ResponseEntity<?> getProfile(@RequestParam("userId") Long userId) {
 
