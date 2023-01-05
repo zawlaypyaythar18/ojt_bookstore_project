@@ -179,7 +179,7 @@ public class UserController {
 
 	@PutMapping("/profile/update")
 	private ResponseEntity<?> updateProfile(@Valid @RequestBody User user,
-			@RequestParam("currentPassword") String currentPassword, @RequestParam("newPassword") String newPassword) {
+			@RequestParam(name = "currentPassword",required = true) String currentPassword, @RequestParam("newPassword") String newPassword) {
 
 		User localUser = userService.findById(user.getId());
 
@@ -189,7 +189,7 @@ public class UserController {
 
 		if (userService.findByEmail(user.getEmail()) != null) {
 			if ((userService.findByEmail(user.getEmail())).getId() != localUser.getId()) {
-				return ResponseEntity.badRequest().body("Email Already Exists");
+				return ResponseEntity.badRequest().body("Email Already Exist");
 			}
 		}
 
@@ -214,9 +214,9 @@ public class UserController {
 		localUser.setEmail(user.getEmail());
 		localUser.setStartJoinDate(user.getStartJoinDate());
 		localUser.setUpdatedAt(LocalDateTime.now());
-		userService.update(localUser);
+		User updatedUser = userService.update(localUser);
 
-		return ResponseEntity.ok().build();
+		return ResponseEntity.ok().body(updatedUser);
 	}
 
 	@PostMapping("/shipping/add")
