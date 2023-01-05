@@ -36,7 +36,6 @@ public class User {
 	private String email;
 
 	@Column(length = 100, nullable = false)
-	@NotBlank(message = "Required")
 	private String password;
 
 	@Column(columnDefinition = "ENUM('active','deactivated') NOT NULL")
