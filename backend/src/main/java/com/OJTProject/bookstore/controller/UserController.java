@@ -79,7 +79,7 @@ public class UserController {
 	private ResponseEntity<?> register(@Valid @RequestBody User user, HttpServletRequest request) throws IOException {
 
 		if (userService.findByEmail(user.getEmail()) != null) {
-			return ResponseEntity.badRequest().body("Email is already Exists");
+			return ResponseEntity.badRequest().body("Email is already Exist");
 		}
 
 		String token = UUID.randomUUID().toString();
