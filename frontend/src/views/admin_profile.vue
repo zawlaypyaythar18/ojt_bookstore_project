@@ -18,7 +18,7 @@
               </v-alert>
 
               <v-alert class="mt-3 mx-1" v-show="errorAlert" dense type="error">
-                Update Failed! Password is not Correct!
+                Update Failed! Incorrect Password!
               </v-alert>
 
               <v-alert
@@ -27,7 +27,7 @@
                 dense
                 type="error"
               >
-                Email Already Exists!
+                Email Already Exist!
               </v-alert>
 
               <v-alert
@@ -70,6 +70,7 @@
                     dense
                     outlined
                     v-model="userData.username"
+                    :rules="[(v) => !!v || 'Required']"
                   ></v-text-field>
                   <v-text-field
                     class="mt-5"
