@@ -59,7 +59,7 @@ public class CartController {
 		Book book = bookService.findById(bookId);
 
 		if (qty > book.getInStockNumber()) {
-			return ResponseEntity.badRequest().build();
+			return ResponseEntity.badRequest().body("Not Enough Stock!");
 		}
 
 		userCartItemService.addBookToCartItem(book, user, qty);
@@ -73,6 +73,10 @@ public class CartController {
 			@RequestParam("qty") Integer qty) {
 		UserCartItem userCartItem = userCartItemService.findById(cartItemId);
 
+		if (qty > userCartItem.getBook().getInStockNumber()) {
+			return ResponseEntity.badRequest().body("Not Enough Stock!"); 
+		}
+		
 		userCartItem.setQty(qty);
 
 		userCartItemService.updateCartItem(userCartItem);
@@ -91,7 +95,7 @@ public class CartController {
 
 		userCartService.updateUserCart(userCartItem.getUserCart());
 
-		return ResponseEntity.ok().build();
+		return ResponseEntity.ok().body("Successfully Deleted CartItem");
 	}
 
 }
