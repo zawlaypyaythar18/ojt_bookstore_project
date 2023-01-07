@@ -1,6 +1,6 @@
 <template>
   <div class="bg-img">
-    <h2 class="text-center pt-16 font-play">LOGIN</h2>
+    <h2 class="text-center pt-12 font-play">LOGIN</h2>
     <v-container>
       <v-row>
         <v-col cols="3"></v-col>
@@ -59,8 +59,8 @@
               <a
                 v-bind="attrs"
                 v-on="on"
-                class="ml-3"
-                style="text-decoration: underline;color: blue;text-shadow: 1px 1px 1px white;"
+                class=""
+                style="text-decoration: underline;color: red;font-size: 15px;"
               >
                 Forget Password
               </a>

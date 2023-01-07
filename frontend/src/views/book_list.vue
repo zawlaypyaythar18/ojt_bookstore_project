@@ -2,14 +2,15 @@
   <div>
     <v-container>
       <v-row class="mt-5">
-        <v-col cols="4"></v-col>
-        <v-col cols="4">
+        <v-col cols="2"></v-col>
+        <v-col cols="10">
           <v-text-field
             v-model="inputTitle"
             placeholder="Search By Book Title"
-            prepend-icon="mdi-magnify"
+            prepend-inner-icon="mdi-magnify"
             rounded
             filled
+            dense
           ></v-text-field>
         </v-col>
         <!-- <v-col cols="1">
@@ -25,7 +26,7 @@
               </v-icon>
               </v-btn>
           </v-col> -->
-        <v-col cols="4"></v-col>
+        <!-- <v-col cols="3"></v-col> -->
       </v-row>
       <v-row>
         <v-col cols="2 mt-5">
