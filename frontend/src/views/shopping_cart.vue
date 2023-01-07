@@ -18,7 +18,7 @@
         </v-col>
       </v-row>
       <v-alert class="mt-3 mx-1" v-show="qtyAlert" dense type="error">
-        Too Much Qty!
+        Not Enough Stock!
       </v-alert>
       <div v-if="cartItemList.length == 0">
         <h3 class="text-center">Your Shopping Cart is Empty.</h3>
@@ -172,7 +172,7 @@ export default {
       for (var cartItem in this.cartItemList) {
         // console.log(this.cartItemList[cartItem].qty)
         // console.log(this.cartItemList[cartItem].id)
-        if (this.cartItemList[cartItem].qty <= 200) {
+        if (this.cartItemList[cartItem].qty <= 200 && this.cartItemList[cartItem].qty >= 1) {
           this.qtyAlert = false;
           const resp = await utils.http.put(
             "/api/cart/item/update?cartItemId=" +
@@ -208,8 +208,10 @@ export default {
       this.$router.push({ path: path });
     },
     checkout() {
+      if (this.qtyAlert == false) {
+        this.$router.push({ path: "/checkout/" + this.shoppingCartId });
+      }
       // console.log(this.shoppingCartId)
-      this.$router.push({ path: "/checkout/" + this.shoppingCartId });
     },
   },
 };
