@@ -2,14 +2,15 @@
   <div>
     <v-container>
       <v-row class="mt-5">
-        <v-col cols="4"></v-col>
-        <v-col cols="4">
+        <v-col cols="2"></v-col>
+        <v-col cols="10">
           <v-text-field
             v-model="inputTitle"
             placeholder="Search By Book Title"
-            prepend-icon="mdi-magnify"
+            prepend-inner-icon="mdi-magnify"
             rounded
             filled
+            dense
           ></v-text-field>
         </v-col>
         <!-- <v-col cols="1">
@@ -25,7 +26,7 @@
               </v-icon>
               </v-btn>
           </v-col> -->
-        <v-col cols="4"></v-col>
+        <!-- <v-col cols="3"></v-col> -->
       </v-row>
       <v-row>
         <v-col cols="2 mt-5">
@@ -56,8 +57,7 @@
         </v-col>
         <v-col cols="10">
           <v-alert dense text type="success" v-show="successAlert">
-            Successfully Added <strong>"{{ addedTitle }}"</strong> To Shopping
-            Cart.
+            Successfully Added <strong>"{{ addedTitle }}"</strong> To <router-link to="/shopping/cart" style="text-decoration: underline;color: green;">Shopping Cart</router-link>.
           </v-alert>
           <v-alert dense text type="error" v-show="errorAlert">
             Sorry, You have to Login First.
@@ -66,7 +66,7 @@
             Not Enough Stock!
           </v-alert>
           <v-alert dense text type="error" v-show="noBookAlert">
-            Sorry, Book is not found
+            Coming Soon
           </v-alert>
           <v-row>
             <v-col cols="4 mt-4" v-for="book in bookList" :key="book.id">
@@ -270,6 +270,7 @@ export default {
       });
     },
     async onClickCategory(cat) {
+      this.inputTitle = "";
       this.successAlert = false;
       this.errorAlert = false;
       this.notEnoughStockAlert = false;
@@ -307,6 +308,9 @@ export default {
             this.totalPages = data.totalPages;
             // console.log(data)
           }
+        } else {
+          this.noBookAlert = true;
+          this.bookList = [];
         }
       } else {
         this.noBookAlert = true;
@@ -319,19 +323,26 @@ export default {
       this.notEnoughStockAlert = false;
       this.noBookAlert = false;
       // console.log(this.inputTitle)
+      const pageNumber = this.page - 1;
 
       const resp = await utils.http.get(
-        "/api/book/title/search?title=" + this.inputTitle
-      );
+        "/api/book/title/search?title=" + this.inputTitle + "&noPage=" + pageNumber + "&count=" + 9);
       if (resp.status === 200) {
         const data = await resp.json();
         if (data) {
-          this.bookList = data;
+          // this.bookList = data;
+          // console.log(data)
+          this.bookList = data.content;
+          this.totalPages = data.totalPages;
         }
       }
     },
     async next() {
-      await this.onClickCategory(this.cat);
+      if (this.inputTitle != "") {
+        await this.searchByTitle();
+      } else {
+        await this.onClickCategory(this.cat);
+      }
     },
     async addToCart(id, title) {
       this.successAlert = false;
@@ -359,7 +370,8 @@ export default {
         }
       } else {
         this.errorAlert = true;
-      }
+      };
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     },
   },
 };

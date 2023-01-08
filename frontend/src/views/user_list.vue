@@ -22,6 +22,7 @@
                 updateDialog = true;
                 toUpdateStatus = Object.assign({}, item);
               "
+              v-if="item.userRole == 'user'"
             >
               <v-icon>mdi-pencil</v-icon>
             </v-btn>
@@ -36,6 +37,7 @@
                 deleteDialog = true;
                 toDeleteUser = item;
               "
+              v-if="item.userRole == 'user'"
             >
               <v-icon>mdi-delete</v-icon>
             </v-btn>

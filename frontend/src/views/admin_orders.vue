@@ -23,12 +23,14 @@
             <v-stepper-content step="2">
               <v-card flat>
                 <v-row>
-                  <v-col cols="12">
-                    <v-card-title>Order Date - {{ orderDate }}</v-card-title>
-                    <v-card-title
-                      >Delivery Date - {{ deliveryDate }}</v-card-title
-                    >
-                  </v-col>
+                  <v-col cols="6">
+                      <v-card-title>Order Date - {{ orderDate }}</v-card-title>
+                    </v-col>
+                    <v-col cols="6">
+                      <v-card-title
+                        >Delivery Date - {{ deliveryDate }}</v-card-title
+                      >
+                    </v-col>
                   <v-col cols="4">
                     <v-card-title>Shipping Address</v-card-title>
                     <v-divider></v-divider>

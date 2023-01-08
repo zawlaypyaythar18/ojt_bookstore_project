@@ -79,7 +79,7 @@ public class UserController {
 	private ResponseEntity<?> register(@Valid @RequestBody User user, HttpServletRequest request) throws IOException {
 
 		if (userService.findByEmail(user.getEmail()) != null) {
-			return ResponseEntity.badRequest().body("Email is already Exists");
+			return ResponseEntity.badRequest().body("Email is already Exist");
 		}
 
 		String token = UUID.randomUUID().toString();
@@ -134,6 +134,36 @@ public class UserController {
 
 	}
 
+	@PostMapping("/forget/password")
+	private ResponseEntity<?> forgetPassword(@RequestParam("email") String email, HttpServletRequest request) {
+
+		User user = userService.findByEmail(email);
+
+		if (user == null) {
+			return ResponseEntity.badRequest().body("Email is not Exist");
+		}
+
+		String password = SecurityUtility.randomPassword();
+
+		String encryptedPassword = SecurityUtility.passwordEncoder().encode(password);
+
+		user.setPassword(encryptedPassword);
+
+		userService.update(user);
+
+		String frontendUrl = "http://localhost:8081";
+		
+		String token = user.getPasswordResetToken().getToken();
+		
+		SimpleMailMessage sendEmail = mailConstructor.constructResetTokenEmail(frontendUrl, request.getLocale(), token,
+				user, password, "Champion's Bookstore - Forget Password");
+
+		mailSender.send(sendEmail);
+		
+		return ResponseEntity.ok().body("Email is Send");
+		
+	}
+
 	@GetMapping("/profile")
 	private ResponseEntity<?> getProfile(@RequestParam("userId") Long userId) {
 
@@ -149,7 +179,7 @@ public class UserController {
 
 	@PutMapping("/profile/update")
 	private ResponseEntity<?> updateProfile(@Valid @RequestBody User user,
-			@RequestParam("currentPassword") String currentPassword, @RequestParam("newPassword") String newPassword) {
+			@RequestParam(name = "currentPassword",required = true) String currentPassword, @RequestParam("newPassword") String newPassword) {
 
 		User localUser = userService.findById(user.getId());
 
@@ -159,7 +189,7 @@ public class UserController {
 
 		if (userService.findByEmail(user.getEmail()) != null) {
 			if ((userService.findByEmail(user.getEmail())).getId() != localUser.getId()) {
-				return ResponseEntity.badRequest().body("Email Already Exists");
+				return ResponseEntity.badRequest().body("Email Already Exist");
 			}
 		}
 
@@ -184,9 +214,9 @@ public class UserController {
 		localUser.setEmail(user.getEmail());
 		localUser.setStartJoinDate(user.getStartJoinDate());
 		localUser.setUpdatedAt(LocalDateTime.now());
-		userService.update(localUser);
+		User updatedUser = userService.update(localUser);
 
-		return ResponseEntity.ok().build();
+		return ResponseEntity.ok().body(updatedUser);
 	}
 
 	@PostMapping("/shipping/add")
