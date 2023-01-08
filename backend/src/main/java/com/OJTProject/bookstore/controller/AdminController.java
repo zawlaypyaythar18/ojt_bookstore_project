@@ -64,11 +64,13 @@ public class AdminController {
 	@PutMapping("/user/status/update")
 	private ResponseEntity<?> updateUserStatus(@RequestParam("userId") Long userId,
 			@RequestParam("status") String status) {
-		User user = userService.updateStatus(userId, status);
+		User user = userService.findById(userId);
 		if (user == null) {
 			return ResponseEntity.badRequest().body("User is invalid, Status is invalid");
 		}
-		return ResponseEntity.ok().build();
+
+		User updatedUser = userService.updateStatus(userId, status);
+		return ResponseEntity.ok().body(updatedUser);
 	}
 
 	@GetMapping("/user/orders")
@@ -92,19 +94,19 @@ public class AdminController {
 		return ResponseEntity.ok().body(orderDetailsDto);
 
 	}
-	
+
 	@DeleteMapping("/user/delete")
 	public ResponseEntity<?> deleteUser(@RequestParam("userId") Long userId) {
 		User user = userService.findById(userId);
 		if (user == null) {
-			return ResponseEntity.badRequest().build();
+			return ResponseEntity.badRequest().body("User is not Found");
 		}
-		
+
 		userService.deleteUser(userId);
-		
-		return ResponseEntity.ok().build();
+
+		return ResponseEntity.ok().body("Successfully Deleted User");
 	}
-	
+
 //	**********Book**********
 
 	@GetMapping("/book/list")
