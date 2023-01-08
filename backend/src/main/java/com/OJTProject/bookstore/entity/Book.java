@@ -21,18 +21,41 @@ public class Book {
 
 	@NotBlank(message = "Required")
 	private String title;
-
+	
+	@Column(nullable = false)
 	private String author;
+	
+	
+	@Column(nullable = false)
 	private String publisher;
+	
+	@Column(nullable = false)
 	private String publicationDate;
+	
+	@Column(nullable = false)
 	private String language;
+	
+	@Column(nullable = false)
 	private String category;
+	
+	@Column(nullable = false)
 	private String numberOfPages;
+	
+	@Column(nullable = false)
 	private String format;
+	
+	@Column(nullable = false)
 	private Long isbn;
+	
+	@Column(nullable = false)
 	private Double shippingWeight;
+	
+	@Column(nullable = false)
 	private Double listPrice;
+	
+	@Column(nullable = false)
 	private Double ourPrice;
+	
 	private Boolean active = true;
 
 	@Column(columnDefinition = "text")
