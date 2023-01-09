@@ -63,6 +63,7 @@
                     readonly
                     v-bind="attrs"
                     v-on="on"
+                    :rules="[(v) => !!v || 'Required']"
                   ></v-text-field>
                 </template>
                 <v-date-picker
@@ -147,6 +148,7 @@
                 outlined
                 label="Description"
                 v-model="description"
+                :rules="[(v) => !!v || 'Required']"
               ></v-textarea>
 
               <v-file-input
