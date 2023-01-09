@@ -141,10 +141,12 @@ public class AdminController {
 
 	@PutMapping("/book/update")
 	public ResponseEntity<Book> updateBook(@Valid @RequestBody Book book) {
-		Book updateBook = bookService.save(book);
-		if (updateBook == null) {
+		Book localBook = bookService.findById(book.getId());
+		if (localBook == null) {
 			return ResponseEntity.notFound().build();
 		}
+		Book updateBook = bookService.save(book);
+		
 		return ResponseEntity.ok().body(updateBook);
 	}
 
@@ -188,7 +190,7 @@ public class AdminController {
 		}
 //		storageService.deleteBookImage("222222_demo.jpg");
 		storageService.deleteBookImage(posterPath);
-		return ResponseEntity.ok().build();
+		return ResponseEntity.ok().body("Successfully Deleted Book");
 	}
 
 }
