@@ -6,8 +6,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -154,7 +152,7 @@ public class CheckoutController {
 		UserPaymentMethod userPaymentMethod = userPaymentMethodService.findById(userPaymentId);
 
 		if (!userPaymentMethod.getUser().getId().equals(userId)) {
-			return ResponseEntity.badRequest().build();
+			return ResponseEntity.badRequest().body("User ID is not match!");
 		}
 
 		UserTransaction userTransaction = new UserTransaction();
@@ -179,7 +177,7 @@ public class CheckoutController {
 		UserShipping userShipping = userShippingService.findById(userShippingId);
 
 		if (!userShipping.getUser().getId().equals(userId)) {
-			return ResponseEntity.badRequest().build();
+			return ResponseEntity.badRequest().body("User ID is not match!");
 		}
 
 		UserOrderAddress userOrderAddress = new UserOrderAddress();
@@ -190,7 +188,7 @@ public class CheckoutController {
 	}
 
 	@PostMapping("/checkout")
-	private ResponseEntity<?> postCheckout(@Valid @RequestBody CheckoutInfoDto checkoutInfoDto,
+	private ResponseEntity<?> postCheckout(@RequestBody CheckoutInfoDto checkoutInfoDto,
 			@RequestParam("shippingMethod") String shippingMethod, @RequestParam("userId") Long userId) {
 
 		User user = userService.findById(userId);

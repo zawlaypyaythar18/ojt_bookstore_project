@@ -330,7 +330,7 @@
               </v-stepper-content>
 
               <v-stepper-content step="3">
-                <v-card flat>
+                <v-card flat :disabled="orderDisabled">
                   <v-card-title>Review Items and Shipping</v-card-title>
                   <v-card-text>
                     <h3>Choose Shipping Method</h3>
@@ -439,7 +439,7 @@
                   ></v-progress-circular>
                 </v-btn>
 
-                <v-btn text color="info" @click="e1 = 2"> Go Back </v-btn>
+                <v-btn text color="info" @click="e1 = 2" :disabled="orderDisabled"> Go Back </v-btn>
               </v-stepper-content>
             </v-stepper-items>
           </v-stepper>
@@ -472,22 +472,15 @@
             <div v-for="cartItem in cartItemList" :key="cartItem.id">
               <v-row class="mt-3">
                 <v-col cols="2">
-                  <router-link :to="'/book/details/' + cartItem.book.id">
-                    <v-img
-                      :src="localDomain + cartItem.book.posterPath"
-                      width="80"
-                      height="100"
-                      contain
-                    ></v-img>
-                  </router-link>
+                  <v-img
+                    :src="localDomain + cartItem.book.posterPath"
+                    width="80"
+                    height="100"
+                    contain
+                  ></v-img>
                 </v-col>
                 <v-col cols="6">
-                  <router-link
-                    :to="'/book/details/' + cartItem.book.id"
-                    class="text-decoration-none"
-                  >
-                    <h3>{{ cartItem.book.title }}</h3>
-                  </router-link>
+                  <h3>{{ cartItem.book.title }}</h3>
                 </v-col>
                 <v-col cols="2"> ${{ cartItem.book.ourPrice }} </v-col>
                 <v-col cols="2">
@@ -601,6 +594,8 @@ export default {
       loading: false,
       orderDialog: false,
       estimatedDeliveryDate: "",
+
+      orderDisabled: false,
     };
   },
   async created() {
@@ -747,6 +742,7 @@ export default {
         this.$refs.billingForm.validate() &&
         this.$refs.shippingForm.validate()
       ) {
+        this.orderDisabled = true;
         this.loading = true;
         // console.log("checkout")
         const resp = await utils.http.post(
