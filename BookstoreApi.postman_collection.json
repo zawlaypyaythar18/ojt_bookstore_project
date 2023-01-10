@@ -1,0 +1,879 @@
+{
+	"info": {
+		"_postman_id": "3058f49d-e8da-4d1c-b0dd-29af1eee5f57",
+		"name": "BookstoreApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23401776"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"zawlay\",\r\n    \"email\" : \"zawlaytest2@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@gmail.com\",\r\n    \"password\" : \"1111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ForgetPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user/forget/password?email=zawlaytest2@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"forget",
+						"password"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "zawlaytest2@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProfileData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user/profile?userId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"profile"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserProfileUpdate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 3,\r\n    \"username\" : \"John\",\r\n    \"email\" : \"zawlaytest2@gmail.com\",\r\n    \"userStatus\" : \"active\",\r\n    \"userRole\" : \"user\",\r\n    \"firstName\" : \"John\",\r\n    \"lastName\" : \"Wick\",\r\n    \"phone\" : \"0922222333\",\r\n    \"startJoinDate\" : \"2023-01-02\",\r\n    \"lastJoinDate\" : null,\r\n    \"createdAt\": \"2023-01-02T06:38:50\",\r\n    \"updatedAt\": \"2023-01-04T10:27:03\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/profile/update?currentPassword=1111&newPassword=1111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"profile",
+						"update"
+					],
+					"query": [
+						{
+							"key": "currentPassword",
+							"value": "1111"
+						},
+						{
+							"key": "newPassword",
+							"value": "1111"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBookList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/admin/book/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"book",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Test2\",\r\n    \"author\" : \"zaw\",\r\n    \"publisher\" : \"aung\",\r\n    \"publicationDate\" : \"2019-11-11\",\r\n    \"language\" : \"English\",\r\n    \"category\" : \"Fiction\",\r\n    \"numberOfPages\" : \"237\",\r\n    \"format\" : \"Hardcover\",\r\n    \"isbn\" : 222222222,\r\n    \"shippingWeight\" : 2.4,\r\n    \"listPrice\" : 10,\r\n    \"ourPrice\" : 8,\r\n    \"active\" : true,\r\n    \"description\" : \"Nice Book\",\r\n    \"inStockNumber\" : 300,\r\n    \"posterPath\": \"/api/admin/media/james.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/admin/book/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"book",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"title\": \"Apples Never Fall\",\r\n    \"author\": \"Liane Moriarty\",\r\n    \"publisher\": \"Penguin\",\r\n    \"publicationDate\": \"2022-07-07\",\r\n    \"language\": \"English\",\r\n    \"category\": \"Fiction\",\r\n    \"numberOfPages\": \"512\",\r\n    \"format\": \"Hardcover\",\r\n    \"isbn\": 9781405942256,\r\n    \"shippingWeight\": 21.34,\r\n    \"listPrice\": 14.99,\r\n    \"ourPrice\": 12.99,\r\n    \"active\": true,\r\n    \"description\": \"THE DELICIOUSLY DARK SUNDAY TIMES BESTSELLER FROM THE AUTHOR OF NINE PERFECT STRANGERS AND HBO'S BIG LITTLE LIES\\n\\n'Perfect holiday reading' GUARDIAN\\n'Smart, sharp and utterly riveting' DAILY MAIL\\n'Stunning' SUNDAY TIMES\\n'A tour de force' GRAZIA\\n'A masterclass' SUN\\n\\n**SOON TO BE A MAJOR TV SERIES**\\n________\\n\\nJoy and Stan Delaney have four grown-up children, a successful family business and their golden years ahead of them.\\n\\nThen Joy vanishes.\\n\\nQuestions are asked. The police get involved.\\n\\nScratch the surface and this seemingly happy family has much to hide . . .\\n________\\n\\n'Deliciously dark' COSMOPOLITAN\\n\\n'Utterly and completely wonderful . . . A hugely engaging, sometimes very funny, page-turner' MARIAN KEYES\\n\\n'Moriarty's expert storytelling will have you turning page after page' i\\n\\n'A corker of a mystery' SUNDAY TELEGRAPH\\n\\n'If you want a book to see you through on your beach towel this summer, I highly recommend Liane's latest, Apples Never Fall. There's a lot of truth in it. Something we really do need right now' FI GLOVER, Waitrose Weekend\\n\\n'I loved it. An absolute page-turner with all the wit and nuance that put Liane Moriarty head and shoulders above the crowd. Liane Moriarty shows once again why she leads the pack' JANE HARPER\\n\\n'One of the few writers I'll drop anything for' JOJO MOYES\",\r\n    \"inStockNumber\": 500,\r\n    \"posterPath\": \"/api/admin/book/media/jpg/331430_apple_never_fall.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/admin/book/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"book",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBook",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/admin/book/delete/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"book",
+						"delete",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListOfShippingAddress",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user/shipping/list?currentUserId=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"shipping",
+						"list"
+					],
+					"query": [
+						{
+							"key": "currentUserId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddUserShippingAddress",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userAddressName\": \"Zaw\",\r\n    \"userAddressStreet1\": \"No.433,bla bla street\",\r\n    \"userAddressCity\": \"Yangon\",\r\n    \"userAddressState\": \"NY-NewYork\",\r\n    \"userAddressZipcode\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/shipping/add?currentUserId=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"shipping",
+						"add"
+					],
+					"query": [
+						{
+							"key": "currentUserId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateShippingAddress",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userAddressId\": 13,\r\n    \"userAddressName\": \"Myo\",\r\n    \"userAddressStreet1\": \"No.433,bla bla street\",\r\n    \"userAddressStreet2\": \"east dagon\",\r\n    \"userAddressCity\": \"Yangon\",\r\n    \"userAddressState\": \"NY-NewYork\",\r\n    \"userAddressCountry\": \"US\",\r\n    \"userAddressZipcode\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/shipping/update?currentUserId=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"shipping",
+						"update"
+					],
+					"query": [
+						{
+							"key": "currentUserId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveShippingAddress",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user/shipping/remove?userShippingId=15&currentUserId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"shipping",
+						"remove"
+					],
+					"query": [
+						{
+							"key": "userShippingId",
+							"value": "15"
+						},
+						{
+							"key": "currentUserId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListOfCreditCards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user/card/list?currentUserId=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"card",
+						"list"
+					],
+					"query": [
+						{
+							"key": "currentUserId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewCreditCard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userAddress\": {\r\n            \"userAddressName\": \"Zaw\",\r\n            \"userAddressStreet1\": \"No.433,bla bla street\",\r\n            \"userAddressCity\": \"Yangon\",\r\n            \"userAddressState\": \"NY-NewYork\",\r\n            \"userAddressCountry\": \"US\",\r\n            \"userAddressZipcode\": \"1234\"\r\n    },\r\n    \"userPaymentMethod\": {\r\n            \"cardType\": \"Visa\",\r\n            \"cardName\": \"Player\",\r\n            \"cardNumber\": \"34333333\",\r\n            \"expiryMonth\": 6,\r\n            \"expiryYear\": 2027,\r\n            \"cvc\": 3222,\r\n            \"holderName\": \"zaw\",\r\n            \"defaultPayment\": true\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/card/add?currentUserId=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"card",
+						"add"
+					],
+					"query": [
+						{
+							"key": "currentUserId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCreditCard",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userAddress\": {\r\n        \"userAddressId\": 15,\r\n        \"userAddressName\": \"John\",\r\n        \"userAddressStreet1\": \"No.553,bla bla street\",\r\n        \"userAddressStreet2\": \"north dagon\",\r\n        \"userAddressCity\": \"Yangon\",\r\n        \"userAddressState\": \"NY-NewYork\",\r\n        \"userAddressCountry\": \"US\",\r\n        \"userAddressZipcode\": \"1234\"\r\n    },\r\n    \"userPaymentMethod\": {\r\n        \"id\": 17,\r\n        \"cardType\": \"Visa\",\r\n        \"cardName\": \"Player2\",\r\n        \"cardNumber\": \"34333333\",\r\n        \"expiryMonth\": 6,\r\n        \"expiryYear\": 2027,\r\n        \"cvc\": 3222,\r\n        \"holderName\": \"zaw\",\r\n        \"defaultPayment\": true\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/card/update?currentUserId=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"card",
+						"update"
+					],
+					"query": [
+						{
+							"key": "currentUserId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveCreditCard",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user/card/remove?userPaymentId=36&currentUserId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"card",
+						"remove"
+					],
+					"query": [
+						{
+							"key": "userPaymentId",
+							"value": "36"
+						},
+						{
+							"key": "currentUserId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCartItemList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cart/item/list?userId=149",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart",
+						"item",
+						"list"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "149"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddCartItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cart/item/add?userId=3&bookId=8&qty=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart",
+						"item",
+						"add"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "3"
+						},
+						{
+							"key": "bookId",
+							"value": "8"
+						},
+						{
+							"key": "qty",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCartItem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cart/item/update?cartItemId=54&qty=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart",
+						"item",
+						"update"
+					],
+					"query": [
+						{
+							"key": "cartItemId",
+							"value": "54"
+						},
+						{
+							"key": "qty",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveCartItem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cart/item/remove?cartItemId=56",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart",
+						"item",
+						"remove"
+					],
+					"query": [
+						{
+							"key": "cartItemId",
+							"value": "56"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/admin/user/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"user",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUserStatus",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/admin/user/status/update?userId=3&status=deactivated",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"user",
+						"status",
+						"update"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "3"
+						},
+						{
+							"key": "status",
+							"value": "deactivated"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/admin/user/delete?userId=62",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"user",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "62"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCheckout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/checkout?userCartId=4&userId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"checkout"
+					],
+					"query": [
+						{
+							"key": "userCartId",
+							"value": "4"
+						},
+						{
+							"key": "userId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostCheckout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userOrderAddressList\" : [\r\n        {\r\n            \"addressId\": null,\r\n            \"addressName\": \"Zaw\",\r\n            \"addressStreet1\": \"no.5532, bla bla street\",\r\n            \"addressStreet2\": \"east dagon\",\r\n            \"addressCity\": \"yangon\",\r\n            \"addressState\": \"CA-California\",\r\n            \"addressCountry\": \"US\",\r\n            \"addressZipcode\": \"2312\",\r\n            \"shippingBill\": \"shipping\",\r\n            \"order\": null\r\n        },\r\n        {\r\n            \"addressId\": null,\r\n            \"addressName\": \"Zaw\",\r\n            \"addressStreet1\": \"no.4343,bla bla street\",\r\n            \"addressStreet2\": \"east dagon\",\r\n            \"addressCity\": \"Yangon\",\r\n            \"addressState\": \"CO-Colorado\",\r\n            \"addressCountry\": \"US\",\r\n            \"addressZipcode\": \"1211\",\r\n            \"shippingBill\": \"billing\",\r\n            \"order\": null\r\n        }\r\n    ],\r\n    \"userTransaction\": {\r\n        \"id\": null,\r\n        \"cardType\": \"MasterCard\",\r\n        \"cardName\": \"PlayerVisa\",\r\n        \"cardNumber\": \"1111111111\",\r\n        \"expiryMonth\": 4,\r\n        \"expiryYear\": 2027,\r\n        \"cvc\": 1212,\r\n        \"holderName\": \"Zaw\",\r\n        \"order\": null,\r\n        \"userBilling\": null\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/checkout?shippingMethod=groundShipping&userId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"checkout"
+					],
+					"query": [
+						{
+							"key": "shippingMethod",
+							"value": "groundShipping"
+						},
+						{
+							"key": "userId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePayment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/payment/update?userPaymentId=76&userId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"payment",
+						"update"
+					],
+					"query": [
+						{
+							"key": "userPaymentId",
+							"value": "76"
+						},
+						{
+							"key": "userId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateShipping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/shipping/update?userShippingId=78&userId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"shipping",
+						"update"
+					],
+					"query": [
+						{
+							"key": "userShippingId",
+							"value": "78"
+						},
+						{
+							"key": "userId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
