@@ -428,7 +428,7 @@
 
                 <v-btn
                   color="error"
-                  :disabled="cartItemList.length == 0"
+                  :disabled="cartItemList.length == 0 || orderDisabled"
                   @click="checkout"
                 >
                   <span v-if="!loading">Place Your Order</span>

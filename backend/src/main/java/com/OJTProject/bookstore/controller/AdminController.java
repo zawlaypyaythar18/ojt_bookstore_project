@@ -94,6 +94,20 @@ public class AdminController {
 		return ResponseEntity.ok().body(orderDetailsDto);
 
 	}
+	
+	@DeleteMapping("/user/order/delete")
+	private ResponseEntity<?> deleteOrder(@RequestParam("orderId") Long orderId) {
+		
+		Order order = orderService.findById(orderId);
+		if (order == null) {
+			return ResponseEntity.badRequest().body("Order ID is not Found!");
+		}
+		
+		orderService.deleteOrderById(orderId);
+		
+		return ResponseEntity.ok().body("Order is Deleted");
+		
+	}
 
 	@DeleteMapping("/user/delete")
 	public ResponseEntity<?> deleteUser(@RequestParam("userId") Long userId) {
