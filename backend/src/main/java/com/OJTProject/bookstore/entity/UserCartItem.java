@@ -3,6 +3,7 @@ package com.OJTProject.bookstore.entity;
 import java.math.BigDecimal;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -32,11 +33,11 @@ public class UserCartItem {
 	@JoinColumn(name = "userCartId")
 	private UserCart userCart;
 	
-	@OneToMany(mappedBy = "cartItem")
+	@OneToMany(mappedBy = "cartItem",cascade = CascadeType.ALL)
 	@JsonIgnore
 	private List<UserCartItemBook> userCartItemBook;
 	
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "orderId")
 	private Order order;
 	

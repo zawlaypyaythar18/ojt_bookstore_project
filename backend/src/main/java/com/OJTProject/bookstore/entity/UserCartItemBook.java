@@ -1,5 +1,6 @@
 package com.OJTProject.bookstore.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,7 +19,7 @@ public class UserCartItemBook {
 	@JoinColumn(name = "bookId")
 	private Book book;
 
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "cartItemId")
 	private UserCartItem cartItem;
 

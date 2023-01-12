@@ -2,6 +2,7 @@ package com.OJTProject.bookstore.entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -66,7 +67,7 @@ public class Book {
 	@NotBlank(message = "Required")
 	private String posterPath;
 
-	@OneToMany(mappedBy = "book")
+	@OneToMany(mappedBy = "book",cascade = CascadeType.ALL)
 	@JsonIgnore
 	private List<UserCartItemBook> userCartItemBookList;
 
