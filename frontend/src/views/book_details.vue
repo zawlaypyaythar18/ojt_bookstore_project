@@ -77,7 +77,7 @@
               <v-col cols="4"></v-col>
             </v-row>
             <div
-              v-if="book.inStockNumber >= 10"
+              v-if="book.inStockNumber > 10"
               class="text-body-1 ml-2 my-3"
               style="color: green"
             >

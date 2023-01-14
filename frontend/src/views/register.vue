@@ -36,7 +36,7 @@
             ></v-text-field>
 
             <v-btn
-              :disabled="!registerForm"
+              :disabled="!registerForm || clickRegister"
               color="primary"
               class="mr-4 mt-4"
               @click="register"
@@ -86,10 +86,14 @@ export default {
       loading: false,
       emailAlert: false,
       errorAlert: false,
+      clickRegister: false,
     };
   },
   methods: {
     async register() {
+      this.emailAlert = false;
+      this.errorAlert = false;
+      this.clickRegister = true;
       if (this.$refs.registerForm.validate()) {
         this.loading = true;
         const resp = await utils.http.post("/api/user/register", {
@@ -106,6 +110,8 @@ export default {
 
         // console.log(this.email + this.username)
       }
+
+      this.clickRegister = false;
     },
   },
 };
