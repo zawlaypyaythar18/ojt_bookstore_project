@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-alert class="mt-3" v-show="errorAlert" dense type="error">
-      Register Failed!
+      Login Failed!
     </v-alert>
   </div>
 </template>

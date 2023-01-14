@@ -105,6 +105,7 @@
                   color="primary"
                   class="mr-4 mt-4"
                   @click="forgetPassword"
+                  :disabled="disabledBtn"
                 >
                   <span v-if="!forgetLoading">Send</span>
                   <v-progress-circular
@@ -169,6 +170,7 @@ export default {
       forgetLoading: false,
       emailNotFoundAlert: false,
       dialog: false,
+      disabledBtn: false,
     };
   },
   methods: {
@@ -178,6 +180,7 @@ export default {
         this.errorAlert = false;
         this.emailNotFoundAlert = false;
         this.forgetPasswordAlert = false;
+        this.disabledBtn = true;
         const resp = await utils.http.post("/api/user/login", {
           email: this.email,
           password: this.password,
@@ -197,6 +200,7 @@ export default {
           this.errorAlert = true;
         }
         this.loading = false;
+        this.disabledBtn = false;
       }
     },
     async forgetPassword() {
