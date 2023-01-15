@@ -12,7 +12,7 @@
           <v-btn
             color="error"
             @click="checkout"
-            :disabled="cartItemList.length == 0"
+            :disabled="cartItemList.length == 0 || checkoutBtn"
             >Checkout</v-btn
           >
         </v-col>
@@ -131,6 +131,7 @@ export default {
       shoppingCartId: null,
       // removeAlert: false,
       qtyAlert: false,
+      checkoutBtn: false,
     };
   },
   async created() {
@@ -177,6 +178,7 @@ export default {
           this.cartItemList[cartItem].qty >= 1
         ) {
           this.qtyAlert = false;
+          this.checkoutBtn = false;
           const resp = await utils.http.put(
             "/api/cart/item/update?cartItemId=" +
               this.cartItemList[cartItem].id +
@@ -187,7 +189,7 @@ export default {
             // console.log("update successfully.");
             const data = await resp.json();
             if (data) {
-              // console.log(this.cartItemList[cartItem].subTotal) 
+              // console.log(this.cartItemList[cartItem].subTotal)
               // console.log(data.shoppingCart.grandTotal);
               this.cartItemList[cartItem].subTotal = data.subTotal;
               this.grandTotal = data.userCart.grandTotal;
@@ -195,6 +197,8 @@ export default {
           }
         } else {
           this.qtyAlert = true;
+          this.checkoutBtn = true;
+          return;
         }
       }
     },
