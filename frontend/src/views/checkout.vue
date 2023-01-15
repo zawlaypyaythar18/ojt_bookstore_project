@@ -439,7 +439,14 @@
                   ></v-progress-circular>
                 </v-btn>
 
-                <v-btn text color="info" @click="e1 = 2" :disabled="orderDisabled"> Go Back </v-btn>
+                <v-btn
+                  text
+                  color="info"
+                  @click="e1 = 2"
+                  :disabled="orderDisabled"
+                >
+                  Go Back
+                </v-btn>
               </v-stepper-content>
             </v-stepper-items>
           </v-stepper>

@@ -1,7 +1,12 @@
 <template>
   <div class="my-5 container">
     <v-alert dense text type="success" v-show="successAlert">
-      Successfully Added <strong>"{{ book.title }}"</strong> To <router-link to="/shopping/cart" style="text-decoration: underline;color: green;">Shopping Cart</router-link>.
+      Successfully Added <strong>"{{ book.title }}"</strong> To
+      <router-link
+        to="/shopping/cart"
+        style="text-decoration: underline; color: green"
+        >Shopping Cart</router-link
+      >.
     </v-alert>
     <v-alert dense text type="error" v-show="errorAlert">
       Sorry, You have to Login First.
@@ -183,8 +188,8 @@ export default {
         }
       } else {
         this.errorAlert = true;
-      };
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      window.scrollTo({ top: 0, behavior: "smooth" });
     },
     back() {
       this.$router.back();
@@ -200,4 +205,3 @@ export default {
   height: 40px;
 }
 </style>
-

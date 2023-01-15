@@ -60,7 +60,7 @@
                 v-bind="attrs"
                 v-on="on"
                 class=""
-                style="text-decoration: underline;color: red;font-size: 15px;"
+                style="text-decoration: underline; color: red; font-size: 15px"
               >
                 Forget Password
               </a>
@@ -122,26 +122,26 @@
         <v-col cols="3"></v-col>
         <v-col cols="6">
           <v-alert class="mt-3" v-show="errorAlert" dense type="error">
-          Login Failed! <br />
-          Email or Password is wrong!
-        </v-alert>
+            Login Failed! <br />
+            Email or Password is wrong!
+          </v-alert>
 
-        <v-alert
-          class="mt-3 mb-3"
-          v-show="forgetPasswordAlert"
-          dense
-          type="info"
-        >
-          Email is Send
-        </v-alert>
-        <v-alert
-          class="mt-3 mb-3"
-          v-show="emailNotFoundAlert"
-          dense
-          type="error"
-        >
-          Email is not Found
-        </v-alert>
+          <v-alert
+            class="mt-3 mb-3"
+            v-show="forgetPasswordAlert"
+            dense
+            type="info"
+          >
+            Email is Send
+          </v-alert>
+          <v-alert
+            class="mt-3 mb-3"
+            v-show="emailNotFoundAlert"
+            dense
+            type="error"
+          >
+            Email is not Found
+          </v-alert>
         </v-col>
         <v-col cols="3"></v-col>
       </v-row>

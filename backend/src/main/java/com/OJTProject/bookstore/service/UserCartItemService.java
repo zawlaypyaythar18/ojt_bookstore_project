@@ -19,7 +19,6 @@ public interface UserCartItemService {
 
 	UserCartItem save(UserCartItem userCartItem);
 
-
 	void removeCartItem(UserCartItem userCartItem);
 
 }

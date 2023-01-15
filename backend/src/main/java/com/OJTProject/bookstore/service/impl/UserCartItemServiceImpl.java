@@ -27,7 +27,6 @@ public class UserCartItemServiceImpl implements UserCartItemService {
 	@Autowired
 	private UserCartItemBookRepo userCartItemBookRepo;
 
-	
 	@Override
 	public List<UserCartItem> findByUserCart(UserCart userCart) {
 		return userCartItemRepo.findByUserCart(userCart);
@@ -64,14 +63,12 @@ public class UserCartItemServiceImpl implements UserCartItemService {
 			}
 		}
 
-
 		UserCartItem userCartItem = new UserCartItem();
 
 		userCartItem.setUserCart(user.getUserCart());
 		userCartItem.setBook(book);
 		userCartItem.setQty(qty);
 		userCartItem.setSubTotal(new BigDecimal(book.getOurPrice()).multiply(new BigDecimal(qty)));
-
 
 		userCartItem = userCartItemRepo.save(userCartItem);
 

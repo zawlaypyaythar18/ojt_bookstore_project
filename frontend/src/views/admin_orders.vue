@@ -18,56 +18,60 @@
                   ${{ item.orderTotal }}
                 </template>
                 <template v-slot:item.action="{ item }">
-                    <v-btn
-                      color="red"
-                      fab
-                      dark
-                      x-small
-                      elevation="2"
-                      @click="
-                        deleteDialog = true;
-                        toDeleteOrder = item;
-                      "
-                    >
-                      <v-icon>mdi-delete</v-icon>
-                    </v-btn>
-                  </template>
+                  <v-btn
+                    color="red"
+                    fab
+                    dark
+                    x-small
+                    elevation="2"
+                    @click="
+                      deleteDialog = true;
+                      toDeleteOrder = item;
+                    "
+                  >
+                    <v-icon>mdi-delete</v-icon>
+                  </v-btn>
+                </template>
               </v-data-table>
               <v-dialog v-model="deleteDialog" width="400">
-                  <v-card>
-                    <v-toolbar color="error" dark>
-                      <div>Delete This Order?</div>
-                      <v-spacer></v-spacer>
-                      <v-btn icon @click="deleteDialog = false">
-                        <v-icon>mdi-close</v-icon>
-                      </v-btn>
-                    </v-toolbar>
-                    <v-card-text class="pa-4">
-                      <v-row dense>
-                        <v-col cols="4" class="font-weight-bold">Order ID</v-col>
-                        <v-col cols="6">{{ toDeleteOrder.id }}</v-col>
-                        <v-col cols="4" class="font-weight-bold">Shipping Date</v-col>
-                        <v-col cols="6">{{ toDeleteOrder.shippingDate }}</v-col>
-                      </v-row>
-                    </v-card-text>
-                    <v-card-actions class="justify-end">
-                      <v-btn color="red" dark @click="deleteOrder()">Delete</v-btn>
-                    </v-card-actions>
-                  </v-card>
-                </v-dialog>
+                <v-card>
+                  <v-toolbar color="error" dark>
+                    <div>Delete This Order?</div>
+                    <v-spacer></v-spacer>
+                    <v-btn icon @click="deleteDialog = false">
+                      <v-icon>mdi-close</v-icon>
+                    </v-btn>
+                  </v-toolbar>
+                  <v-card-text class="pa-4">
+                    <v-row dense>
+                      <v-col cols="4" class="font-weight-bold">Order ID</v-col>
+                      <v-col cols="6">{{ toDeleteOrder.id }}</v-col>
+                      <v-col cols="4" class="font-weight-bold"
+                        >Shipping Date</v-col
+                      >
+                      <v-col cols="6">{{ toDeleteOrder.shippingDate }}</v-col>
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="justify-end">
+                    <v-btn color="red" dark @click="deleteOrder()"
+                      >Delete</v-btn
+                    >
+                  </v-card-actions>
+                </v-card>
+              </v-dialog>
             </v-stepper-content>
 
             <v-stepper-content step="2">
               <v-card flat>
                 <v-row>
                   <v-col cols="6">
-                      <v-card-title>Order Date - {{ orderDate }}</v-card-title>
-                    </v-col>
-                    <v-col cols="6">
-                      <v-card-title
-                        >Delivery Date - {{ deliveryDate }}</v-card-title
-                      >
-                    </v-col>
+                    <v-card-title>Order Date - {{ orderDate }}</v-card-title>
+                  </v-col>
+                  <v-col cols="6">
+                    <v-card-title
+                      >Delivery Date - {{ deliveryDate }}</v-card-title
+                    >
+                  </v-col>
                   <v-col cols="4">
                     <v-card-title>Shipping Address</v-card-title>
                     <v-divider></v-divider>
@@ -290,12 +294,14 @@ export default {
     },
 
     async deleteOrder() {
-      const resp = await utils.http.del("/api/admin/user/order/delete?orderId=" + this.toDeleteOrder.id);
+      const resp = await utils.http.del(
+        "/api/admin/user/order/delete?orderId=" + this.toDeleteOrder.id
+      );
       if (resp && resp.status === 200) {
         this.deleteDialog = false;
         await this.fetchOrderList();
       }
-    }
+    },
   },
 };
 </script>

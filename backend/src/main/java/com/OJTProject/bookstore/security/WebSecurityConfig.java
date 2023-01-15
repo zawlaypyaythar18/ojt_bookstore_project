@@ -6,7 +6,6 @@ import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
-
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -18,8 +17,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	public void configure(WebSecurity web) throws Exception {
-		web.debug(false).ignoring()
-				.antMatchers("/images/**", "/js/**", "/css/**");
+		web.debug(false).ignoring().antMatchers("/images/**", "/js/**", "/css/**");
 	}
 
 }

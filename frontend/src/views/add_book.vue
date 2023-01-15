@@ -239,8 +239,7 @@ export default {
       ourPrice: "",
       inStockNumber: "",
       active: true,
-      description:
-        "",
+      description: "",
       bookImage: null,
       bookPreviewPath: null,
     };

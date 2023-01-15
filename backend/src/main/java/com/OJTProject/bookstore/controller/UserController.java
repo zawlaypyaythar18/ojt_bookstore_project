@@ -79,7 +79,7 @@ public class UserController {
 	private ResponseEntity<?> register(@Valid @RequestBody User user, HttpServletRequest request) throws IOException {
 
 		if (userService.findByEmail(user.getEmail()) != null) {
-			return ResponseEntity.badRequest().body("Email is already Exist");
+			return ResponseEntity.badRequest().body("Email is already Exists");
 		}
 
 		String token = UUID.randomUUID().toString();
@@ -140,7 +140,7 @@ public class UserController {
 		User user = userService.findByEmail(email);
 
 		if (user == null) {
-			return ResponseEntity.badRequest().body("Email is not Exist");
+			return ResponseEntity.badRequest().body("Email is not Exists.");
 		}
 
 		String password = SecurityUtility.randomPassword();
@@ -152,16 +152,16 @@ public class UserController {
 		userService.update(user);
 
 		String frontendUrl = "http://localhost:8081";
-		
+
 		String token = user.getPasswordResetToken().getToken();
-		
+
 		SimpleMailMessage sendEmail = mailConstructor.constructResetTokenEmail(frontendUrl, request.getLocale(), token,
 				user, password, "Champion's Bookstore - Forget Password");
 
 		mailSender.send(sendEmail);
-		
+
 		return ResponseEntity.ok().body("Email is Send");
-		
+
 	}
 
 	@GetMapping("/profile")
@@ -179,7 +179,8 @@ public class UserController {
 
 	@PutMapping("/profile/update")
 	private ResponseEntity<?> updateProfile(@Valid @RequestBody User user,
-			@RequestParam(name = "currentPassword",required = true) String currentPassword, @RequestParam("newPassword") String newPassword) {
+			@RequestParam(name = "currentPassword", required = true) String currentPassword,
+			@RequestParam("newPassword") String newPassword) {
 
 		User localUser = userService.findById(user.getId());
 
@@ -189,7 +190,7 @@ public class UserController {
 
 		if (userService.findByEmail(user.getEmail()) != null) {
 			if ((userService.findByEmail(user.getEmail())).getId() != localUser.getId()) {
-				return ResponseEntity.badRequest().body("Email Already Exist");
+				return ResponseEntity.badRequest().body("Email Already Exists");
 			}
 		}
 

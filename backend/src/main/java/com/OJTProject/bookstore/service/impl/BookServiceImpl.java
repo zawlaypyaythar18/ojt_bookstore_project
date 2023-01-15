@@ -67,11 +67,11 @@ public class BookServiceImpl implements BookService {
 		}
 
 		int start = (int) pageable.getOffset();
-        int end = Math.min((start + pageable.getPageSize()), activeBookList.size());
-        if(start > activeBookList.size())
-            return new PageImpl<>(new ArrayList<>(), pageable, activeBookList.size());
-        
-        return new PageImpl<>(activeBookList.subList(start, end), pageable, activeBookList.size());
+		int end = Math.min((start + pageable.getPageSize()), activeBookList.size());
+		if (start > activeBookList.size())
+			return new PageImpl<>(new ArrayList<>(), pageable, activeBookList.size());
+
+		return new PageImpl<>(activeBookList.subList(start, end), pageable, activeBookList.size());
 	}
 
 	@Override
@@ -106,7 +106,7 @@ public class BookServiceImpl implements BookService {
 
 	@Override
 	public Page<Book> findByPage(Pageable pageable) {
-		
+
 		List<Book> bookList = bookRepo.findAll();
 		List<Book> activeBookList = new ArrayList<>();
 		for (Book book : bookList) {
@@ -114,16 +114,16 @@ public class BookServiceImpl implements BookService {
 				activeBookList.add(book);
 			}
 		}
-		
+
 		int start = (int) pageable.getOffset();
-        int end = Math.min((start + pageable.getPageSize()), activeBookList.size());
-        if(start > activeBookList.size())
-            return new PageImpl<>(new ArrayList<>(), pageable, activeBookList.size());
-        
-        return new PageImpl<>(activeBookList.subList(start, end), pageable, activeBookList.size());
-		
+		int end = Math.min((start + pageable.getPageSize()), activeBookList.size());
+		if (start > activeBookList.size())
+			return new PageImpl<>(new ArrayList<>(), pageable, activeBookList.size());
+
+		return new PageImpl<>(activeBookList.subList(start, end), pageable, activeBookList.size());
+
 //		return bookRepo.findAllByOrderByTitleAsc(pageable);
-		
+
 	}
 
 	@Override
@@ -131,23 +131,23 @@ public class BookServiceImpl implements BookService {
 
 //		Page<Book> categoryBookList = bookRepo.findByCategory(category, pageable);
 //		return categoryBookList;
-		
+
 		List<Book> bookList = bookRepo.findByCategory(category);
-		
+
 		List<Book> activeBookList = new ArrayList<>();
 		for (Book book : bookList) {
 			if (book.getActive()) {
 				activeBookList.add(book);
 			}
 		}
-		
+
 		int start = (int) pageable.getOffset();
-        int end = Math.min((start + pageable.getPageSize()), activeBookList.size());
-        if(start > activeBookList.size())
-            return new PageImpl<>(new ArrayList<>(), pageable, activeBookList.size());
-        
-        return new PageImpl<>(activeBookList.subList(start, end), pageable, activeBookList.size());
-		
+		int end = Math.min((start + pageable.getPageSize()), activeBookList.size());
+		if (start > activeBookList.size())
+			return new PageImpl<>(new ArrayList<>(), pageable, activeBookList.size());
+
+		return new PageImpl<>(activeBookList.subList(start, end), pageable, activeBookList.size());
+
 	}
 
 }

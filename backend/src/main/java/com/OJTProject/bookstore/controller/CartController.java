@@ -74,9 +74,9 @@ public class CartController {
 		UserCartItem userCartItem = userCartItemService.findById(cartItemId);
 
 		if (qty > userCartItem.getBook().getInStockNumber()) {
-			return ResponseEntity.badRequest().body("Not Enough Stock!"); 
+			return ResponseEntity.badRequest().body("Not Enough Stock!");
 		}
-		
+
 		userCartItem.setQty(qty);
 
 		userCartItemService.updateCartItem(userCartItem);

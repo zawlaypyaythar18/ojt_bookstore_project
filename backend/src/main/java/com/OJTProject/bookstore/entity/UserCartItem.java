@@ -17,30 +17,30 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class UserCartItem {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	private Integer qty;
-	
+
 	private BigDecimal subTotal;
-	
+
 	@OneToOne
 	private Book book;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "userCartId")
 	private UserCart userCart;
-	
-	@OneToMany(mappedBy = "cartItem",cascade = CascadeType.ALL)
+
+	@OneToMany(mappedBy = "cartItem", cascade = CascadeType.ALL)
 	@JsonIgnore
 	private List<UserCartItemBook> userCartItemBook;
-	
+
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "orderId")
 	private Order order;
-	
+
 	public UserCartItem() {
 		// TODO Auto-generated constructor stub
 	}
@@ -100,6 +100,5 @@ public class UserCartItem {
 	public void setOrder(Order order) {
 		this.order = order;
 	}
-	
 
 }

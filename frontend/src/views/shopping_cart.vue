@@ -172,7 +172,10 @@ export default {
       for (var cartItem in this.cartItemList) {
         // console.log(this.cartItemList[cartItem].qty)
         // console.log(this.cartItemList[cartItem].id)
-        if (this.cartItemList[cartItem].qty <= 200 && this.cartItemList[cartItem].qty >= 1) {
+        if (
+          this.cartItemList[cartItem].qty <= 200 &&
+          this.cartItemList[cartItem].qty >= 1
+        ) {
           this.qtyAlert = false;
           const resp = await utils.http.put(
             "/api/cart/item/update?cartItemId=" +

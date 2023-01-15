@@ -51,11 +51,11 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td class="text-center"><span th:text="${billingAddress.addressName}"></span><br />
-					<span
-					th:text="${billingAddress.addressStreet1}"></span><br />
-					<span th:text="${billingAddress.addressStreet2}"></span><br />
-					<span th:text="${billingAddress.addressCity}"></span><br /> <span
+				<td class="text-center"><span
+					th:text="${billingAddress.addressName}"></span><br /> <span
+					th:text="${billingAddress.addressStreet1}"></span><br /> <span
+					th:text="${billingAddress.addressStreet2}"></span><br /> <span
+					th:text="${billingAddress.addressCity}"></span><br /> <span
 					th:text="${billingAddress.addressState}"></span><br /> <span
 					th:text="${billingAddress.addressZipcode}"></span><br /></td>
 				<td><span th:text="${order.userTransaction.holderName}"></span><br />
@@ -64,10 +64,9 @@
 					th:text="${order.userTransaction.expiryMonth}"></span><br /> <span
 					th:text="${order.userTransaction.expiryYear}"></span><br /></td>
 				<td><span th:text="${shippingAddress.addressName}"></span><br />
-					<span
-					th:text="${shippingAddress.addressStreet1}"></span><br />
-					<span th:text="${shippingAddress.addressStreet2}"></span><br />
-					<span th:text="${shippingAddress.addressCity}"></span><br /> <span
+					<span th:text="${shippingAddress.addressStreet1}"></span><br /> <span
+					th:text="${shippingAddress.addressStreet2}"></span><br /> <span
+					th:text="${shippingAddress.addressCity}"></span><br /> <span
 					th:text="${shippingAddress.addressState}"></span><br /> <span
 					th:text="${shippingAddress.addressZipcode}"></span><br /></td>
 			</tr>

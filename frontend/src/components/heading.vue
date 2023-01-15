@@ -17,9 +17,7 @@
               class="text-center"
             ></v-img>
           </v-col>
-          <v-col cols="6">
-            書店
-          </v-col>
+          <v-col cols="6"> 書店 </v-col>
         </v-row>
       </router-link>
       <v-spacer></v-spacer>

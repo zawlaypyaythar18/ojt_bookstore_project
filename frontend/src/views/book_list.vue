@@ -57,7 +57,12 @@
         </v-col>
         <v-col cols="10">
           <v-alert dense text type="success" v-show="successAlert">
-            Successfully Added <strong>"{{ addedTitle }}"</strong> To <router-link to="/shopping/cart" style="text-decoration: underline;color: green;">Shopping Cart</router-link>.
+            Successfully Added <strong>"{{ addedTitle }}"</strong> To
+            <router-link
+              to="/shopping/cart"
+              style="text-decoration: underline; color: green"
+              >Shopping Cart</router-link
+            >.
           </v-alert>
           <v-alert dense text type="error" v-show="errorAlert">
             Sorry, You have to Login First.
@@ -225,8 +230,8 @@ export default {
           // this.grandTotal = newVal[0].shoppingCart.grandTotal;
         }
         if (!this.inputTitle) {
-        this.onClickCategory("All Books");
-      }
+          this.onClickCategory("All Books");
+        }
       },
       deep: true,
     },
@@ -326,7 +331,13 @@ export default {
       const pageNumber = this.page - 1;
 
       const resp = await utils.http.get(
-        "/api/book/title/search?title=" + this.inputTitle + "&noPage=" + pageNumber + "&count=" + 9);
+        "/api/book/title/search?title=" +
+          this.inputTitle +
+          "&noPage=" +
+          pageNumber +
+          "&count=" +
+          9
+      );
       if (resp.status === 200) {
         const data = await resp.json();
         if (data) {
@@ -370,8 +381,8 @@ export default {
         }
       } else {
         this.errorAlert = true;
-      };
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      window.scrollTo({ top: 0, behavior: "smooth" });
     },
   },
 };
