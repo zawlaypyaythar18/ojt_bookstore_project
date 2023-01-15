@@ -55,7 +55,7 @@ public class UserCartServiceImpl implements UserCartService {
 		}
 
 		userCart.setGrandTotal(new BigDecimal(0));
-		userCartRepo.save(userCart);
+		userCartRepo.save(userCart); 
 	}
 
 	@Override

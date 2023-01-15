@@ -147,7 +147,7 @@
               class="mx-2 navlink text-decoration-none"
               to="/user/profile"
               >プロフィール</router-link
-            >
+            > 
           </v-list-item>
 
           <v-list-item v-if="isLogin" class="blue-grey lighten-1">

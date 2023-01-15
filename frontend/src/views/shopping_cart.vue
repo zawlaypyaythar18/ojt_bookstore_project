@@ -187,7 +187,7 @@ export default {
             // console.log("update successfully.");
             const data = await resp.json();
             if (data) {
-              // console.log(this.cartItemList[cartItem].subTotal)
+              // console.log(this.cartItemList[cartItem].subTotal) 
               // console.log(data.shoppingCart.grandTotal);
               this.cartItemList[cartItem].subTotal = data.subTotal;
               this.grandTotal = data.userCart.grandTotal;

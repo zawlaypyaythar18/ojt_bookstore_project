@@ -175,7 +175,7 @@ public class UserController {
 
 		return ResponseEntity.ok().body(user);
 
-	}
+	} 
 
 	@PutMapping("/profile/update")
 	private ResponseEntity<?> updateProfile(@Valid @RequestBody User user,

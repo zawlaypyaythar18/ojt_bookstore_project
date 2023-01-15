@@ -19,7 +19,7 @@
                     'Title must be less than 255 characters.',
                 ]"
               >
-              </v-text-field>
+              </v-text-field> 
 
               <v-text-field
                 v-model="author"

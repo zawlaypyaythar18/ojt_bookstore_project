@@ -136,7 +136,6 @@ public class AdminController {
 	@PostMapping("/book/add")
 	private ResponseEntity<?> addBook(@Valid @RequestBody Book book) throws IOException {
 		Book saveBook = bookService.save(book);
-
 		return ResponseEntity.ok().body(saveBook);
 	}
 

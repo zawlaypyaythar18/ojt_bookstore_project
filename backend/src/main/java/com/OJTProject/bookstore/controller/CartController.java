@@ -85,7 +85,7 @@ public class CartController {
 
 		return ResponseEntity.ok().body(userCartItem);
 
-	}
+	} 
 
 	@DeleteMapping("/item/remove")
 	private ResponseEntity<?> removeCartItem(@RequestParam("cartItemId") Long cartItemId) {

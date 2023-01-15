@@ -71,8 +71,7 @@ public class Book {
 	@JsonIgnore
 	private List<UserCartItemBook> userCartItemBookList;
 
-	public Book() {
-	}
+	public Book() {}
 
 	public Long getId() {
 		return id;

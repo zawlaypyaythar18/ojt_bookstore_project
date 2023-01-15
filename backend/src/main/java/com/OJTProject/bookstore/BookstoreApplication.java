@@ -46,6 +46,7 @@ public class BookstoreApplication implements CommandLineRunner {
 			user.setUserStatus(UserStatus.active);
 			user.setCreatedAt(LocalDateTime.now());
 			userService.save(user);
+
 		}
 
 		if (deleteImages.equals("true")) {

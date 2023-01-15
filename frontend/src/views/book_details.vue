@@ -68,7 +68,7 @@
               <v-col cols="4"></v-col>
               <v-col cols="4">
                 <div class="text-body-1 ml-2 my-3">
-                  <!-- <span>Qty : </span>  -->
+                  <!-- <span>Qty : </span> -->
                   <v-select
                     label="Qty"
                     :items="items"

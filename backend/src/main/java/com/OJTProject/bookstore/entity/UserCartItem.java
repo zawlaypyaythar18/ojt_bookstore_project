@@ -41,9 +41,7 @@ public class UserCartItem {
 	@JoinColumn(name = "orderId")
 	private Order order;
 
-	public UserCartItem() {
-		// TODO Auto-generated constructor stub
-	}
+	public UserCartItem() {}
 
 	public Long getId() {
 		return id;

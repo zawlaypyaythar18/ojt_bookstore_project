@@ -57,6 +57,7 @@ public class BookController {
 			Page<Book> pageAllBooks = bookService.findByPage(pageable);
 			return ResponseEntity.ok(pageAllBooks);
 		}
+
 		Page<Book> pageCategoryList = bookService.findByCategoryWithPage(category, pageable);
 
 		if (pageCategoryList.isEmpty()) {

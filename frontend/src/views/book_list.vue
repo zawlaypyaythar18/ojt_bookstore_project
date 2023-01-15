@@ -198,7 +198,7 @@ export default {
     };
   },
   async created() {
-    // await this.fetchBooks();
+    // await this.fetchBooks(); 
     await this.onClickCategory("All Books");
     this.loginUser = this.$store.state.loginUser;
     this.$store.watch(

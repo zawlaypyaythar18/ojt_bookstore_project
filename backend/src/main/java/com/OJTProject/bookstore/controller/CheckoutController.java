@@ -208,7 +208,7 @@ public class CheckoutController {
 			userOrderAddress2.setAddressZipcode(userOrderAddress.getAddressZipcode());
 			userOrderAddress2.setShippingBill(userOrderAddress.getShippingBill());
 			userOrderAddressList.add(userOrderAddress2);
-		}
+		} 
 
 		UserTransaction userTransaction = new UserTransaction();
 		userTransaction.setCardName(checkoutInfoDto.getUserTransaction().getCardName());

@@ -607,7 +607,7 @@ export default {
   },
   async created() {
     this.loginUser = this.$store.state.loginUser;
-    // const value = 100.3232;
+    // const value = 100.3232; 
     // console.log(value.toFixed(2))
     await this.getCheckoutList();
   },

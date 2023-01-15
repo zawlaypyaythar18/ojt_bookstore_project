@@ -84,8 +84,7 @@ public class User {
 	@JsonIgnore
 	private List<Order> orderList;
 
-	public User() {
-	}
+	public User() {}
 
 	public Long getId() {
 		return id;

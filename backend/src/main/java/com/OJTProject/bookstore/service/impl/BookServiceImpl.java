@@ -50,7 +50,6 @@ public class BookServiceImpl implements BookService {
 				activeBookList.add(book);
 			}
 		}
-
 		return activeBookList;
 	}
 
